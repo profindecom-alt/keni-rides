@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Keni Rides — Book a safe, reliable ride in seconds. Available 24/7 across the city.">
+  <title>Keni Rides — Your City, Your Ride</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Keni<span>.</span></a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="booking.html">Book a Ride</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="drivers.html">Drive with Us</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Mobile Menu ── -->
+  <div class="mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="Navigation">
+    <button id="mobileClose" aria-label="Close menu" style="position:absolute;top:24px;right:24px;background:none;border:none;color:#fff;cursor:pointer;padding:8px;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <a href="index.html">Home</a>
+    <a href="booking.html">Book a Ride</a>
+    <a href="about.html">About</a>
+    <a href="drivers.html">Drive with Us</a>
+    <a href="booking.html" class="btn btn-primary" style="margin-top:1rem;">Book Now</a>
+  </div>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-bg-glow"></div>
+
+    <div class="hero-inner">
+      <!-- Left: Copy -->
+      <div>
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Now available in 40+ cities
+        </div>
+
+        <h1 class="display-xl">Your<br>city,<br><span style="color:var(--color-accent)">your</span><br>ride.</h1>
+
+        <p style="font-size:1.125rem;color:var(--color-text-muted);line-height:1.7;margin-top:1.5rem;max-width:440px;">
+          Fast, reliable rides at the tap of a button. No surge surprises — just transparent fares and drivers you can trust.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="booking.html" class="btn btn-primary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            Book a Ride
+          </a>
+          <a href="drivers.html" class="btn btn-ghost btn-lg">Become a Driver</a>
+        </div>
+
+        <div class="hero-trust">
+          <div class="hero-trust-avatars">
+            <span>AK</span><span>MR</span><span>JD</span><span>+</span>
+          </div>
+          <span>Trusted by <strong style="color:#fff">2M+</strong> riders across Morocco</span>
+        </div>
+      </div>
+
+      <!-- Right: Quick Booking Card -->
+      <div>
+        <div class="booking-card">
+          <h3>Quick Book</h3>
+
+          <div style="margin-bottom:1.25rem;">
+            <div class="form-label">Ride Type</div>
+            <div class="ride-types">
+              <button class="ride-type-btn active" onclick="selectRide(this)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v10a2 2 0 0 1-2 2h-2"/><circle cx="9" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M13 2v5h5"/></svg>
+                Standard
+              </button>
+              <button class="ride-type-btn" onclick="selectRide(this)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                Premium
+              </button>
+              <button class="ride-type-btn" onclick="selectRide(this)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                Shared
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="pickup">Pickup</label>
+            <div style="position:relative;">
+              <svg style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--color-accent);" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+              <input class="form-input" id="pickup" type="text" placeholder="Enter pickup location" style="padding-left:40px;">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="dropoff">Drop-off</label>
+            <div style="position:relative;">
+              <svg style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#F59E0B;" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <input class="form-input" id="dropoff" type="text" placeholder="Enter destination" style="padding-left:40px;">
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:1.25rem;">
+            <div class="form-group" style="margin:0;">
+              <label class="form-label" for="date">Date</label>
+              <input class="form-input" id="date" type="date">
+            </div>
+            <div class="form-group" style="margin:0;">
+              <label class="form-label" for="time">Time</label>
+              <input class="form-input" id="time" type="time">
+            </div>
+          </div>
+
+          <div style="background:rgba(37,99,235,0.08);border:1px solid rgba(37,99,235,0.2);border-radius:var(--radius-md);padding:12px 16px;margin-bottom:1.25rem;font-size:0.875rem;color:#93C5FD;display:flex;align-items:center;gap:8px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+            Driver arriving in <strong style="color:#fff">3–5 min</strong> after booking
+          </div>
+
+          <a href="booking.html" class="btn btn-primary" style="width:100%;justify-content:center;">
+            Confirm Booking
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Stats ── -->
+  <div style="padding: 0 24px 80px;">
+    <div style="max-width:1280px;margin:0 auto;">
+      <div class="stats-grid fade-up">
+        <div class="stat-item">
+          <div class="stat-number">2M<span style="color:var(--color-accent)">+</span></div>
+          <div class="stat-label">Happy Riders</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">40<span style="color:var(--color-accent)">+</span></div>
+          <div class="stat-label">Cities Covered</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">15K<span style="color:var(--color-accent)">+</span></div>
+          <div class="stat-label">Verified Drivers</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">4.9<span style="color:var(--color-accent)">★</span></div>
+          <div class="stat-label">App Store Rating</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Features ── -->
+  <div style="padding: 0 24px 100px;">
+    <div style="max-width:1280px;margin:0 auto;">
+      <div class="fade-up" style="margin-bottom:3rem;">
+        <span class="section-label">Why Keni Rides</span>
+        <h2 class="display-md" style="max-width:520px;margin-top:0.5rem;">
+          Built for the way you actually move.
+        </h2>
+      </div>
+
+      <div class="features-grid fade-up">
+        <div class="feature-item">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="feature-title">Verified Drivers</div>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;margin-top:0.25rem;">Every driver passes a rigorous background check, vehicle inspection, and safety training before their first ride.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="feature-title">On-Time Guarantee</div>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;margin-top:0.25rem;">Our smart dispatch system matches you with the nearest driver. Average pickup time is under 4 minutes in city centers.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <div class="feature-title">Fixed, Fair Fares</div>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;margin-top:0.25rem;">See your price before you confirm. No surge pricing during peak hours — what you see is what you pay, always.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="feature-title">Real-Time Tracking</div>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;margin-top:0.25rem;">Track your driver live on the map. Share your trip with family or friends for added peace of mind.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          </div>
+          <div class="feature-title">Multiple Payment Options</div>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;margin-top:0.25rem;">Pay by card, mobile wallet, or cash. Switch methods anytime — every ride is cashless-ready.</p>
+        </div>
+
+        <div class="feature-item">
+          <div class="feature-icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <div class="feature-title">24/7 Support</div>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;margin-top:0.25rem;">Got a question or issue? Our support team is available around the clock via in-app chat, email, or phone.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── How It Works ── -->
+  <div style="background:var(--color-primary);padding:100px 24px;border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);">
+    <div style="max-width:1280px;margin:0 auto;">
+      <div class="fade-up" style="text-align:center;margin-bottom:4rem;">
+        <span class="section-label">How It Works</span>
+        <h2 class="display-md" style="margin-top:0.5rem;">Three steps to your ride.</h2>
+      </div>
+
+      <div class="steps-grid fade-up">
+        <div class="step-item">
+          <div class="step-number">01</div>
+          <h3 class="step-title">Enter Your Route</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;margin-top:0.25rem;">Type your pickup point and destination. Instantly see your fare and estimated arrival time.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">02</div>
+          <h3 class="step-title">Choose Your Ride</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;margin-top:0.25rem;">Pick Standard, Premium, or Shared. Each option shows a real-time ETA and final price.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">03</div>
+          <h3 class="step-title">Confirm & Go</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;margin-top:0.25rem;">Tap confirm and your driver is on the way. Track them live and get notified when they arrive.</p>
+        </div>
+        <div class="step-item">
+          <div class="step-number">04</div>
+          <h3 class="step-title">Rate & Repeat</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;margin-top:0.25rem;">After your ride, rate your driver and leave feedback. Your next ride is even smoother.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Testimonials ── -->
+  <div style="padding:100px 24px;">
+    <div style="max-width:1280px;margin:0 auto;">
+      <div class="fade-up" style="margin-bottom:3rem;">
+        <span class="section-label">Rider Stories</span>
+        <h2 class="display-md" style="margin-top:0.5rem;max-width:480px;">Real people, real rides.</h2>
+      </div>
+
+      <div class="testimonials-grid fade-up">
+        <div class="testimonial">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"I use Keni Rides every morning for my commute. The drivers are always on time and the cars are spotless. Worth every dirham."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AK</div>
+            <div>
+              <div class="testimonial-name">Amine Karim</div>
+              <div class="testimonial-role">Daily commuter, Casablanca</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"As a woman traveling alone at night, safety is everything. Keni's live tracking and verified drivers give me real peace of mind."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SB</div>
+            <div>
+              <div class="testimonial-name">Sara Benali</div>
+              <div class="testimonial-role">Business analyst, Rabat</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Fixed fares are a game changer. No more arguing about the price at the end — I know exactly what I'll pay before I even get in the car."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">YM</div>
+            <div>
+              <div class="testimonial-name">Youssef Mansouri</div>
+              <div class="testimonial-role">Student, Marrakech</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Driver CTA ── -->
+  <div style="padding:0 24px 100px;">
+    <div style="max-width:1280px;margin:0 auto;">
+      <div class="driver-cta fade-up">
+        <div>
+          <span class="section-label">For Drivers</span>
+          <h2 class="display-md" style="margin-top:0.75rem;max-width:500px;">Earn on your schedule. No boss. No limits.</h2>
+          <p style="color:var(--color-text-muted);font-size:1rem;line-height:1.7;margin-top:1rem;max-width:480px;">
+            Join 15,000+ drivers already earning with Keni Rides. Set your own hours, keep more of what you earn, and get paid weekly.
+          </p>
+          <div style="display:flex;gap:1rem;margin-top:2rem;flex-wrap:wrap;">
+            <a href="drivers.html" class="btn btn-primary">Start Driving</a>
+            <a href="drivers.html#how" class="btn btn-ghost">Learn More</a>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:1.25rem;min-width:220px;">
+          <div style="display:flex;align-items:center;gap:1rem;">
+            <div style="width:44px;height:44px;border-radius:var(--radius-md);background:rgba(37,99,235,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#60A5FA;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div>
+              <div style="font-weight:700;font-size:1.125rem;">Avg. 4,500 MAD/mo</div>
+              <div style="color:var(--color-text-muted);font-size:0.875rem;">Average monthly earnings</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:1rem;">
+            <div style="width:44px;height:44px;border-radius:var(--radius-md);background:rgba(37,99,235,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#60A5FA;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div style="font-weight:700;font-size:1.125rem;">Flexible Hours</div>
+              <div style="color:var(--color-text-muted);font-size:0.875rem;">Drive whenever you want</div>
+            </div>
+          </div>
+          <div style="display:flex;align-items:center;gap:1rem;">
+            <div style="width:44px;height:44px;border-radius:var(--radius-md);background:rgba(37,99,235,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:#60A5FA;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <div style="font-weight:700;font-size:1.125rem;">Full Insurance</div>
+              <div style="color:var(--color-text-muted);font-size:0.875rem;">Coverage on every trip</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── App Download ── -->
+  <div style="background:var(--color-primary);border-top:1px solid var(--color-border);padding:100px 24px;">
+    <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;">
+      <div class="fade-up">
+        <span class="section-label">Get the App</span>
+        <h2 class="display-md" style="margin-top:0.5rem;max-width:440px;">Download and ride in minutes.</h2>
+        <p style="color:var(--color-text-muted);font-size:1rem;line-height:1.7;margin-top:1rem;max-width:420px;">
+          Book rides, track your driver live, manage payments, and view your trip history — all from one app.
+        </p>
+        <div class="app-download" style="margin-top:2rem;">
+          <a href="#" class="store-btn" aria-label="Download on the App Store">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            <div class="store-btn-text">
+              <small>Download on the</small>
+              <strong>App Store</strong>
+            </div>
+          </a>
+          <a href="#" class="store-btn" aria-label="Get it on Google Play">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199 1.848a1 1 0 0 1 .002 1.744l-2.42 1.4-2.57-2.57 2.57-2.57 2.418 1.996zM5.864 2.658L16.8 8.99l-2.302 2.302-8.635-8.635z"/></svg>
+            <div class="store-btn-text">
+              <small>Get it on</small>
+              <strong>Google Play</strong>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Phone mockup -->
+      <div class="fade-up" style="display:flex;justify-content:center;">
+        <div style="width:280px;background:var(--color-background);border:1px solid var(--color-border);border-radius:36px;padding:24px;box-shadow:var(--shadow-xl);position:relative;overflow:hidden;">
+          <!-- Notch -->
+          <div style="width:80px;height:24px;background:var(--color-primary);border-radius:12px;margin:0 auto 20px;"></div>
+          <!-- Map placeholder -->
+          <div style="height:200px;background:linear-gradient(135deg,#0F172A 0%,#1E293B 50%,#0F172A 100%);border-radius:16px;margin-bottom:16px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;">
+            <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.03) 1px,transparent 1px);background-size:30px 30px;"></div>
+            <!-- Route line -->
+            <svg width="200" height="160" viewBox="0 0 200 160" fill="none" style="position:absolute;" aria-hidden="true">
+              <path d="M40 120 Q80 80 120 60 Q160 40 170 30" stroke="#2563EB" stroke-width="3" stroke-dasharray="8 4" fill="none"/>
+              <circle cx="40" cy="120" r="8" fill="#2563EB"/>
+              <circle cx="170" cy="30" r="8" fill="#F59E0B"/>
+            </svg>
+            <div style="position:absolute;bottom:12px;left:12px;background:rgba(30,41,59,0.95);border:1px solid var(--color-border);border-radius:8px;padding:8px 12px;font-size:0.75rem;">
+              <div style="color:var(--color-text-muted);">Driver arriving in</div>
+              <div style="font-weight:700;color:#60A5FA;">3 min</div>
+            </div>
+          </div>
+          <!-- Bottom card -->
+          <div style="background:var(--color-primary);border-radius:16px;padding:14px;">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;">
+              <div style="font-weight:700;font-size:0.9375rem;">Hassan A.</div>
+              <div style="color:#F59E0B;font-size:0.8125rem;">★ 4.98</div>
+            </div>
+            <div style="color:var(--color-text-muted);font-size:0.8125rem;margin-bottom:12px;">Toyota Camry · DRB 4521</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
+              <div style="background:rgba(37,99,235,0.12);border-radius:8px;padding:8px;text-align:center;cursor:pointer;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#60A5FA" stroke-width="2" style="display:block;margin:0 auto 4px;" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 12 19.79 19.79 0 0 1 1 3.18 2 2 0 0 1 3 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9l-.07.05a16 16 0 0 0 7.1 7.1l.06-.07.33-.33a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 18z"/></svg>
+                <div style="font-size:0.6875rem;color:#60A5FA;">Call</div>
+              </div>
+              <div style="background:rgba(255,255,255,0.04);border-radius:8px;padding:8px;text-align:center;cursor:pointer;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-text-muted)" stroke-width="2" style="display:block;margin:0 auto 4px;" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                <div style="font-size:0.6875rem;color:var(--color-text-muted);">Chat</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-logo">Keni<span>.</span></a>
+          <p class="footer-desc">Safe, reliable, affordable rides across Morocco. Available 24/7 wherever you need to go.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Twitter">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Riders</div>
+          <ul class="footer-links">
+            <li><a href="booking.html">Book a Ride</a></li>
+            <li><a href="#">Ride Types</a></li>
+            <li><a href="#">Safety</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-heading">Drivers</div>
+          <ul class="footer-links">
+            <li><a href="drivers.html">Become a Driver</a></li>
+            <li><a href="#">Driver App</a></li>
+            <li><a href="#">Earnings</a></li>
+            <li><a href="#">Driver Support</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Keni Rides. All rights reserved.</span>
+        <div style="display:flex;gap:1.5rem;">
+          <a href="#" style="color:var(--color-text-muted);text-decoration:none;transition:color 150ms;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Privacy Policy</a>
+          <a href="#" style="color:var(--color-text-muted);text-decoration:none;transition:color 150ms;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Terms of Service</a>
+          <a href="#" style="color:var(--color-text-muted);text-decoration:none;transition:color 150ms;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+
+    function openMenu() {
+      mobileMenu.classList.add('open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    hamburger.addEventListener('click', openMenu);
+    mobileClose.addEventListener('click', closeMenu);
+
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeMenu);
+    });
+
+    // Ride type selector
+    function selectRide(btn) {
+      document.querySelectorAll('.ride-type-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    // Scroll animations
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          entry.target.style.transitionDelay = (i * 80) + 'ms';
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    fadeEls.forEach(el => observer.observe(el));
+
+    // Set default date/time
+    const dateInput = document.getElementById('date');
+    const timeInput = document.getElementById('time');
+    if (dateInput) {
+      const now = new Date();
+      dateInput.value = now.toISOString().split('T')[0];
+    }
+    if (timeInput) {
+      const now = new Date();
+      const h = String(now.getHours()).padStart(2, '0');
+      const m = String(now.getMinutes()).padStart(2, '0');
+      timeInput.value = `${h}:${m}`;
+    }
+  </script>
+</body>
+</html>

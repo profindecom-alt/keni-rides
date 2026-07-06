@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Drive with Keni Rides — earn on your schedule, keep more of what you make.">
+  <title>Drive with Us — Keni Rides</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .earnings-calculator {
+      background: var(--color-primary);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: 2rem;
+    }
+
+    .range-input {
+      width: 100%;
+      -webkit-appearance: none;
+      appearance: none;
+      height: 4px;
+      border-radius: 2px;
+      background: var(--color-border);
+      outline: none;
+      cursor: pointer;
+      margin: 8px 0;
+    }
+
+    .range-input::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      cursor: pointer;
+      box-shadow: 0 0 0 4px rgba(37,99,235,0.2);
+    }
+
+    .range-input::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: var(--color-accent);
+      cursor: pointer;
+      border: none;
+    }
+
+    .requirement-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .requirement-item:last-child { border-bottom: none; }
+
+    .req-check {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(37,99,235,0.12);
+      border: 1px solid rgba(37,99,235,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+      color: #60A5FA;
+    }
+
+    .signup-form {
+      background: var(--color-primary);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      padding: 2.5rem;
+    }
+
+    @media (max-width:768px) {
+      .driver-hero-grid { grid-template-columns: 1fr !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Keni<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html">Book a Ride</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="drivers.html" class="active">Drive with Us</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Mobile Menu ── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button id="mobileClose" aria-label="Close menu" style="position:absolute;top:24px;right:24px;background:none;border:none;color:#fff;cursor:pointer;padding:8px;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <a href="index.html">Home</a>
+    <a href="booking.html">Book a Ride</a>
+    <a href="about.html">About</a>
+    <a href="drivers.html">Drive with Us</a>
+    <a href="booking.html" class="btn btn-primary" style="margin-top:1rem;">Book Now</a>
+  </div>
+
+  <!-- ── Hero ── -->
+  <section style="padding:140px 24px 100px;position:relative;overflow:hidden;">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-bg-glow" style="right:auto;left:-100px;top:-100px;background:radial-gradient(circle,rgba(37,99,235,0.1) 0%,transparent 70%);"></div>
+    <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;" class="driver-hero-grid">
+      <div class="fade-up">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          15,000+ drivers already earning
+        </div>
+        <h1 class="display-lg" style="margin-top:1rem;">
+          Earn more.<br>Work less.<br><span style="color:var(--color-accent)">Your rules.</span>
+        </h1>
+        <p style="font-size:1.125rem;color:var(--color-text-muted);line-height:1.8;margin-top:1.5rem;max-width:480px;">
+          Drive when you want, where you want. Keep more of what you earn with industry-leading commission rates and weekly direct payments.
+        </p>
+        <div style="display:flex;gap:1rem;margin-top:2.5rem;flex-wrap:wrap;">
+          <a href="#signup" class="btn btn-primary btn-lg">Start Earning Today</a>
+          <a href="#how" class="btn btn-ghost btn-lg">See How It Works</a>
+        </div>
+      </div>
+
+      <!-- Earnings preview -->
+      <div class="fade-up">
+        <div style="background:var(--color-primary);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:2rem;">
+          <div style="font-size:0.8125rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-text-muted);margin-bottom:0.75rem;">This week's earnings</div>
+          <div style="font-size:3rem;font-weight:900;letter-spacing:-0.04em;margin-bottom:0.25rem;">1,240 <span style="font-size:1.5rem;color:var(--color-text-muted);">MAD</span></div>
+          <div style="color:#34D399;font-size:0.875rem;font-weight:600;margin-bottom:1.5rem;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="display:inline;vertical-align:-2px;" aria-hidden="true"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/></svg>
+            +18% vs last week
+          </div>
+          <!-- Mini bar chart -->
+          <div style="display:flex;align-items:flex-end;gap:8px;height:80px;margin-bottom:1rem;">
+            <div style="flex:1;background:var(--color-secondary);border-radius:4px;height:45%;"></div>
+            <div style="flex:1;background:var(--color-secondary);border-radius:4px;height:60%;"></div>
+            <div style="flex:1;background:var(--color-secondary);border-radius:4px;height:35%;"></div>
+            <div style="flex:1;background:var(--color-secondary);border-radius:4px;height:70%;"></div>
+            <div style="flex:1;background:var(--color-secondary);border-radius:4px;height:55%;"></div>
+            <div style="flex:1;background:var(--color-accent);border-radius:4px;height:90%;box-shadow:0 0 12px rgba(37,99,235,0.4);"></div>
+            <div style="flex:1;background:rgba(37,99,235,0.3);border-radius:4px;height:75%;border:1px dashed rgba(37,99,235,0.4);"></div>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--color-text-muted);margin-bottom:1.5rem;">
+            <span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+            <div style="background:var(--color-muted);border-radius:var(--radius-md);padding:12px;">
+              <div style="font-size:0.75rem;color:var(--color-text-muted);">Rides today</div>
+              <div style="font-weight:800;font-size:1.25rem;">12</div>
+            </div>
+            <div style="background:var(--color-muted);border-radius:var(--radius-md);padding:12px;">
+              <div style="font-size:0.75rem;color:var(--color-text-muted);">Hours driven</div>
+              <div style="font-weight:800;font-size:1.25rem;">6.5h</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Benefits ── -->
+  <div style="background:var(--color-primary);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);padding:100px 24px;">
+    <div style="max-width:1280px;margin:0 auto;">
+      <div class="fade-up" style="text-align:center;margin-bottom:4rem;">
+        <span class="section-label">Driver Benefits</span>
+        <h2 class="display-md" style="margin-top:0.5rem;">Everything you need to succeed.</h2>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;" class="fade-up">
+        <div class="card">
+          <div style="font-size:2rem;font-weight:900;letter-spacing:-0.03em;color:var(--color-accent);margin-bottom:0.5rem;">85%</div>
+          <h3 style="font-size:1.125rem;font-weight:700;margin-bottom:0.5rem;">Driver Earnings Share</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;">You keep 85% of every fare. That's 5–10% more than most competitors — more money in your pocket, less taken by the platform.</p>
+        </div>
+
+        <div class="card">
+          <div style="font-size:2rem;font-weight:900;letter-spacing:-0.03em;color:var(--color-accent);margin-bottom:0.5rem;">Weekly</div>
+          <h3 style="font-size:1.125rem;font-weight:700;margin-bottom:0.5rem;">Direct Payments</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;">Your earnings are transferred directly to your bank or mobile wallet every Monday. No delays, no holds, no minimum thresholds.</p>
+        </div>
+
+        <div class="card">
+          <div style="font-size:2rem;font-weight:900;letter-spacing:-0.03em;color:var(--color-accent);margin-bottom:0.5rem;">24/7</div>
+          <h3 style="font-size:1.125rem;font-weight:700;margin-bottom:0.5rem;">Driver Support</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;">Dedicated driver support team available via the app, phone, or WhatsApp. Incident resolution within 2 hours, always.</p>
+        </div>
+
+        <div class="card">
+          <div style="font-size:2rem;font-weight:900;letter-spacing:-0.03em;color:var(--color-accent);margin-bottom:0.5rem;">Full</div>
+          <h3 style="font-size:1.125rem;font-weight:700;margin-bottom:0.5rem;">Ride Insurance</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;">Every trip is covered by our comprehensive insurance policy. Drive with confidence knowing you and your passengers are protected.</p>
+        </div>
+
+        <div class="card">
+          <div style="font-size:2rem;font-weight:900;letter-spacing:-0.03em;color:var(--color-accent);margin-bottom:0.5rem;">Free</div>
+          <h3 style="font-size:1.125rem;font-weight:700;margin-bottom:0.5rem;">Driver Training</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;">Access our free online training program: customer service, defensive driving, and how to maximize earnings on the Keni platform.</p>
+        </div>
+
+        <div class="card">
+          <div style="font-size:2rem;font-weight:900;letter-spacing:-0.03em;color:var(--color-accent);margin-bottom:0.5rem;">Bonus</div>
+          <h3 style="font-size:1.125rem;font-weight:700;margin-bottom:0.5rem;">Peak Hour Incentives</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;">Earn bonus MAD per ride during morning rush, evenings, and weekends. The more strategically you drive, the more you earn.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Earnings Calculator ── -->
+  <div style="padding:100px 24px;" id="how">
+    <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;" class="driver-hero-grid">
+      <div class="fade-up">
+        <span class="section-label">Earnings Calculator</span>
+        <h2 class="display-md" style="margin-top:0.75rem;max-width:440px;">See what you could make.</h2>
+        <p style="color:var(--color-text-muted);font-size:1rem;line-height:1.8;margin-top:1rem;margin-bottom:2rem;">
+          Adjust the sliders to match your schedule and see your estimated monthly earnings.
+        </p>
+
+        <div class="earnings-calculator">
+          <div style="margin-bottom:1.5rem;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;">
+              <label style="font-weight:600;font-size:0.9375rem;">Hours per day</label>
+              <span id="hoursVal" style="font-weight:800;color:var(--color-accent);">6h</span>
+            </div>
+            <input type="range" class="range-input" id="hoursRange" min="2" max="12" value="6" oninput="calcEarnings()">
+            <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--color-text-muted);">
+              <span>2h</span><span>12h</span>
+            </div>
+          </div>
+
+          <div style="margin-bottom:1.5rem;">
+            <div style="display:flex;justify-content:space-between;margin-bottom:0.5rem;">
+              <label style="font-weight:600;font-size:0.9375rem;">Days per week</label>
+              <span id="daysVal" style="font-weight:800;color:var(--color-accent);">5 days</span>
+            </div>
+            <input type="range" class="range-input" id="daysRange" min="1" max="7" value="5" oninput="calcEarnings()">
+            <div style="display:flex;justify-content:space-between;font-size:0.75rem;color:var(--color-text-muted);">
+              <span>1 day</span><span>7 days</span>
+            </div>
+          </div>
+
+          <div style="background:var(--color-muted);border-radius:var(--radius-lg);padding:1.5rem;text-align:center;">
+            <div style="font-size:0.875rem;color:var(--color-text-muted);margin-bottom:0.5rem;">Estimated monthly earnings</div>
+            <div style="font-size:3rem;font-weight:900;letter-spacing:-0.04em;" id="estimatedEarnings">4,500 MAD</div>
+            <div style="font-size:0.8125rem;color:var(--color-text-muted);margin-top:0.5rem;">Based on avg 6 rides/hour at 25 MAD/ride</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- How to start -->
+      <div class="fade-up">
+        <span class="section-label">How It Works</span>
+        <h2 class="display-md" style="margin-top:0.75rem;">Start driving in 3 days.</h2>
+
+        <div style="margin-top:2rem;display:flex;flex-direction:column;gap:0;">
+          <div class="requirement-item">
+            <div class="req-check" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <div style="font-weight:700;margin-bottom:0.25rem;">1. Sign up online</div>
+              <div style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.6;">Fill in the form below. Takes 5 minutes. We'll review your application within 24 hours.</div>
+            </div>
+          </div>
+
+          <div class="requirement-item">
+            <div class="req-check" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <div style="font-weight:700;margin-bottom:0.25rem;">2. Submit documents</div>
+              <div style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.6;">Upload your driver's license, vehicle registration, and ID. We run a background check — usually done within 48 hours.</div>
+            </div>
+          </div>
+
+          <div class="requirement-item">
+            <div class="req-check" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <div style="font-weight:700;margin-bottom:0.25rem;">3. Complete orientation</div>
+              <div style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.6;">A short online training module covering the Keni app, safety protocols, and how to get great ratings.</div>
+            </div>
+          </div>
+
+          <div class="requirement-item">
+            <div class="req-check" style="background:rgba(52,211,153,0.12);border-color:rgba(52,211,153,0.3);color:#34D399;" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <div>
+              <div style="font-weight:700;margin-bottom:0.25rem;">4. Start earning!</div>
+              <div style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.6;">Your driver app is activated and you can start accepting ride requests immediately. First week earnings include a 200 MAD welcome bonus.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Requirements ── -->
+  <div style="background:var(--color-primary);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);padding:100px 24px;">
+    <div style="max-width:1280px;margin:0 auto;">
+      <div class="fade-up" style="margin-bottom:3rem;">
+        <span class="section-label">Requirements</span>
+        <h2 class="display-md" style="margin-top:0.5rem;">What you need to drive with us.</h2>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;" class="fade-up">
+        <div>
+          <h3 style="font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-text-muted);margin-bottom:1.5rem;">Driver Requirements</h3>
+          <div style="display:flex;flex-direction:column;gap:0.75rem;">
+            <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9375rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              At least 21 years old
+            </div>
+            <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9375rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Valid Moroccan driver's license (2+ years)
+            </div>
+            <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9375rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Clean driving record
+            </div>
+            <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9375rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Pass background check
+            </div>
+            <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9375rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Smartphone (Android 9+ or iOS 14+)
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:1rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-text-muted);margin-bottom:1.5rem;">Vehicle Requirements</h3>
+          <div style="display:flex;flex-direction:column;gap:0.75rem;">
+            <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9375rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Model year 2016 or newer
+            </div>
+            <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9375rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              4-door vehicle (sedan, SUV, or MPV)
+            </div>
+            <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9375rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Valid vehicle registration (Carte Grise)
+            </div>
+            <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9375rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Valid vehicle insurance
+            </div>
+            <div style="display:flex;align-items:center;gap:0.75rem;font-size:0.9375rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              Pass Keni vehicle inspection
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Signup Form ── -->
+  <div style="padding:100px 24px;" id="signup">
+    <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;" class="driver-hero-grid">
+      <div class="fade-up">
+        <span class="section-label">Get Started</span>
+        <h2 class="display-md" style="margin-top:0.75rem;">Join the Keni driver community.</h2>
+        <p style="color:var(--color-text-muted);font-size:1rem;line-height:1.8;margin-top:1rem;">
+          Fill in your details and we'll be in touch within 24 hours to guide you through the next steps.
+        </p>
+
+        <div style="margin-top:2rem;display:flex;flex-direction:column;gap:1rem;">
+          <div style="display:flex;align-items:center;gap:1rem;background:var(--color-primary);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:1rem 1.25rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span style="font-size:0.9375rem;">200 MAD welcome bonus on your first week</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:1rem;background:var(--color-primary);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:1rem 1.25rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span style="font-size:0.9375rem;">Free driver training included</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:1rem;background:var(--color-primary);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:1rem 1.25rem;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            <span style="font-size:0.9375rem;">Activate and earn within 3 business days</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-up">
+        <div class="signup-form">
+          <h3 style="font-size:1.25rem;font-weight:800;margin-bottom:1.5rem;">Driver Application</h3>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:0.75rem;">
+            <div>
+              <label class="form-label" for="dFirstName">First Name</label>
+              <input class="form-input" id="dFirstName" type="text" placeholder="Hassan" required>
+            </div>
+            <div>
+              <label class="form-label" for="dLastName">Last Name</label>
+              <input class="form-input" id="dLastName" type="text" placeholder="Alami" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="dPhone">Phone Number</label>
+            <input class="form-input" id="dPhone" type="tel" placeholder="+212 6XX XXX XXX" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="dEmail">Email Address</label>
+            <input class="form-input" id="dEmail" type="email" placeholder="hassan@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="dCity">Your City</label>
+            <select class="form-input" id="dCity" style="cursor:pointer;appearance:none;background-image:url('data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%2394A3B8\' stroke-width=\'2\'><path d=\'M6 9l6 6 6-6\'/></svg>');background-repeat:no-repeat;background-position:right 14px center;">
+              <option value="">Select your city</option>
+              <option>Casablanca</option>
+              <option>Rabat</option>
+              <option>Marrakech</option>
+              <option>Fès</option>
+              <option>Tanger</option>
+              <option>Agadir</option>
+              <option>Meknès</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="dVehicle">Vehicle Model</label>
+            <input class="form-input" id="dVehicle" type="text" placeholder="e.g. Toyota Corolla 2020">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="dExperience">Driving Experience</label>
+            <select class="form-input" id="dExperience" style="cursor:pointer;appearance:none;background-image:url('data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%2394A3B8\' stroke-width=\'2\'><path d=\'M6 9l6 6 6-6\'/></svg>');background-repeat:no-repeat;background-position:right 14px center;">
+              <option value="">Select experience</option>
+              <option>2–3 years</option>
+              <option>4–5 years</option>
+              <option>6–10 years</option>
+              <option>10+ years</option>
+            </select>
+          </div>
+
+          <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:0.5rem;" onclick="submitApplication()">
+            Submit Application
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+
+          <p style="text-align:center;font-size:0.75rem;color:var(--color-text-muted);margin-top:0.75rem;">
+            We'll review your application within 24 hours and contact you to arrange next steps.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-logo">Keni<span>.</span></a>
+          <p class="footer-desc">Safe, reliable, affordable rides across Morocco. Available 24/7 wherever you need to go.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Twitter"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Riders</div>
+          <ul class="footer-links">
+            <li><a href="booking.html">Book a Ride</a></li>
+            <li><a href="#">Safety</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Drivers</div>
+          <ul class="footer-links">
+            <li><a href="drivers.html">Become a Driver</a></li>
+            <li><a href="#">Driver App</a></li>
+            <li><a href="#">Earnings</a></li>
+            <li><a href="#">Driver Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Keni Rides. All rights reserved.</span>
+        <div style="display:flex;gap:1.5rem;">
+          <a href="#" style="color:var(--color-text-muted);text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Privacy Policy</a>
+          <a href="#" style="color:var(--color-text-muted);text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Nav
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+    hamburger.addEventListener('click', () => { mobileMenu.classList.add('open'); hamburger.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; });
+    mobileClose.addEventListener('click', () => { mobileMenu.classList.remove('open'); hamburger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; });
+    mobileMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', () => { mobileMenu.classList.remove('open'); document.body.style.overflow=''; }));
+
+    // Scroll animations
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // Earnings calculator
+    function calcEarnings() {
+      const hours = parseInt(document.getElementById('hoursRange').value);
+      const days = parseInt(document.getElementById('daysRange').value);
+      document.getElementById('hoursVal').textContent = hours + 'h';
+      document.getElementById('daysVal').textContent = days + ' day' + (days > 1 ? 's' : '');
+      // Avg 6 rides/hour at 25 MAD * 85% driver share = 127.5 MAD/hour
+      const monthly = Math.round(hours * 127.5 * days * 4.3 / 100) * 100;
+      document.getElementById('estimatedEarnings').textContent = monthly.toLocaleString() + ' MAD';
+    }
+
+    // Style range input fill
+    document.querySelectorAll('.range-input').forEach(r => {
+      function updateFill() {
+        const min = parseFloat(r.min), max = parseFloat(r.max), val = parseFloat(r.value);
+        const pct = ((val - min) / (max - min)) * 100;
+        r.style.background = `linear-gradient(to right, #2563EB ${pct}%, rgba(255,255,255,0.08) ${pct}%)`;
+      }
+      updateFill();
+      r.addEventListener('input', updateFill);
+    });
+
+    // Submit application
+    function submitApplication() {
+      const first = document.getElementById('dFirstName').value;
+      const phone = document.getElementById('dPhone').value;
+      if (!first || !phone) { alert('Please fill in your name and phone number.'); return; }
+      alert('Application submitted! We\'ll contact you within 24 hours, ' + first + '.');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,1002 @@
+{
+  "meta": {
+    "siteTitle": "Keni Rides, Location de motos premium au Maroc",
+    "siteDescription": "Louez des motos d'aventure premium au Maroc. BMW GS, Yamaha Ténéré, Honda et Suzuki, parcourez le Sahara, l'Atlas et les deux côtes avec Keni Rides.",
+    "home": {
+      "title": "Keni Rides, Location de motos premium au Maroc"
+    },
+    "motorcycles": {
+      "title": "La Flotte, Location de motos d'aventure",
+      "description": "11 motos d'aventure prêtes à l'expédition à louer au Maroc : BMW GS 1200, Yamaha Ténéré 700, Honda Transalp, Suzuki DR650 et plus. À partir de 60 €/jour."
+    },
+    "gallery": {
+      "title": "Galerie, Le Maroc à moto",
+      "description": "Photos des aventures à moto Keni Rides à travers le Maroc, dunes du Sahara, cols de l'Atlas, criques méditerranéennes et couchers de soleil sur l'Atlantique."
+    },
+    "testimonials": {
+      "title": "Témoignages de nos riders, Vidéos",
+      "description": "Regardez de vrais riders raconter leurs aventures à moto Keni Rides à travers le Maroc, témoignages vidéo et avis de voyageurs du monde entier."
+    },
+    "about": {
+      "title": "Le Fondateur, Mohamed (Simo) Bennis",
+      "description": "Rencontrez Mohamed (Simo) Bennis, fondateur de Keni Rides, un rider marocain de toujours qui a transformé une enfance d'exploration en aventures à moto authentiques."
+    },
+    "faq": {
+      "title": "FAQ, Questions sur la location de moto",
+      "description": "Réponses aux questions fréquentes sur la location de moto au Maroc : réservation, documents, assurance, livraison, équipement, pannes et paiements."
+    },
+    "conditions": {
+      "title": "Conditions de Location, Modalités",
+      "description": "Conditions de location Keni Rides : âge minimum 21 ans, permis requis, dépôts, documents, tarifs de livraison, équipement de sécurité, assurance et conditions générales."
+    },
+    "contact": {
+      "title": "Contactez-nous, Réservez votre aventure",
+      "description": "Contactez Keni Rides, téléphone +212 616 712266, WhatsApp, ou envoyez-nous un message. Location de motos à Marrakech, Casablanca et partout au Maroc."
+    },
+    "motorcycleDetail": {
+      "titleSuffix": "Location Maroc, à partir de {price} €/jour"
+    }
+  },
+  "nav": {
+    "home": "Accueil",
+    "motorcycles": "Motos",
+    "gallery": "Galerie",
+    "testimonials": "Témoignages",
+    "about": "À propos",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "bookRide": "Réserver"
+  },
+  "fab": {
+    "call": "Appeler Keni Rides",
+    "whatsapp": "Discuter avec Keni Rides sur WhatsApp",
+    "language": "Changer de langue"
+  },
+  "footer": {
+    "tagline": "Location de motos d'aventure premium au Maroc. Sahara, Atlas et deux côtes, une aventure inoubliable.",
+    "explore": "Explorer",
+    "topBikes": "Motos populaires",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp",
+    "contactForm": "Formulaire de contact",
+    "base": "Marrakech · Casablanca, Maroc",
+    "hours": "Prise en charge sur rendez-vous, lun.-dim.",
+    "rights": "© {year} Keni Rides, keni-rides.com. Tous droits réservés.",
+    "rentalConditions": "Conditions de location",
+    "links": {
+      "motorcycles": "Motos",
+      "gallery": "Galerie",
+      "testimonials": "Témoignages",
+      "about": "À propos du fondateur",
+      "conditions": "Conditions de location",
+      "faq": "FAQ"
+    }
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "title": "Page introuvable",
+    "lead": "Cette route n'existe pas, mais beaucoup d'autres oui.",
+    "back": "Retour à l'accueil"
+  },
+  "common": {
+    "from": "À partir de",
+    "perDay": "/ jour",
+    "viewAndBook": "Voir et réserver",
+    "chatWhatsapp": "Discuter sur WhatsApp",
+    "exploreTheFleet": "Découvrir la flotte",
+    "bookYourMotorcycle": "Réserver votre moto",
+    "readMore": "En savoir plus"
+  },
+  "home": {
+    "heroKicker": "Aventures à moto premium · Maroc",
+    "heroTitleStart": "Roulez vers l'",
+    "heroTitleEmphasis": "âme",
+    "heroTitleEnd": "du Maroc",
+    "heroLead": "Des dunes du Sahara aux sommets de l'Atlas, explorez le Maroc sur une moto d'aventure premium. Des machines prêtes à l'expédition, une expertise locale et la liberté de la route.",
+    "exploreFleet": "Découvrir la flotte",
+    "watchStories": "Voir les témoignages",
+    "stats": {
+      "bikes": "Motos d'aventure",
+      "regions": "Régions mythiques",
+      "riders": "Riders accueillis",
+      "support": "Assistance route"
+    },
+    "marquee": "Désert du Sahara ◆ Montagnes de l'Atlas ◆ Côte méditerranéenne ◆ Côte atlantique ◆ Marrakech ◆ Merzouga ◆ Chefchaouen ◆ Essaouira ◆",
+    "fleet": {
+      "eyebrow": "La Flotte",
+      "titleStart": "Des machines conçues pour l'",
+      "titleEmphasis": "aventure",
+      "lead": "Onze motos prêtes à l'expédition, entretenues selon les plus hauts standards. De la puissante BMW GS aux monocylindres agiles du désert, il y a la moto parfaite pour chaque rider.",
+      "seeAll": "Voir les 11 motos"
+    },
+    "why": {
+      "eyebrow": "Pourquoi Keni Rides",
+      "title": "Plus qu'une simple location",
+      "lead": "Nous sommes avant tout des riders. Chaque détail, des motos aux conseils d'itinéraire, est pensé pour un seul objectif : votre aventure marocaine parfaite.",
+      "features": [
+        {
+          "title": "Une flotte de niveau expédition",
+          "desc": "Des machines d'aventure BMW, Yamaha, Honda et Suzuki, entièrement révisées avant chaque location, avec protections anti-chute et options de bagagerie."
+        },
+        {
+          "title": "Assurance incluse",
+          "desc": "Chaque moto est couverte par une assurance responsabilité civile, et nous vous aidons à vérifier votre couverture voyage avant le départ."
+        },
+        {
+          "title": "Livraison partout au Maroc",
+          "desc": "Récupérez votre moto à Marrakech ou Casablanca, ou faites-la livrer à Tanger, Fès et au-delà, directement à votre hôtel."
+        },
+        {
+          "title": "Assistance route 24/7",
+          "desc": "Panne loin de la base ? Nous vous apportons une moto équivalente ou une solution alternative pour que votre voyage ne s'arrête jamais."
+        },
+        {
+          "title": "Une connaissance du terrain, depuis toujours",
+          "desc": "Fondée par un rider qui explore chaque région du Maroc depuis son enfance. Des itinéraires d'initié introuvables sur les applications de cartes."
+        },
+        {
+          "title": "Équipement complet fourni",
+          "desc": "Casques, gants, blousons et combinaisons imperméables disponibles en option, arrivez avec votre seul permis et l'envie d'aventure."
+        }
+      ]
+    },
+    "destinations": {
+      "eyebrow": "Destinations",
+      "titleStart": "Quatre mondes. ",
+      "titleEmphasis": "Un seul pays.",
+      "lead": "Peu d'endroits sur terre concentrent autant de diversité en une seule route. Désert, hautes montagnes et deux côtes, le tout à quelques jours d'intervalle.",
+      "items": [
+        {
+          "tag": "Sud · Merzouga",
+          "name": "Désert du Sahara",
+          "desc": "Dunes dorées, vallées oasiennes et nuits sous un million d'étoiles."
+        },
+        {
+          "tag": "Centre · Tizi n'Tichka",
+          "name": "Montagnes de l'Atlas",
+          "desc": "Cols légendaires, villages berbères et lacets à n'en plus finir."
+        },
+        {
+          "tag": "Nord · Al Hoceima",
+          "name": "Côte méditerranéenne",
+          "desc": "Criques turquoise et routes de corniche de Tanger à Saïdia."
+        },
+        {
+          "tag": "Ouest · Essaouira",
+          "name": "Côte atlantique",
+          "desc": "Villes de surf sauvages, ports de pêche et horizons océaniques infinis."
+        }
+      ]
+    },
+    "founder": {
+      "eyebrow": "L'Histoire",
+      "title": "L'aventure au cœur de Keni Rides",
+      "lead": "Keni Rides a été fondée par Mohamed (Simo) Bennis, un rider passionné qui explore chaque région du Maroc depuis son enfance. Son rêve : permettre aux voyageurs de découvrir le vrai Maroc à travers des aventures à moto authentiques.",
+      "caption": "Mohamed « Simo » Bennis, Fondateur",
+      "checklist": [
+        {
+          "strong": "Toute une vie sur les routes marocaines",
+          "text": "des pistes du Sahara aux lacets de la côte du Rif."
+        },
+        {
+          "strong": "Un service de rider à rider",
+          "text": "des conseils honnêtes sur les motos, les itinéraires et les saisons."
+        },
+        {
+          "strong": "Des expériences authentiques",
+          "text": "le Maroc que les touristes ne voient jamais."
+        }
+      ],
+      "meetFounder": "Rencontrer le fondateur"
+    },
+    "how": {
+      "eyebrow": "Réservation simple",
+      "title": "Sur la route en trois étapes",
+      "lead": "Pas de paiement en ligne, pas de démarche compliquée. Demander, confirmer, rouler.",
+      "steps": [
+        {
+          "title": "Choisissez votre moto",
+          "desc": "Sélectionnez votre moto ainsi que vos dates de prise en charge et de retour. La location minimale est de 2 jours seulement."
+        },
+        {
+          "title": "Envoyez votre demande",
+          "desc": "Remplissez le formulaire de réservation. Notre équipe vous contacte rapidement pour confirmer la disponibilité et les détails."
+        },
+        {
+          "title": "Roulez au Maroc",
+          "desc": "Versez un acompte de 20 % pour réserver, le solde à la prise en charge. Le pays est ensuite à vous pour l'explorer."
+        }
+      ]
+    },
+    "stories": {
+      "eyebrow": "Témoignages",
+      "title": "La confiance de riders du monde entier",
+      "videosLead": "De vrais riders racontent leur aventure marocaine, dans leurs propres mots.",
+      "watchVideos": "Voir les témoignages vidéo"
+    },
+    "journey": {
+      "eyebrow": "Le Voyage",
+      "title": "Instants capturés sur la route",
+      "openGallery": "Voir la galerie complète"
+    },
+    "cta": {
+      "titleStart": "Votre ",
+      "titleEmphasis": "aventure",
+      "titleEnd": " marocaine commence ici",
+      "lead": "Choisissez votre machine, fixez vos dates, et laissez-nous faire le reste. Pas de paiement en ligne, juste une demande simple et un appel de confirmation."
+    }
+  },
+  "reviews": [
+    {
+      "quote": "La Ténéré était irréprochable et l'itinéraire de Simo dans l'Atlas a été la plus belle semaine de moto de ma vie. Une organisation de classe mondiale.",
+      "initials": "MK",
+      "name": "Markus K.",
+      "loc": "Allemagne · Boucle de l'Atlas"
+    },
+    {
+      "quote": "Moto livrée à notre hôtel à Marrakech, impeccable et prête. Quand je l'ai fait tomber dans le sable près de Merzouga, l'aide est arrivée le jour même.",
+      "initials": "SL",
+      "name": "Sophie L.",
+      "loc": "France · Expédition Sahara"
+    },
+    {
+      "quote": "Première fois en tout-terrain et ils m'ont installé sur la CRF250 parfaite avec l'équipement complet. Des gens patients, professionnels et vraiment passionnés.",
+      "initials": "JR",
+      "name": "James R.",
+      "loc": "Royaume-Uni · Balade côtière"
+    },
+    {
+      "quote": "Deux GS 1200 pendant dix jours, de Casablanca au désert et retour. Des machines irréprochables et Simo répondait à chaque message en quelques minutes.",
+      "initials": "AV",
+      "name": "Andrés V.",
+      "loc": "Espagne · Grand Tour"
+    },
+    {
+      "quote": "En tant que voyageuse solo, je me suis sentie totalement accompagnée. Super moto, conseils honnêtes, et la World Raid a géré les dunes comme un rêve.",
+      "initials": "EN",
+      "name": "Emma N.",
+      "loc": "Pays-Bas · Raid Désert"
+    },
+    {
+      "quote": "Transalp livrée à Fès, rendue à Marrakech. Cette flexibilité a rendu notre boucle de deux semaines possible. Je recommande vivement.",
+      "initials": "PT",
+      "name": "Paolo T.",
+      "loc": "Italie · Villes Impériales"
+    }
+  ],
+  "motorcyclesPage": {
+    "heroTitleStart": "La ",
+    "heroTitleEmphasis": "Flotte",
+    "heroLead": "Onze machines prêtes à l'expédition, de la puissante BMW GS 1200 Adventure aux monocylindres légers du désert. Chaque moto entièrement révisée, assurée, et prête pour les routes et pistes marocaines.",
+    "goodToKnow": {
+      "eyebrow": "Bon à savoir",
+      "title": "L'essentiel de la location",
+      "items": [
+        {
+          "title": "Minimum 2 jours",
+          "desc": "Toutes les locations démarrent à deux jours, de quoi vraiment goûter à l'Atlas ou à la côte. Plus vous roulez longtemps, moins vous payez par jour."
+        },
+        {
+          "title": "Acompte de 20 % pour réserver",
+          "desc": "Sécurisez votre moto avec un acompte de 20 %, le solde est réglé à la prise en charge. La caution de sécurité est autorisée, jamais débitée."
+        },
+        {
+          "title": "Livraison disponible",
+          "desc": "Marrakech et Casablanca à partir de 50 €, Tanger et Fès à partir de 100 €, ou indiquez-nous votre destination et nous nous organisons."
+        }
+      ]
+    },
+    "readConditions": "Lire toutes les conditions de location",
+    "cta": {
+      "titleStart": "Vous ne savez pas quelle ",
+      "titleEmphasis": "moto",
+      "titleEnd": " vous correspond ?",
+      "lead": "Dites-nous votre niveau d'expérience, votre itinéraire et vos dates, nous vous recommandons la machine parfaite pour votre aventure.",
+      "button": "Obtenir une recommandation gratuite"
+    }
+  },
+  "motorcycleDetail": {
+    "breadcrumbMotorcycles": "Motos",
+    "whyLoveItEyebrow": "La Machine",
+    "whyLoveItTitle": "Pourquoi vous allez l'adorer",
+    "specs": {
+      "engine": "Moteur",
+      "power": "Puissance",
+      "tank": "Réservoir",
+      "seat": "Hauteur de selle",
+      "weight": "Poids",
+      "from": "À partir de",
+      "deposit": "Caution"
+    },
+    "bestTerrain": "Meilleur terrain",
+    "featuresEyebrow": "À bord",
+    "featuresTitle": "Équipement & points forts",
+    "included": {
+      "title": "Toujours inclus",
+      "text": "Assurance responsabilité civile · Casque et gants (obligatoires, disponibles en option) · Assistance route 24/7 avec moto de remplacement en cas de réparation impossible · Conseils d'itinéraire par des experts locaux."
+    },
+    "simulator": {
+      "eyebrow": "Estimation",
+      "title": "Estimez votre location",
+      "duration": "Durée",
+      "days": "{count, plural, one {# jour} other {# jours}}",
+      "perDay": "Tarif journalier",
+      "total": "Total",
+      "deposit": "Acompte (20 %)",
+      "balance": "Solde à la prise en charge",
+      "accessories": "Options ({count} × {price} €/jour)",
+      "securityDeposit": "Caution (bloquée)",
+      "tierHint": "Ajoutez {days, plural, one {# jour} other {# jours}} pour bénéficier du tarif longue durée de {rate} €/jour.",
+      "note": "Estimation indicative. Pas de paiement en ligne : l'acompte confirme la réservation, le solde se règle à la prise en charge. La caution est pré-autorisée, jamais débitée, et libérée au retour.",
+      "decrease": "Retirer un jour",
+      "increase": "Ajouter un jour"
+    },
+    "conditions": {
+      "title": "Conditions de location",
+      "items": [
+        "Location minimale de 2 jours",
+        "Âge minimum 21 ans, permis moto de plus de 2 ans",
+        "Acompte de 20 % pour réserver, solde à la prise en charge",
+        "Caution de 1000 € à 2000 € (autorisée, jamais débitée)",
+        "Assurance responsabilité civile incluse",
+        "Casque et gants obligatoires, équipement dispo en option"
+      ]
+    },
+    "conditionsLink": "Conditions de location",
+    "bookThe": "Réserver la {name}",
+    "keepExploring": "Continuez à explorer",
+    "youMightLike": "Vous aimerez aussi",
+    "view3d": {
+      "eyebrow": "Vue 360°",
+      "title": "Explorez la moto en 3D"
+    },
+    "gallery": {
+      "eyebrow": "Galerie",
+      "title": "La moto sous tous les angles",
+      "main": "Photo principale",
+      "front": "Trois-quarts avant",
+      "side": "Profil",
+      "rear": "Trois-quarts arrière",
+      "zoom": "Agrandir la photo",
+      "close": "Fermer"
+    }
+  },
+  "bookingForm": {
+    "fullName": "Nom complet",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "country": "Pays",
+    "riders": "Nombre de riders",
+    "pickupLocation": "Lieu de départ",
+    "returnLocation": "Lieu de retour",
+    "pickupDate": "Date de départ",
+    "returnDate": "Date de retour",
+    "message": "Message",
+    "messagePlaceholder": "Projets d'itinéraire, besoins en équipement, demandes de livraison, questions…",
+    "select": "Sélectionner",
+    "locations": {
+      "marrakech": "Marrakech",
+      "casablanca": "Casablanca",
+      "tangier": "Tanger",
+      "fez": "Fès",
+      "other": "Autre (précisez dans le message)"
+    },
+    "pickupHint": "Préavis de 2 jours requis",
+    "returnHint": "Location minimale : 2 jours",
+    "submit": "Demander une réservation",
+    "sending": "Envoi…",
+    "noOnlinePayment": "Pas de paiement en ligne. Acompte de 20 % pour confirmer, solde à la prise en charge.",
+    "successTitle": "Demande reçue",
+    "successMessage": "Merci. Notre équipe vous contactera très vite pour confirmer votre réservation.",
+    "errors": {
+      "required": "Ce champ est obligatoire.",
+      "email": "Veuillez saisir une adresse e-mail valide.",
+      "minRental": "La location minimale est de 2 jours, merci de choisir une date de retour ultérieure.",
+      "webhookMissing": "Le système de réservation n'est pas encore connecté. Merci de nous appeler ou de nous écrire sur WhatsApp.",
+      "generic": "Un problème est survenu lors de l'envoi de votre demande. Veuillez réessayer, ou contactez-nous directement sur WhatsApp."
+    }
+  },
+  "accessories": {
+    "title": "Ajouter équipement & options",
+    "perDay": "15 € / jour chacun",
+    "items": {
+      "helmet": "Casque",
+      "gloves": "Gants",
+      "jacket": "Veste de moto",
+      "pants": "Pantalon de moto",
+      "boots": "Bottes",
+      "gopro": "Caméra GoPro",
+      "insta360": "Caméra Insta360"
+    }
+  },
+  "contactForm": {
+    "fullName": "Nom complet",
+    "email": "E-mail",
+    "phone": "Téléphone / WhatsApp",
+    "subject": "Sujet",
+    "subjectOptions": {
+      "booking": "Question sur une réservation",
+      "quote": "Demande de devis",
+      "delivery": "Demande de livraison",
+      "route": "Conseils d'itinéraire",
+      "partnership": "Partenariat",
+      "other": "Autre"
+    },
+    "message": "Message",
+    "messagePlaceholder": "Parlez-nous de votre voyage, dates, motos, envies…",
+    "submit": "Envoyer le message",
+    "sending": "Envoi…",
+    "successTitle": "Demande reçue",
+    "successMessage": "Merci. Notre équipe vous contactera très vite.",
+    "errors": {
+      "required": "Ce champ est obligatoire.",
+      "email": "Veuillez saisir une adresse e-mail valide.",
+      "webhookMissing": "Le système de contact n'est pas encore connecté. Merci de nous appeler ou de nous écrire sur WhatsApp.",
+      "generic": "Un problème est survenu lors de l'envoi de votre message. Veuillez réessayer, ou contactez-nous directement sur WhatsApp."
+    }
+  },
+  "galleryPage": {
+    "heroTitleStart": "Instants capturés sur ",
+    "heroTitleEmphasis": "la route",
+    "heroLead": "Chacune de ces photos a été prise lors d'une aventure Keni Rides. La prochaine pourrait être la vôtre.",
+    "images": [
+      {
+        "alt": "Groupe Keni Rides à un point de vue en montagne au Maroc",
+        "label": "Le Point de Vue"
+      },
+      {
+        "alt": "Moto soulevant la poussière sur une route de montagne marocaine",
+        "label": "Piste de Montagne"
+      },
+      {
+        "alt": "Riders sur une route de canyon aux roches rouges au Maroc",
+        "label": "Route du Canyon"
+      },
+      {
+        "alt": "Moto descendant un col de montagne au Maroc",
+        "label": "La Descente"
+      },
+      {
+        "alt": "Vue aérienne d'une route de col de montagne au Maroc",
+        "label": "Le Col"
+      },
+      {
+        "alt": "Moto roulant dans un col de montagne au crépuscule",
+        "label": "Balade au Crépuscule"
+      },
+      {
+        "alt": "L'équipe Keni Rides dans un garage au Maroc",
+        "label": "Le Garage"
+      },
+      {
+        "alt": "Riders Keni Rides partageant un moment ensemble",
+        "label": "Bonne Compagnie"
+      },
+      {
+        "alt": "Rider Keni Rides faisant une pause dans le désert",
+        "label": "Pause Désert"
+      },
+      {
+        "alt": "Riders traversant les plaines désertiques du Maroc",
+        "label": "Les Plaines"
+      },
+      {
+        "alt": "Rider debout sur les cale-pieds traversant le désert marocain",
+        "label": "Traversée du Désert"
+      },
+      {
+        "alt": "Groupe Keni Rides sous un acacia dans le désert",
+        "label": "Pause à l'Ombre"
+      },
+      {
+        "alt": "Riders se saluant dans le désert marocain",
+        "label": "Salut du Désert"
+      },
+      {
+        "alt": "Moto roulant sur une piste poussiéreuse de montagne au Maroc",
+        "label": "Piste Poussiéreuse"
+      },
+      {
+        "alt": "Moto fonçant à travers les dunes du désert au Maroc",
+        "label": "Dans les Dunes"
+      },
+      {
+        "alt": "Riders Keni Rides partageant un moment ensemble",
+        "label": "Bonne Compagnie"
+      },
+      {
+        "alt": "Rider Keni Rides avec sa moto au Maroc",
+        "label": "Le Rider"
+      },
+      {
+        "alt": "Riders réparant un pneu de moto dans le désert",
+        "label": "Réparation en Piste"
+      }
+    ],
+    "cta": {
+      "titleStart": "Mettez-",
+      "titleEmphasis": "vous",
+      "titleEnd": " dans le tableau",
+      "lead": "Ces routes vous attendent. Choisissez votre moto et commencez à écrire votre propre histoire.",
+      "button": "Choisir votre moto"
+    }
+  },
+  "testimonialsPage": {
+    "heroTitleStart": "Histoires de ",
+    "heroTitleEmphasis": "nos riders",
+    "heroLead": "Ne nous croyez pas sur parole, écoutez-le directement de la bouche des riders qui l'ont vécu.",
+    "videos": {
+      "eyebrow": "Témoignages vidéo",
+      "title": "Dans leurs propres mots",
+      "comingSoon": "Vidéo bientôt disponible",
+      "more": "Plus de récits de riders sur notre",
+      "youtubeChannel": "chaîne YouTube"
+    },
+    "reviews": {
+      "eyebrow": "Avis",
+      "title": "Cinq étoiles, sur tous les terrains"
+    },
+    "cta": {
+      "titleStart": "Votre histoire, c'est la ",
+      "titleEmphasis": "prochaine",
+      "lead": "Rejoignez des centaines de riders qui ont trouvé leur aventure marocaine parfaite avec Keni Rides.",
+      "button": "Commencer votre aventure"
+    }
+  },
+  "aboutPage": {
+    "heroTitle": "L'aventure au cœur de Keni Rides",
+    "founder": {
+      "eyebrow": "Le Fondateur",
+      "title": "Né pour parcourir le Maroc",
+      "caption": "Mohamed « Simo » Bennis, Fondateur",
+      "paragraphs": [
+        "Keni Rides a été fondée par <strong>Mohamed (Simo) Bennis</strong>, un motard et explorateur passionné. Depuis son enfance, il a parcouru le Maroc, découvrant chaque région du pays, chaque col, chaque piste, chaque café de village qui mérite le détour.",
+        "Des dunes dorées du <strong>désert du Sahara</strong> aux sommets enneigés des <strong>montagnes de l'Atlas</strong>, des criques turquoise de la <strong>Méditerranée</strong> au surf sauvage de la <strong>côte atlantique</strong>, Simo a tout parcouru, à toutes les saisons.",
+        "Son rêve est devenu une entreprise : un lieu où les voyageurs découvrent le vrai Maroc, non pas depuis la fenêtre d'un bus touristique, mais depuis la selle d'une grande moto, avec la liberté d'explorer et le soutien de quelqu'un qui connaît chaque kilomètre."
+      ],
+      "rideWithUs": "Roulez avec nous",
+      "sayHello": "Dites Salam sur WhatsApp"
+    },
+    "regions": {
+      "eyebrow": "Toute une vie d'exploration",
+      "titleStart": "Chaque région. ",
+      "titleEmphasis": "Chaque route.",
+      "items": [
+        {
+          "tag": "Sud",
+          "name": "Désert du Sahara",
+          "desc": "Merzouga, Zagora, et les pistes entre les ergs."
+        },
+        {
+          "tag": "Centre",
+          "name": "Montagnes de l'Atlas",
+          "desc": "Tizi n'Tichka, Tizi n'Test et une centaine de cols sans nom."
+        },
+        {
+          "tag": "Nord",
+          "name": "Côte méditerranéenne",
+          "desc": "Le Rif, Chefchaouen, et les routes de corniche jusqu'à Al Hoceima."
+        },
+        {
+          "tag": "Ouest",
+          "name": "Côte atlantique",
+          "desc": "Essaouira, Taghazout et l'autoroute océanique infinie vers le sud."
+        }
+      ]
+    },
+    "values": {
+      "eyebrow": "Nos valeurs",
+      "title": "La promesse Keni Rides",
+      "items": [
+        {
+          "title": "Authenticité",
+          "desc": "De vraies aventures marocaines conçues par quelqu'un qui a grandi sur ces routes, pas des circuits touristiques importés."
+        },
+        {
+          "title": "Sécurité avant tout",
+          "desc": "Des machines méticuleusement entretenues, un équipement de qualité obligatoire, une assurance sur chaque moto et une assistance 24/7."
+        },
+        {
+          "title": "Fraternité entre riders",
+          "desc": "Vous arrivez client, vous repartez ami. Attendez-vous à des conseils d'itinéraire, des pauses thé, et une réponse WhatsApp à toute heure."
+        }
+      ]
+    },
+    "cta": {
+      "titleStart": "Venez rouler ",
+      "titleEmphasis": "avec nous",
+      "lead": "Simo et l'équipe sont prêts à construire votre aventure marocaine parfaite.",
+      "explore": "Découvrir la flotte",
+      "contact": "Nous contacter"
+    }
+  },
+  "faqPage": {
+    "heroTitleStart": "Questions ",
+    "heroTitleEmphasis": "fréquentes",
+    "heroLeadStart": "Tout ce qu'il faut savoir avant de rouler. Encore un doute ?",
+    "heroLeadLink": "Contactez-nous directement",
+    "items": [
+      {
+        "q": "Comment réserver une moto ?",
+        "a": "Choisissez votre moto ainsi que vos dates de prise en charge et de retour, puis envoyez le formulaire de réservation sur la page de la moto. Notre équipe vous contacte rapidement pour confirmer la disponibilité. Un <strong>acompte de 20 %</strong> sécurise votre réservation et le solde est réglé à la prise en charge, <strong>aucun paiement en ligne</strong> n'est requis."
+      },
+      {
+        "q": "Puis-je rouler n'importe où au Maroc ?",
+        "a": "Oui, du Sahara à l'Atlas en passant par les deux côtes, le pays est à vous. Nous vous demandons simplement de partager votre itinéraire prévu afin de vous conseiller sur l'état des routes, les stations-service et les saisons, et de nous assurer que l'assistance peut vous joindre partout."
+      },
+      {
+        "q": "Quels documents sont nécessaires ?",
+        "a": "Quatre choses : un <strong>permis moto délivré depuis plus de 2 ans</strong>, votre <strong>passeport ou carte d'identité nationale</strong>, une <strong>adresse d'hôtel ou justificatif d'hébergement</strong>, et une <strong>carte bancaire au nom du locataire</strong>. L'âge minimum est de 21 ans. Détails sur la page des conditions de location."
+      },
+      {
+        "q": "L'assurance est-elle incluse ?",
+        "a": "Chaque moto inclut une <strong>assurance responsabilité civile</strong>. De plus, une assurance voyage couvrant la pratique de la moto est <strong>obligatoire</strong>, nous pouvons demander une preuve avant le début de la location."
+      },
+      {
+        "q": "Les motos peuvent-elles être livrées ?",
+        "a": "Oui. <strong>Marrakech / Casablanca :</strong> 50 € de livraison, 50 € de reprise. <strong>Tanger / Fès :</strong> 100 € de livraison, 100 € de reprise. Les autres destinations sont chiffrées individuellement. Disponible du lundi au dimanche, sur rendez-vous, avec 2 jours de préavis."
+      },
+      {
+        "q": "L'équipement de conduite est-il inclus ?",
+        "a": "Casques, gants, blousons et combinaisons imperméables sont disponibles en <strong>option</strong>. Notez que le <strong>casque et les gants sont obligatoires</strong> pour chaque location, apportez les vôtres ou ajoutez les nôtres."
+      },
+      {
+        "q": "Que se passe-t-il en cas de panne ?",
+        "a": "Appelez-nous, à tout moment, tous les jours. Si la moto ne peut pas être réparée rapidement, nous fournissons une <strong>moto équivalente</strong>, une solution alternative, ou une remise sur la location si nécessaire. Votre aventure continue."
+      },
+      {
+        "q": "Les débutants peuvent-ils louer une moto ?",
+        "a": "Oui, si vous avez <strong>21 ans ou plus</strong> et détenez votre permis moto depuis <strong>plus de 2 ans</strong>. Pour les riders moins expérimentés en tout-terrain, nous recommandons la sympathique Suzuki DR200 ou la Honda CRF250, et nous sommes ravis de vous suggérer des itinéraires en douceur."
+      },
+      {
+        "q": "Quels moyens de paiement sont acceptés ?",
+        "a": "L'acompte de réservation de 20 % et le solde peuvent être réglés par <strong>carte bancaire ou en espèces</strong>. La caution de sécurité (<strong>1000 € à 2000 €</strong> selon la moto) est <strong>autorisée sur votre carte mais jamais débitée</strong> sauf en cas de dommage."
+      }
+    ],
+    "faqTextPlain": [
+      "Choisissez votre moto et vos dates sur notre site puis envoyez le formulaire de réservation. Notre équipe vous contacte rapidement pour confirmer la disponibilité. Un acompte de 20 % sécurise votre réservation et le solde est réglé à la prise en charge. Aucun paiement en ligne n'est requis.",
+      "Oui, du Sahara à l'Atlas en passant par les deux côtes. Nous vous demandons simplement de nous indiquer votre itinéraire prévu afin de vous conseiller sur l'état des routes et de mettre en place la couverture d'assistance.",
+      "Un permis de conduire moto délivré depuis plus de 2 ans, votre passeport ou carte d'identité nationale, une adresse d'hôtel ou justificatif d'hébergement, et une carte bancaire au nom du locataire. L'âge minimum est de 21 ans.",
+      "Toutes les motos incluent une assurance responsabilité civile. Une assurance voyage couvrant la pratique de la moto est obligatoire et une preuve peut être demandée avant la location.",
+      "Oui. La livraison ou la reprise à Marrakech et Casablanca coûte 50 € chacune ; à Tanger et Fès, 100 € chacune. Les autres destinations sont chiffrées sur demande. La livraison est disponible du lundi au dimanche avec 2 jours de préavis.",
+      "Casques, gants, blousons et combinaisons imperméables sont disponibles en option. Le casque et les gants sont obligatoires pour chaque location.",
+      "Appelez-nous à tout moment. Si la moto ne peut pas être réparée rapidement, nous fournissons une moto équivalente, une solution alternative, ou une remise sur la location si nécessaire. Vous n'êtes jamais laissé en rade.",
+      "Oui, à condition d'avoir 21 ans ou plus et de détenir un permis moto depuis plus de 2 ans. Nous avons des motos légères et sympathiques comme la Suzuki DR200 et la Honda CRF250, idéales pour prendre confiance.",
+      "L'acompte de réservation de 20 % et le solde peuvent être réglés par carte bancaire ou en espèces. La caution de sécurité (1000 € à 2000 € selon la moto) est autorisée sur votre carte mais jamais débitée."
+    ],
+    "readFinePrint": "Lisez les petites lignes, elles sont courtes et justes.",
+    "fullConditions": "Toutes les conditions de location",
+    "cta": {
+      "titleStart": "Prêt quand ",
+      "titleEmphasis": "vous l'êtes",
+      "lead": "Questions résolues ? L'Atlas vous attend.",
+      "askWhatsapp": "Poser une question sur WhatsApp"
+    }
+  },
+  "conditionsPage": {
+    "heroTitleStart": "Conditions de ",
+    "heroTitleEmphasis": "Location",
+    "heroLead": "Claires, justes et pensées pour les riders. Voici tout ce qu'il faut savoir avant de réserver.",
+    "nav": {
+      "minimumRental": "Location minimale",
+      "age": "Âge",
+      "license": "Permis de conduire",
+      "deposit": "Caution de sécurité",
+      "reservation": "Réservation",
+      "documents": "Documents requis",
+      "delivery": "Prise en charge et livraison",
+      "equipment": "Équipement de sécurité",
+      "insurance": "Assurance",
+      "breakdown": "Problèmes techniques",
+      "terms": "Conditions générales"
+    },
+    "sections": {
+      "minimumRental": {
+        "title": "Location minimale",
+        "body": "Toutes les locations ont une durée minimale de <strong>2 jours</strong>. Le Maroc mérite au moins cela, la moto aussi."
+      },
+      "age": {
+        "title": "Âge",
+        "body": "L'âge minimum pour louer une moto est de <strong>21 ans</strong>."
+      },
+      "license": {
+        "title": "Permis de conduire",
+        "body": "Vous devez détenir un <strong>permis moto délivré depuis plus de 2 ans</strong>. Un permis de conduire international est recommandé en complément de votre permis national."
+      },
+      "deposit": {
+        "title": "Caution de sécurité",
+        "body": "Une caution de sécurité de <strong>1000 € à 2000 €</strong> s'applique, selon la moto. La caution est <strong>autorisée mais non débitée</strong>, le blocage est simplement levé après la restitution de la moto en bon état.",
+        "list": [
+          "Réglée par <strong>carte bancaire au nom du locataire</strong> (pré-autorisation), jamais en espèces"
+        ]
+      },
+      "reservation": {
+        "title": "Réservation",
+        "body": "Un <strong>acompte de 20 %</strong> confirme votre réservation. Le <strong>solde restant est réglé à la prise en charge</strong>, par carte bancaire ou en espèces. Jamais de paiement intégral en ligne."
+      },
+      "documents": {
+        "title": "Documents requis",
+        "list": [
+          "Permis de conduire (catégorie moto)",
+          "Passeport ou carte d'identité nationale",
+          "Adresse d'hôtel ou justificatif d'hébergement",
+          "Carte bancaire au nom du locataire"
+        ]
+      },
+      "delivery": {
+        "title": "Prise en charge et livraison",
+        "tableHeaders": {
+          "location": "Lieu",
+          "delivery": "Livraison",
+          "pickup": "Reprise"
+        },
+        "rows": [
+          {
+            "location": "Marrakech / Casablanca",
+            "delivery": "50 €",
+            "pickup": "50 €"
+          },
+          {
+            "location": "Tanger / Fès",
+            "delivery": "100 €",
+            "pickup": "100 €"
+          }
+        ],
+        "otherLocations": "Autres destinations",
+        "otherPrice": "Tarif étudié selon la destination",
+        "list": [
+          "Prise en charge et retour <strong>uniquement sur rendez-vous</strong>",
+          "Disponible <strong>du lundi au dimanche</strong> avec <strong>2 jours de préavis</strong>"
+        ]
+      },
+      "equipment": {
+        "title": "Équipement de sécurité",
+        "intro": "Disponible en option :",
+        "list": [
+          "Casque <strong>(obligatoire)</strong>",
+          "Gants <strong>(obligatoires)</strong>",
+          "Blouson",
+          "Combinaison imperméable"
+        ],
+        "note": "Vous êtes libre d'apporter votre propre équipement, le casque et les gants doivent être portés en permanence."
+      },
+      "insurance": {
+        "title": "Assurance",
+        "list": [
+          "Toutes les motos incluent une <strong>assurance responsabilité civile</strong>",
+          "Une <strong>assurance voyage couvrant la pratique de la moto est obligatoire</strong>",
+          "Une preuve d'assurance peut être demandée avant la location"
+        ]
+      },
+      "breakdown": {
+        "title": "Problèmes techniques",
+        "intro": "Nos machines sont entretenues avec le plus grand soin, mais l'aventure reste l'aventure. En cas de problème technique :",
+        "list": [
+          "Contactez-nous immédiatement, nous assurons une <strong>assistance 24/7</strong>",
+          "Nous tentons d'abord une <strong>réparation rapide sur place</strong> via notre réseau de mécaniciens de confiance",
+          "Si la réparation est impossible, nous fournissons une <strong>moto équivalente</strong>",
+          "Si aucune moto équivalente n'est disponible, nous organisons une <strong>solution alternative</strong>",
+          "Le cas échéant, une <strong>remise sur la location</strong> est appliquée pour compenser le temps de conduite perdu"
+        ]
+      },
+      "terms": {
+        "title": "Conditions générales",
+        "list": [
+          "<strong>Responsabilité du locataire</strong>, le locataire est responsable de la moto de la prise en charge au retour, et doit conduire dans le respect du code de la route marocain.",
+          "<strong>Dommages</strong>, les dommages au-delà de l'usure normale sont évalués au retour et déduits de la caution de sécurité, dans la limite de son montant.",
+          "<strong>Amendes</strong>, toute amende ou pénalité encourue pendant la période de location est à la charge du locataire.",
+          "<strong>Usage illégal interdit</strong>, la compétition, le transport payant de passagers, la sous-location ou toute activité illégale annule immédiatement le contrat de location.",
+          "<strong>Conditions de retour</strong>, restituez la moto à l'heure et au lieu convenus, avec le même niveau de carburant, dans le même état qu'à la livraison. Tout retour tardif ou à distance doit être convenu à l'avance."
+        ]
+      }
+    },
+    "cta": {
+      "titleStart": "Des conditions justes. ",
+      "titleEmphasis": "Des balades épiques.",
+      "lead": "Une question sur les conditions ? Nous répondons vite.",
+      "choose": "Choisir votre moto",
+      "ask": "Poser une question"
+    }
+  },
+  "contactPage": {
+    "heroTitleStart": "Planifions votre ",
+    "heroTitleEmphasis": "aventure",
+    "heroLead": "Appelez, écrivez sur WhatsApp ou envoyez un message, nous répondons vite, sept jours sur sept.",
+    "reach": {
+      "eyebrow": "Nous joindre",
+      "title": "Les lignes directes du garage"
+    },
+    "tiles": {
+      "phone": "Téléphone",
+      "whatsapp": "WhatsApp",
+      "whatsappValue": "Réponse la plus rapide, généralement en quelques minutes",
+      "bases": "Bases",
+      "basesValue": "Marrakech et Casablanca",
+      "basesValue2": "Livraison partout au Maroc",
+      "hours": "Horaires",
+      "hoursValue": "Lundi-dimanche, 9h-19h",
+      "hoursValue2": "Prise en charge sur rendez-vous"
+    },
+    "follow": "Suivez l'aventure",
+    "formTitle": "Envoyez-nous un message",
+    "mapCaption": "Le point de rendez-vous exact est communiqué après confirmation de la réservation."
+  },
+  "bikes": {
+    "bmw-gs1200-adventure": {
+      "category": "Fleuron Aventure",
+      "tagline": "La légende du voyage au long cours. Traversez l'Atlas sans effort.",
+      "engine": "1170 cm³",
+      "power": "125 ch",
+      "terrain": "Longue distance · Pistes du désert · Cols de montagne",
+      "description": "La GS 1200 Adventure est la référence du voyage d'aventure. Avec son immense réservoir de 30 litres, sa suspension électronique et son couple de boxer sans effort, elle avale aussi bien les autoroutes marocaines que les pistes du désert. La machine parfaite pour ceux qui veulent traverser le pays avec confort et style.",
+      "features": [
+        "Réservoir grande autonomie de 30 L",
+        "Valises aluminium disponibles",
+        "Régulateur de vitesse",
+        "Poignées chauffantes",
+        "Modes de conduite & ABS Pro",
+        "Pare-carters montés"
+      ]
+    },
+    "yamaha-tenere-700-world-raid": {
+      "category": "Rally Raid",
+      "tagline": "L'ADN du rallye avec double réservoir, née pour le Sahara.",
+      "engine": "689 cm³",
+      "power": "73 ch",
+      "terrain": "Traversées du Sahara · Pistes rallye · Tout-terrain technique",
+      "description": "La World Raid reprend la Ténéré 700 tant appréciée et ajoute un double réservoir de 23 litres, une suspension à plus grand débattement et un cockpit rallye. C'est ce qui se rapproche le plus d'une machine du Dakar avec une plaque d'immatriculation, idéale pour les expéditions profondes dans le désert.",
+      "features": [
+        "Double réservoir, 500 km d'autonomie",
+        "Suspension longue course KYB",
+        "Cockpit style rallye",
+        "ABS 3 modes",
+        "Sabot moteur renforcé",
+        "Pneus tout-terrain"
+      ]
+    },
+    "yamaha-tenere-700": {
+      "category": "Aventure",
+      "tagline": "L'icône moderne du voyage d'aventure africain.",
+      "engine": "689 cm³",
+      "power": "73 ch",
+      "terrain": "Voyage mixte · Piste · Sentiers de montagne",
+      "description": "Légère, pleine de couple et quasiment indestructible, la Ténéré 700 est LA moto d'aventure au Maroc. Assez agile pour les lacets de l'Atlas, assez stable pour les longues étendues désertiques, une véritable machine à tout faire.",
+      "features": [
+        "Agilité de premier ordre",
+        "Carénage d'inspiration rallye",
+        "ABS débrayable",
+        "Feux rallye à LED",
+        "Porte-bagages installé",
+        "Protection anti-chute"
+      ]
+    },
+    "bmw-f800gs-adventure": {
+      "category": "Aventure",
+      "tagline": "Confort longue distance et vraies aptitudes tout-terrain.",
+      "engine": "798 cm³",
+      "power": "85 ch",
+      "terrain": "Longue distance · Pistes · Bords de dunes",
+      "description": "La F800GS Adventure allie le confort de voyage BMW à un châssis qui aime vraiment la terre. Son réservoir de 24 litres et son ergonomie détendue en font une favorite pour les boucles d'une semaine dans le Sud marocain.",
+      "features": [
+        "Réservoir aventure de 24 L",
+        "Selle confort longue distance",
+        "Poignées chauffantes",
+        "Fixations pour valises",
+        "ABS débrayable",
+        "Grand pare-brise"
+      ]
+    },
+    "honda-transalp-700": {
+      "category": "Aventure Routière",
+      "tagline": "Douce, fiable, prête pour toutes les routes du Maroc.",
+      "engine": "680 cm³",
+      "power": "60 ch",
+      "terrain": "Voyage routier · Routes côtières · Piste légère",
+      "description": "Légende de la fiabilité en voyage, la Transalp est soyeuse sur route et confiante sur piste. Sa selle plus basse et sa puissance accessible en font un excellent choix pour un tourisme détendu le long des côtes et à travers les vallées.",
+      "features": [
+        "Hauteur de selle accessible",
+        "Puissance en V douce",
+        "Excellente protection au vent",
+        "Porte-bagages",
+        "Freins ABS",
+        "Confort toute la journée"
+      ]
+    },
+    "yamaha-xtz660-tenere": {
+      "category": "Aventure Classique",
+      "tagline": "L'esprit originel du raid désert, construite comme un char.",
+      "engine": "660 cm³",
+      "power": "48 ch",
+      "terrain": "Pistes du désert · Longue autonomie · Terrain mixte",
+      "description": "Descendante directe des Ténéré victorieuses au Dakar, la XTZ660 embarque un immense réservoir de 23 litres et un monocylindre increvable. Simple, honnête et redoutablement capable, l'aventure pure, sans électronique.",
+      "features": [
+        "Réservoir grande autonomie de 23 L",
+        "Monocylindre increvable",
+        "Haute bulle rallye",
+        "Porte-bagages en acier",
+        "Simple et fiable",
+        "Excellente sur piste"
+      ]
+    },
+    "yamaha-xt660r": {
+      "category": "Dual-Sport",
+      "tagline": "Le plaisir du monocylindre plein de couple, sur route comme hors piste.",
+      "engine": "660 cm³",
+      "power": "48 ch",
+      "terrain": "Sentiers · Routes de montagne · Pistes de village",
+      "description": "La XT660R est une grande trail au tempérament joueur. Légère, pleine de couple et facile à manier, elle s'épanouit sur les sentiers de l'Atlas et les routes étroites de village où les machines plus lourdes se sentent encombrantes.",
+      "features": [
+        "Légère et maniable",
+        "Fort couple à bas régime",
+        "Suspension longue course",
+        "Fiabilité éprouvée",
+        "Entretien facile",
+        "Idéale pour débuter en trail"
+      ]
+    },
+    "suzuki-dr650": {
+      "category": "Dual-Sport",
+      "tagline": "La préférée des grands voyageurs du monde entier.",
+      "engine": "644 cm³",
+      "power": "46 ch",
+      "terrain": "Partout · Désert · Montagnes · Ville",
+      "description": "Simple, légère et réputée increvable, la DR650 a fait le tour du monde avec des voyageurs. Elle gère le sable, les cailloux et le bitume avec la même aisance, la moto marocaine par excellence pour aller partout.",
+      "features": [
+        "Fiabilité légendaire",
+        "Faible poids en ordre de marche",
+        "Option de selle abaissée",
+        "Réparable sur le terrain",
+        "À l'aise dans le sable",
+        "Idéale pour les longs voyages"
+      ]
+    },
+    "suzuki-dr400": {
+      "category": "Dual-Sport",
+      "tagline": "Assez légère pour jouer, assez solide pour voyager.",
+      "engine": "398 cm³",
+      "power": "40 ch",
+      "terrain": "Sentiers techniques · Dunes · Single track",
+      "description": "La DR-Z400 est le juste milieu entre la moto de jeu et la moto de voyage. Excellente en terrain technique et dans les dunes, elle récompense les riders qui veulent explorer les coins les plus sauvages du Maroc.",
+      "features": [
+        "Poids plume de 145 kg",
+        "Suspension excellente",
+        "Agile dans les dunes",
+        "Monocylindre 400 puissant",
+        "Increvable",
+        "Le pur plaisir du tout-terrain"
+      ]
+    },
+    "honda-crf250": {
+      "category": "Trail léger",
+      "tagline": "Une confiance hors piste accessible à tous les riders.",
+      "engine": "250 cm³",
+      "power": "25 ch",
+      "terrain": "Sentiers · Tout-terrain débutant · Sorties à la journée",
+      "description": "Légère, sympathique et impossible à ne pas aimer, la CRF250 rend la conduite hors piste accessible à tous. Parfaite pour les sorties à la journée dans les collines et pour les riders qui font leurs premiers pas hors du bitume.",
+      "features": [
+        "Idéale pour débutants",
+        "Prise en main très légère",
+        "Selle basse",
+        "Injection électronique",
+        "Fiabilité Honda",
+        "Parfaite pour une sortie à la journée"
+      ]
+    },
+    "suzuki-dr200": {
+      "category": "Trail léger",
+      "tagline": "Le moyen le plus simple de démarrer votre aventure marocaine.",
+      "engine": "199 cm³",
+      "power": "20 ch",
+      "terrain": "Ville · Villages · Sentiers faciles",
+      "description": "Petite, simple et rassurante, la DR200 est l'introduction la plus douce à la conduite d'aventure. Selle basse, poids léger, et une autonomie surprenante, explorez à votre rythme.",
+      "features": [
+        "Selle la plus basse",
+        "Seulement 126 kg",
+        "Réservoir grande autonomie de 13 L",
+        "Très économique",
+        "Facile à conduire",
+        "Parfaite à deux en ville"
+      ]
+    }
+  }
+}

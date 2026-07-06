@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Keni Rides — our mission to make transportation safe, affordable, and accessible across Morocco.">
+  <title>About — Keni Rides</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Keni<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html">Book a Ride</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="drivers.html">Drive with Us</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Mobile Menu ── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button id="mobileClose" aria-label="Close menu" style="position:absolute;top:24px;right:24px;background:none;border:none;color:#fff;cursor:pointer;padding:8px;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <a href="index.html">Home</a>
+    <a href="booking.html">Book a Ride</a>
+    <a href="about.html">About</a>
+    <a href="drivers.html">Drive with Us</a>
+    <a href="booking.html" class="btn btn-primary" style="margin-top:1rem;">Book Now</a>
+  </div>
+
+  <!-- ── Hero ── -->
+  <section style="padding:140px 24px 80px;position:relative;overflow:hidden;">
+    <div class="hero-bg-grid"></div>
+    <div style="max-width:1280px;margin:0 auto;">
+      <div class="fade-up" style="max-width:720px;">
+        <span class="section-label">Our Story</span>
+        <h1 class="display-lg" style="margin-top:0.75rem;">
+          Moving Morocco<br>forward — one<br><span style="color:var(--color-accent)">ride</span> at a time.
+        </h1>
+        <p style="font-size:1.125rem;color:var(--color-text-muted);line-height:1.8;margin-top:1.5rem;max-width:600px;">
+          Keni Rides was born from a simple frustration: getting around Moroccan cities shouldn't be stressful, expensive, or unpredictable. We set out to change that in 2021, and today we're the fastest-growing ride service in the country.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Mission ── -->
+  <div style="padding:0 24px 100px;">
+    <div style="max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;" class="fade-up">
+      <!-- Stats side -->
+      <div style="background:var(--color-primary);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:3rem;display:grid;grid-template-columns:1fr 1fr;gap:2rem;">
+        <div style="text-align:center;">
+          <div style="font-size:clamp(2rem,4vw,3.5rem);font-weight:900;letter-spacing:-0.04em;color:var(--color-accent);">2021</div>
+          <div style="font-size:0.875rem;color:var(--color-text-muted);margin-top:0.25rem;">Founded in Casablanca</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-size:clamp(2rem,4vw,3.5rem);font-weight:900;letter-spacing:-0.04em;">40+</div>
+          <div style="font-size:0.875rem;color:var(--color-text-muted);margin-top:0.25rem;">Cities served</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-size:clamp(2rem,4vw,3.5rem);font-weight:900;letter-spacing:-0.04em;">2M+</div>
+          <div style="font-size:0.875rem;color:var(--color-text-muted);margin-top:0.25rem;">Rides completed</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-size:clamp(2rem,4vw,3.5rem);font-weight:900;letter-spacing:-0.04em;">15K+</div>
+          <div style="font-size:0.875rem;color:var(--color-text-muted);margin-top:0.25rem;">Active drivers</div>
+        </div>
+      </div>
+
+      <!-- Mission text -->
+      <div>
+        <span class="section-label">Our Mission</span>
+        <h2 class="display-md" style="margin-top:0.75rem;">Reliable transport, built for Moroccans.</h2>
+        <p style="color:var(--color-text-muted);font-size:1rem;line-height:1.8;margin-top:1rem;">
+          We believe everyone deserves a safe, comfortable ride — whether you're commuting to work, heading to the airport, or exploring a new city. Our platform connects riders with vetted drivers through technology that's fast, transparent, and fair.
+        </p>
+        <p style="color:var(--color-text-muted);font-size:1rem;line-height:1.8;margin-top:1rem;">
+          No hidden charges. No surge pricing. Just honest fares and drivers who take pride in their work.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Values ── -->
+  <div style="background:var(--color-primary);border-top:1px solid var(--color-border);border-bottom:1px solid var(--color-border);padding:100px 24px;">
+    <div style="max-width:1280px;margin:0 auto;">
+      <div class="fade-up" style="text-align:center;margin-bottom:4rem;">
+        <span class="section-label">Our Values</span>
+        <h2 class="display-md" style="margin-top:0.5rem;">The principles we drive by.</h2>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;" class="fade-up">
+        <div class="card">
+          <div style="width:48px;height:48px;border-radius:var(--radius-md);background:rgba(37,99,235,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;color:#60A5FA;" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 style="font-size:1.125rem;font-weight:700;margin-bottom:0.5rem;">Safety First</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;">Every driver undergoes criminal background checks, vehicle safety inspections, and professional training before joining the platform.</p>
+        </div>
+
+        <div class="card">
+          <div style="width:48px;height:48px;border-radius:var(--radius-md);background:rgba(37,99,235,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;color:#60A5FA;" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h3 style="font-size:1.125rem;font-weight:700;margin-bottom:0.5rem;">Radical Transparency</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;">You see the full fare before you book, the driver's name and rating, and live tracking throughout. No surprises — ever.</p>
+        </div>
+
+        <div class="card">
+          <div style="width:48px;height:48px;border-radius:var(--radius-md);background:rgba(37,99,235,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;color:#60A5FA;" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 style="font-size:1.125rem;font-weight:700;margin-bottom:0.5rem;">Community Impact</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;">We create economic opportunity for drivers and their families, while reducing congestion and emissions in cities through shared mobility.</p>
+        </div>
+
+        <div class="card">
+          <div style="width:48px;height:48px;border-radius:var(--radius-md);background:rgba(37,99,235,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;color:#60A5FA;" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+          </div>
+          <h3 style="font-size:1.125rem;font-weight:700;margin-bottom:0.5rem;">Constant Innovation</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;">Our engineering team works every day to improve matching algorithms, reduce wait times, and build tools that make both riders' and drivers' lives easier.</p>
+        </div>
+
+        <div class="card">
+          <div style="width:48px;height:48px;border-radius:var(--radius-md);background:rgba(37,99,235,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;color:#60A5FA;" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3 style="font-size:1.125rem;font-weight:700;margin-bottom:0.5rem;">Fair Pricing</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;">Affordable for riders, fair for drivers. We structure our commission model to ensure drivers earn a living wage while keeping fares competitive.</p>
+        </div>
+
+        <div class="card">
+          <div style="width:48px;height:48px;border-radius:var(--radius-md);background:rgba(37,99,235,0.12);display:flex;align-items:center;justify-content:center;margin-bottom:1.25rem;color:#60A5FA;" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 style="font-size:1.125rem;font-weight:700;margin-bottom:0.5rem;">Local First</h3>
+          <p style="color:var(--color-text-muted);font-size:0.9375rem;line-height:1.7;">Built in Morocco, for Morocco. We understand the local context — traffic patterns, city nuances, and cultural expectations — better than any global competitor.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Team ── -->
+  <div style="padding:100px 24px;">
+    <div style="max-width:1280px;margin:0 auto;">
+      <div class="fade-up" style="margin-bottom:3rem;">
+        <span class="section-label">Leadership</span>
+        <h2 class="display-md" style="margin-top:0.5rem;max-width:480px;">Meet the people driving Keni forward.</h2>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;" class="fade-up">
+        <div style="text-align:center;">
+          <div style="width:80px;height:80px;border-radius:50%;background:var(--color-primary);border:2px solid var(--color-border);display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:900;margin:0 auto 1rem;">KA</div>
+          <div style="font-weight:700;">Keni Alaoui</div>
+          <div style="font-size:0.875rem;color:var(--color-text-muted);margin-top:4px;">Co-founder & CEO</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:80px;height:80px;border-radius:50%;background:var(--color-primary);border:2px solid var(--color-border);display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:900;margin:0 auto 1rem;">MB</div>
+          <div style="font-weight:700;">Meryem Benali</div>
+          <div style="font-size:0.875rem;color:var(--color-text-muted);margin-top:4px;">Co-founder & CTO</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:80px;height:80px;border-radius:50%;background:var(--color-primary);border:2px solid var(--color-border);display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:900;margin:0 auto 1rem;">YO</div>
+          <div style="font-weight:700;">Younes Ouhman</div>
+          <div style="font-size:0.875rem;color:var(--color-text-muted);margin-top:4px;">Head of Operations</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="width:80px;height:80px;border-radius:50%;background:var(--color-primary);border:2px solid var(--color-border);display:flex;align-items:center;justify-content:center;font-size:1.5rem;font-weight:900;margin:0 auto 1rem;">SE</div>
+          <div style="font-weight:700;">Sara El-Amrani</div>
+          <div style="font-size:0.875rem;color:var(--color-text-muted);margin-top:4px;">Head of Safety</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CTA ── -->
+  <div style="padding:0 24px 100px;">
+    <div style="max-width:1280px;margin:0 auto;">
+      <div style="background:var(--color-primary);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:4rem;text-align:center;position:relative;overflow:hidden;" class="fade-up">
+        <div style="position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(37,99,235,0.1) 0%,transparent 60%);pointer-events:none;"></div>
+        <h2 class="display-md" style="margin-bottom:1rem;">Ready to ride?</h2>
+        <p style="color:var(--color-text-muted);font-size:1.125rem;max-width:400px;margin:0 auto 2rem;">Join 2 million riders who choose Keni for their daily commute.</p>
+        <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;">
+          <a href="booking.html" class="btn btn-primary btn-lg">Book a Ride</a>
+          <a href="drivers.html" class="btn btn-ghost btn-lg">Become a Driver</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="footer-logo">Keni<span>.</span></a>
+          <p class="footer-desc">Safe, reliable, affordable rides across Morocco. Available 24/7 wherever you need to go.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn" aria-label="Twitter">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Company</div>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#">Newsroom</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Riders</div>
+          <ul class="footer-links">
+            <li><a href="booking.html">Book a Ride</a></li>
+            <li><a href="#">Ride Types</a></li>
+            <li><a href="#">Safety</a></li>
+            <li><a href="#">Help Center</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-heading">Drivers</div>
+          <ul class="footer-links">
+            <li><a href="drivers.html">Become a Driver</a></li>
+            <li><a href="#">Driver App</a></li>
+            <li><a href="#">Earnings</a></li>
+            <li><a href="#">Driver Support</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Keni Rides. All rights reserved.</span>
+        <div style="display:flex;gap:1.5rem;">
+          <a href="#" style="color:var(--color-text-muted);text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Privacy Policy</a>
+          <a href="#" style="color:var(--color-text-muted);text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+    hamburger.addEventListener('click', () => { mobileMenu.classList.add('open'); hamburger.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; });
+    mobileClose.addEventListener('click', () => { mobileMenu.classList.remove('open'); hamburger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; });
+    mobileMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', () => { mobileMenu.classList.remove('open'); document.body.style.overflow=''; }));
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

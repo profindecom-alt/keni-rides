@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Book a Keni Ride — fast, reliable transportation across the city.">
+  <title>Book a Ride — Keni Rides</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .booking-page {
+      min-height: 100vh;
+      padding: 100px 24px 60px;
+    }
+
+    .booking-page-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    .map-placeholder {
+      background: var(--color-primary);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-xl);
+      height: 560px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .map-grid {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    .fare-estimate {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(37,99,235,0.08);
+      border: 1px solid rgba(37,99,235,0.2);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      margin-bottom: 1.25rem;
+    }
+
+    .price-badge {
+      font-size: 1.5rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+
+    .ride-option {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 14px 16px;
+      border-radius: var(--radius-md);
+      background: var(--color-muted);
+      border: 1.5px solid var(--color-border);
+      cursor: pointer;
+      transition: all 150ms ease;
+      margin-bottom: 0.625rem;
+    }
+
+    .ride-option:hover { border-color: rgba(255,255,255,0.2); }
+    .ride-option.selected { border-color: var(--color-accent); background: rgba(37,99,235,0.08); }
+
+    .ride-option-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: #60A5FA;
+    }
+
+    .ride-option-info { flex: 1; }
+    .ride-option-name { font-weight: 700; font-size: 0.9375rem; }
+    .ride-option-desc { font-size: 0.8125rem; color: var(--color-text-muted); margin-top: 2px; }
+    .ride-option-price { font-weight: 800; font-size: 1rem; }
+
+    .step-indicator {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      margin-bottom: 2rem;
+    }
+
+    .step-dot {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .step-dot.done { background: var(--color-accent); color: #fff; }
+    .step-dot.active { background: var(--color-accent); color: #fff; box-shadow: 0 0 0 4px rgba(37,99,235,0.2); }
+    .step-dot.upcoming { background: var(--color-primary); border: 1.5px solid var(--color-border); color: var(--color-text-muted); }
+
+    .step-line { flex: 1; height: 2px; background: var(--color-border); }
+    .step-line.done { background: var(--color-accent); }
+
+    .payment-method {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+      border-radius: var(--radius-md);
+      background: var(--color-muted);
+      border: 1.5px solid var(--color-border);
+      cursor: pointer;
+      transition: all 150ms ease;
+      margin-bottom: 0.625rem;
+    }
+
+    .payment-method:hover { border-color: rgba(255,255,255,0.2); }
+    .payment-method.selected { border-color: var(--color-accent); background: rgba(37,99,235,0.08); }
+
+    .payment-icon {
+      width: 40px;
+      height: 28px;
+      border-radius: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.75rem;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 1024px) {
+      .booking-page-inner { grid-template-columns: 1fr; }
+      .map-placeholder { height: 300px; }
+    }
+
+    @media (max-width: 768px) {
+      .booking-page { padding: 90px 16px 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Keni<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="booking.html" class="active">Book a Ride</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="drivers.html">Drive with Us</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="booking.html" class="btn btn-primary btn-sm">Book Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Mobile Menu ── -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button id="mobileClose" aria-label="Close menu" style="position:absolute;top:24px;right:24px;background:none;border:none;color:#fff;cursor:pointer;padding:8px;">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <a href="index.html">Home</a>
+    <a href="booking.html">Book a Ride</a>
+    <a href="about.html">About</a>
+    <a href="drivers.html">Drive with Us</a>
+    <a href="booking.html" class="btn btn-primary" style="margin-top:1rem;">Book Now</a>
+  </div>
+
+  <!-- ── Booking Page ── -->
+  <main class="booking-page">
+    <div class="booking-page-inner">
+
+      <!-- Left: Map -->
+      <div>
+        <h1 class="display-md" style="margin-bottom:0.5rem;">Book your ride</h1>
+        <p style="color:var(--color-text-muted);margin-bottom:2rem;">Fill in your details and we'll match you with a nearby driver instantly.</p>
+
+        <div class="map-placeholder">
+          <div class="map-grid"></div>
+
+          <!-- Decorative route -->
+          <svg width="100%" height="100%" viewBox="0 0 600 400" preserveAspectRatio="xMidYMid slice" fill="none" style="position:absolute;" aria-hidden="true">
+            <!-- Streets -->
+            <line x1="0" y1="200" x2="600" y2="200" stroke="rgba(255,255,255,0.05)" stroke-width="20"/>
+            <line x1="0" y1="100" x2="600" y2="100" stroke="rgba(255,255,255,0.03)" stroke-width="12"/>
+            <line x1="0" y1="300" x2="600" y2="300" stroke="rgba(255,255,255,0.03)" stroke-width="12"/>
+            <line x1="150" y1="0" x2="150" y2="400" stroke="rgba(255,255,255,0.04)" stroke-width="16"/>
+            <line x1="300" y1="0" x2="300" y2="400" stroke="rgba(255,255,255,0.04)" stroke-width="16"/>
+            <line x1="450" y1="0" x2="450" y2="400" stroke="rgba(255,255,255,0.04)" stroke-width="16"/>
+            <!-- Route path -->
+            <path d="M120 320 Q180 240 260 200 Q340 160 420 100" stroke="#2563EB" stroke-width="4" stroke-dasharray="12 6" stroke-linecap="round"/>
+            <!-- Pickup dot -->
+            <circle cx="120" cy="320" r="12" fill="#2563EB"/>
+            <circle cx="120" cy="320" r="20" fill="rgba(37,99,235,0.2)"/>
+            <!-- Drop-off dot -->
+            <circle cx="420" cy="100" r="12" fill="#F59E0B"/>
+            <circle cx="420" cy="100" r="20" fill="rgba(245,158,11,0.2)"/>
+            <!-- Car icon -->
+            <rect x="255" y="188" width="20" height="14" rx="3" fill="#60A5FA"/>
+            <rect x="258" y="183" width="14" height="8" rx="2" fill="#93C5FD"/>
+          </svg>
+
+          <!-- ETA card -->
+          <div style="position:absolute;bottom:20px;left:20px;right:20px;background:rgba(15,23,42,0.92);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:16px;backdrop-filter:blur(12px);">
+            <div style="display:flex;align-items:center;justify-content:space-between;">
+              <div>
+                <div style="font-size:0.8125rem;color:var(--color-text-muted);">Nearest driver</div>
+                <div style="font-weight:700;font-size:1rem;">3 min away</div>
+              </div>
+              <div style="text-align:right;">
+                <div style="font-size:0.8125rem;color:var(--color-text-muted);">Est. fare</div>
+                <div style="font-weight:900;font-size:1.25rem;color:var(--color-accent);" id="mapFare">45 MAD</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div>
+        <!-- Step indicator -->
+        <div class="step-indicator">
+          <div class="step-dot active" id="step1dot">1</div>
+          <div class="step-line" id="line12"></div>
+          <div class="step-dot upcoming" id="step2dot">2</div>
+          <div class="step-line" id="line23"></div>
+          <div class="step-dot upcoming" id="step3dot">3</div>
+        </div>
+
+        <!-- Step 1: Route -->
+        <div id="step1" class="booking-card">
+          <h2 style="font-size:1.25rem;font-weight:800;margin-bottom:1.5rem;">Where are you going?</h2>
+
+          <div class="form-group">
+            <label class="form-label" for="bookPickup">Pickup Location</label>
+            <div style="position:relative;">
+              <svg style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:var(--color-accent);" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+              <input class="form-input" id="bookPickup" type="text" placeholder="Enter pickup address" style="padding-left:40px;" required>
+            </div>
+          </div>
+
+          <div style="display:flex;justify-content:center;margin:-2px 0;position:relative;z-index:1;">
+            <button onclick="swapLocations()" style="width:32px;height:32px;border-radius:50%;background:var(--color-secondary);border:2px solid var(--color-border);cursor:pointer;display:flex;align-items:center;justify-content:center;color:#fff;transition:transform 200ms;" aria-label="Swap pickup and destination">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M7 16V4m0 0L3 8m4-4 4 4M17 8v12m0 0 4-4m-4 4-4-4"/></svg>
+            </button>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="bookDropoff">Destination</label>
+            <div style="position:relative;">
+              <svg style="position:absolute;left:14px;top:50%;transform:translateY(-50%);color:#F59E0B;" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <input class="form-input" id="bookDropoff" type="text" placeholder="Where to?" style="padding-left:40px;" required>
+            </div>
+          </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;margin-bottom:1.25rem;">
+            <div>
+              <label class="form-label" for="bookDate">Date</label>
+              <input class="form-input" id="bookDate" type="date">
+            </div>
+            <div>
+              <label class="form-label" for="bookTime">Time</label>
+              <input class="form-input" id="bookTime" type="time">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="bookPassengers">Passengers</label>
+            <select class="form-input" id="bookPassengers" style="cursor:pointer;appearance:none;background-image:url('data:image/svg+xml,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'16\' height=\'16\' viewBox=\'0 0 24 24\' fill=\'none\' stroke=\'%2394A3B8\' stroke-width=\'2\'><path d=\'M6 9l6 6 6-6\'/></svg>');background-repeat:no-repeat;background-position:right 14px center;">
+              <option value="1">1 passenger</option>
+              <option value="2">2 passengers</option>
+              <option value="3">3 passengers</option>
+              <option value="4">4 passengers</option>
+            </select>
+          </div>
+
+          <button class="btn btn-primary" style="width:100%;justify-content:center;" onclick="goToStep2()">
+            See Available Rides
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- Step 2: Choose ride (hidden initially) -->
+        <div id="step2" class="booking-card" style="display:none;">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.5rem;">
+            <button onclick="goToStep1()" style="background:none;border:none;color:var(--color-text-muted);cursor:pointer;display:flex;align-items:center;gap:4px;font-size:0.875rem;font-family:inherit;transition:color 150ms;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+              Back
+            </button>
+            <h2 style="font-size:1.25rem;font-weight:800;">Choose your ride</h2>
+          </div>
+
+          <div class="fare-estimate">
+            <div>
+              <div style="font-size:0.8125rem;color:var(--color-text-muted);">Estimated distance</div>
+              <div style="font-weight:600;">8.4 km · ~14 min</div>
+            </div>
+            <div style="text-align:right;">
+              <div style="font-size:0.8125rem;color:var(--color-text-muted);">Fixed fare from</div>
+              <div class="price-badge" style="color:var(--color-accent);">35 MAD</div>
+            </div>
+          </div>
+
+          <div style="margin-bottom:1.25rem;">
+            <div class="form-label" style="margin-bottom:0.75rem;">Ride options</div>
+
+            <div class="ride-option selected" onclick="selectRideOption(this,'35 MAD')">
+              <div class="ride-option-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 17H3a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v10a2 2 0 0 1-2 2h-2"/><circle cx="9" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M13 2v5h5"/></svg>
+              </div>
+              <div class="ride-option-info">
+                <div class="ride-option-name">Standard</div>
+                <div class="ride-option-desc">Up to 4 passengers · 3 min ETA</div>
+              </div>
+              <div class="ride-option-price">35 MAD</div>
+            </div>
+
+            <div class="ride-option" onclick="selectRideOption(this,'58 MAD')">
+              <div class="ride-option-icon" style="background:rgba(245,158,11,0.12);color:#F59E0B;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </div>
+              <div class="ride-option-info">
+                <div class="ride-option-name">Premium</div>
+                <div class="ride-option-desc">Luxury sedan · 5 min ETA</div>
+              </div>
+              <div class="ride-option-price">58 MAD</div>
+            </div>
+
+            <div class="ride-option" onclick="selectRideOption(this,'18 MAD')">
+              <div class="ride-option-icon" style="background:rgba(16,185,129,0.12);color:#34D399;">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div class="ride-option-info">
+                <div class="ride-option-name">Shared</div>
+                <div class="ride-option-desc">Share with others · 6 min ETA</div>
+              </div>
+              <div class="ride-option-price">18 MAD</div>
+            </div>
+          </div>
+
+          <div style="background:var(--color-muted);border-radius:var(--radius-md);padding:12px 16px;margin-bottom:1.25rem;font-size:0.8125rem;color:var(--color-text-muted);display:flex;gap:8px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex-shrink:0;margin-top:1px;" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            Fare is fixed. You will not be charged more due to traffic.
+          </div>
+
+          <button class="btn btn-primary" style="width:100%;justify-content:center;" onclick="goToStep3()">
+            Continue to Payment
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+
+        <!-- Step 3: Payment (hidden initially) -->
+        <div id="step3" class="booking-card" style="display:none;">
+          <div style="display:flex;align-items:center;gap:12px;margin-bottom:1.5rem;">
+            <button onclick="goToStep2()" style="background:none;border:none;color:var(--color-text-muted);cursor:pointer;display:flex;align-items:center;gap:4px;font-size:0.875rem;font-family:inherit;transition:color 150ms;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color=''">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+              Back
+            </button>
+            <h2 style="font-size:1.25rem;font-weight:800;">Payment & Confirm</h2>
+          </div>
+
+          <!-- Order summary -->
+          <div style="background:var(--color-muted);border-radius:var(--radius-md);padding:16px;margin-bottom:1.25rem;">
+            <div style="font-weight:700;font-size:0.9375rem;margin-bottom:12px;">Trip Summary</div>
+            <div style="display:flex;flex-direction:column;gap:8px;font-size:0.875rem;">
+              <div style="display:flex;justify-content:space-between;color:var(--color-text-muted);">
+                <span>Standard Ride</span>
+                <span id="selectedFare" style="color:#fff;font-weight:600;">35 MAD</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;color:var(--color-text-muted);">
+                <span>Service fee</span><span>2 MAD</span>
+              </div>
+              <div style="height:1px;background:var(--color-border);margin:4px 0;"></div>
+              <div style="display:flex;justify-content:space-between;font-weight:800;font-size:1rem;">
+                <span>Total</span>
+                <span id="totalFare" style="color:var(--color-accent);">37 MAD</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Payment method -->
+          <div class="form-label" style="margin-bottom:0.75rem;">Payment Method</div>
+
+          <div class="payment-method selected" onclick="selectPayment(this)">
+            <div class="payment-icon" style="background:#1A56DB;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+            </div>
+            <div style="flex:1;">
+              <div style="font-weight:600;font-size:0.9375rem;">Credit Card</div>
+              <div style="font-size:0.8125rem;color:var(--color-text-muted);">Visa ending in 4242</div>
+            </div>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+
+          <div class="payment-method" onclick="selectPayment(this)">
+            <div class="payment-icon" style="background:#047857;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            </div>
+            <div style="flex:1;">
+              <div style="font-weight:600;font-size:0.9375rem;">Mobile Wallet</div>
+              <div style="font-size:0.8125rem;color:var(--color-text-muted);">CIH Money, Orange Money</div>
+            </div>
+          </div>
+
+          <div class="payment-method" onclick="selectPayment(this)">
+            <div class="payment-icon" style="background:var(--color-secondary);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <div style="flex:1;">
+              <div style="font-weight:600;font-size:0.9375rem;">Cash</div>
+              <div style="font-size:0.8125rem;color:var(--color-text-muted);">Pay driver directly</div>
+            </div>
+          </div>
+
+          <div style="margin:1.25rem 0;"></div>
+
+          <div class="form-group">
+            <label class="form-label" for="promoCode">Promo Code</label>
+            <div style="display:flex;gap:0.625rem;">
+              <input class="form-input" id="promoCode" type="text" placeholder="Enter promo code" style="flex:1;">
+              <button onclick="applyPromo()" class="btn btn-ghost btn-sm">Apply</button>
+            </div>
+          </div>
+
+          <div style="background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.2);border-radius:var(--radius-md);padding:12px 16px;margin-bottom:1.25rem;display:flex;align-items:center;gap:8px;font-size:0.8125rem;color:#34D399;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Your ride is insured. Driver is verified and background-checked.
+          </div>
+
+          <button class="btn btn-primary btn-lg" style="width:100%;justify-content:center;" onclick="confirmBooking()">
+            Confirm & Book
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+
+          <p style="text-align:center;font-size:0.75rem;color:var(--color-text-muted);margin-top:0.75rem;">
+            By booking you agree to our <a href="#" style="color:#60A5FA;text-decoration:none;">Terms of Service</a>
+          </p>
+        </div>
+
+        <!-- Success State (hidden initially) -->
+        <div id="stepSuccess" style="display:none;text-align:center;">
+          <div style="width:72px;height:72px;border-radius:50%;background:rgba(16,185,129,0.12);border:2px solid rgba(16,185,129,0.3);display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;color:#34D399;">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h2 style="font-size:1.5rem;font-weight:900;letter-spacing:-0.03em;margin-bottom:0.5rem;">Ride Confirmed!</h2>
+          <p style="color:var(--color-text-muted);margin-bottom:2rem;">Hassan A. is on his way. ETA: <strong style="color:#fff;">3 min</strong></p>
+
+          <div style="background:var(--color-primary);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:1.5rem;text-align:left;">
+            <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1rem;">
+              <div style="width:48px;height:48px;border-radius:50%;background:var(--color-secondary);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;">HA</div>
+              <div>
+                <div style="font-weight:700;">Hassan Alami</div>
+                <div style="font-size:0.875rem;color:var(--color-text-muted);">Toyota Camry · DRB 4521</div>
+              </div>
+              <div style="margin-left:auto;color:#F59E0B;font-weight:700;">★ 4.98</div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0.75rem;">
+              <a href="tel:+212600000000" class="btn btn-ghost btn-sm" style="justify-content:center;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 12 19.79 19.79 0 0 1 1 3.18 2 2 0 0 1 3 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9l-.07.05a16 16 0 0 0 7.1 7.1l.06-.07.33-.33a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 18z"/></svg>
+                Call Driver
+              </a>
+              <button class="btn btn-ghost btn-sm" style="justify-content:center;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                Message
+              </button>
+            </div>
+          </div>
+
+          <a href="index.html" class="btn btn-ghost" style="width:100%;justify-content:center;">Back to Home</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Nav
+    const nav = document.getElementById('nav');
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+    function openMenu() { mobileMenu.classList.add('open'); hamburger.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
+    function closeMenu() { mobileMenu.classList.remove('open'); hamburger.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+    hamburger.addEventListener('click', openMenu);
+    mobileClose.addEventListener('click', closeMenu);
+    mobileMenu.querySelectorAll('a').forEach(l => l.addEventListener('click', closeMenu));
+
+    // Default date/time
+    const d = document.getElementById('bookDate');
+    const t = document.getElementById('bookTime');
+    if (d) { d.value = new Date().toISOString().split('T')[0]; }
+    if (t) { const now = new Date(); t.value = `${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`; }
+
+    // Swap locations
+    function swapLocations() {
+      const a = document.getElementById('bookPickup');
+      const b = document.getElementById('bookDropoff');
+      [a.value, b.value] = [b.value, a.value];
+    }
+
+    // Step navigation
+    function showStep(n) {
+      ['step1','step2','step3','stepSuccess'].forEach(id => {
+        document.getElementById(id).style.display = 'none';
+      });
+      document.getElementById('step' + n === 'Success' ? 'stepSuccess' : 'step' + n).style.display = 'block';
+      updateStepDots(typeof n === 'number' ? n : 4);
+    }
+
+    function updateStepDots(active) {
+      for (let i = 1; i <= 3; i++) {
+        const dot = document.getElementById('step' + i + 'dot');
+        dot.className = 'step-dot ' + (i < active ? 'done' : i === active ? 'active' : 'upcoming');
+      }
+      const l12 = document.getElementById('line12');
+      const l23 = document.getElementById('line23');
+      if (l12) l12.className = 'step-line' + (active > 1 ? ' done' : '');
+      if (l23) l23.className = 'step-line' + (active > 2 ? ' done' : '');
+    }
+
+    function goToStep1() { document.getElementById('step1').style.display='block'; document.getElementById('step2').style.display='none'; document.getElementById('step3').style.display='none'; updateStepDots(1); }
+    function goToStep2() { document.getElementById('step1').style.display='none'; document.getElementById('step2').style.display='block'; document.getElementById('step3').style.display='none'; updateStepDots(2); }
+    function goToStep3() { document.getElementById('step1').style.display='none'; document.getElementById('step2').style.display='none'; document.getElementById('step3').style.display='block'; updateStepDots(3); }
+
+    function confirmBooking() {
+      document.getElementById('step3').style.display='none';
+      document.getElementById('stepSuccess').style.display='block';
+      updateStepDots(4);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function selectRideOption(el, price) {
+      document.querySelectorAll('.ride-option').forEach(r => r.classList.remove('selected'));
+      el.classList.add('selected');
+      document.getElementById('mapFare').textContent = price;
+      document.getElementById('selectedFare').textContent = price;
+      const base = parseInt(price);
+      document.getElementById('totalFare').textContent = (base + 2) + ' MAD';
+    }
+
+    function selectPayment(el) {
+      document.querySelectorAll('.payment-method').forEach(p => {
+        p.classList.remove('selected');
+        const check = p.querySelector('svg:last-child');
+        if (check && check.getAttribute('stroke') === 'var(--color-accent)') check.remove();
+      });
+      el.classList.add('selected');
+    }
+
+    function applyPromo() {
+      const code = document.getElementById('promoCode').value.toUpperCase();
+      if (code === 'KENI10') alert('Promo applied! 10 MAD discount.');
+      else if (code) alert('Invalid promo code.');
+    }
+  </script>
+</body>
+</html>

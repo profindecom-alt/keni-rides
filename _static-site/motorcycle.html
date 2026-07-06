@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motorcycle — Keni Rides Morocco</title>
+  <meta name="description" content="Book a premium adventure motorcycle in Morocco with Keni Rides. Simple booking, no online payment — our team confirms your reservation personally.">
+  <link rel="icon" href="public/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <nav class="nav" aria-label="Main navigation">
+    <div class="container nav-inner">
+      <a class="nav-logo" href="index.html" aria-label="Keni Rides — home">
+        <img src="public/logo.png" alt="" data-fallback-applied="1" onerror="this.style.display='none'">
+        <span>Keni<span class="logo-mark">&nbsp;Rides</span></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg>
+      </button>
+      <div class="nav-links" id="nav-menu">
+        <a href="index.html">Home</a>
+        <a href="motorcycles.html">Motorcycles</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="testimonials.html">Testimonials</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+        <span class="nav-cta"><a class="btn btn-primary" href="motorcycles.html">Book a Ride</a></span>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main">
+    <!-- ============ BIKE HERO ============ -->
+    <section class="hero hero-sub">
+      <div class="hero-media">
+        <img id="bike-hero-img" class="parallax-media" data-speed="0.18" src="" alt="" fetchpriority="high">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-content">
+          <nav class="breadcrumb" aria-label="Breadcrumb">
+            <a href="index.html">Home</a><span class="sep">/</span>
+            <a href="motorcycles.html">Motorcycles</a><span class="sep">/</span>
+            <span id="crumb-name" aria-current="page">Motorcycle</span>
+          </nav>
+          <p class="hero-kicker"><span class="dot" aria-hidden="true"></span> <span id="bike-category">Adventure</span></p>
+          <h1 id="bike-name" data-reveal>Motorcycle</h1>
+          <p class="lead" id="bike-tagline" data-reveal data-reveal-delay="0.1s"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DETAIL + BOOKING ============ -->
+    <section class="section">
+      <div class="glow-field" aria-hidden="true"><span class="glow" style="top:0;right:-20%"></span></div>
+      <div class="container detail-layout">
+
+        <!-- Left: bike info -->
+        <div>
+          <div data-reveal>
+            <p class="eyebrow">The Machine</p>
+            <h2 style="text-transform:none;font-size:clamp(1.3rem,2.4vw,1.8rem)">Why you'll love it</h2>
+            <p class="lead" id="bike-description" style="margin-top:1rem"></p>
+          </div>
+
+          <div class="spec-grid" data-reveal>
+            <div class="spec-tile"><span>Engine</span><strong id="spec-engine">—</strong></div>
+            <div class="spec-tile"><span>Power</span><strong id="spec-power">—</strong></div>
+            <div class="spec-tile"><span>Fuel Tank</span><strong id="spec-tank">—</strong></div>
+            <div class="spec-tile"><span>Seat Height</span><strong id="spec-seat">—</strong></div>
+            <div class="spec-tile"><span>Weight</span><strong id="spec-weight">—</strong></div>
+            <div class="spec-tile"><span>From</span><strong id="spec-price">—</strong></div>
+          </div>
+
+          <div data-reveal>
+            <h3 style="margin-bottom:0.4rem">Best terrain</h3>
+            <p id="bike-terrain" style="color:var(--text-2)"></p>
+            <div class="tag-row" id="bike-features"></div>
+          </div>
+
+          <div class="feature-card" data-reveal style="margin-top:2rem">
+            <h3 style="display:flex;align-items:center;gap:0.6rem">
+              <svg style="width:20px;height:20px;color:var(--brand-bright);flex:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              Always included
+            </h3>
+            <p>Third-party liability insurance · Helmet &amp; gloves (mandatory, available as extras) · 24/7 road assistance with replacement bike if repair is impossible · Route advice from local experts.</p>
+            <p style="margin-top:0.6rem"><a class="link-arrow" href="conditions.html">Rental conditions
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Right: booking form -->
+        <div class="sticky-book">
+          <div class="form-card" data-reveal="right">
+            <div style="display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:1.4rem">
+              <h2 style="text-transform:none;font-size:1.25rem" id="form-title">Book this motorcycle</h2>
+              <p class="price"><small>From</small><strong><span id="form-price">€—</span> <em>/ day</em></strong></p>
+            </div>
+            <form data-webhook="booking" data-success-message="Thank you. Our team will contact you shortly to confirm your reservation." novalidate>
+              <input type="hidden" name="motorcycle" id="field-motorcycle" value="">
+              <input type="hidden" name="motorcycleSlug" id="field-slug" value="">
+              <input type="hidden" name="pricePerDayEUR" id="field-price" value="">
+              <div class="form-grid">
+                <div class="field full">
+                  <label for="b-name">Full Name <span class="req" aria-hidden="true">*</span></label>
+                  <input id="b-name" name="fullName" type="text" required autocomplete="name" placeholder="Your full name">
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="field">
+                  <label for="b-email">Email <span class="req" aria-hidden="true">*</span></label>
+                  <input id="b-email" name="email" type="email" required autocomplete="email" placeholder="you@email.com">
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="field">
+                  <label for="b-phone">Phone <span class="req" aria-hidden="true">*</span></label>
+                  <input id="b-phone" name="phone" type="tel" required autocomplete="tel" placeholder="+33 6 12 34 56 78">
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="field">
+                  <label for="b-country">Country <span class="req" aria-hidden="true">*</span></label>
+                  <input id="b-country" name="country" type="text" required autocomplete="country-name" placeholder="France">
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="field">
+                  <label for="b-riders">Number of Riders <span class="req" aria-hidden="true">*</span></label>
+                  <select id="b-riders" name="riders" required>
+                    <option value="" selected disabled>Select</option>
+                    <option>1</option><option>2</option><option>3</option><option>4</option>
+                    <option>5</option><option>6+</option>
+                  </select>
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="field">
+                  <label for="b-pickup-loc">Pickup Location <span class="req" aria-hidden="true">*</span></label>
+                  <select id="b-pickup-loc" name="pickupLocation" required>
+                    <option value="" selected disabled>Select</option>
+                    <option>Marrakech</option>
+                    <option>Casablanca</option>
+                    <option>Tangier</option>
+                    <option>Fez</option>
+                    <option>Other (tell us in message)</option>
+                  </select>
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="field">
+                  <label for="b-return-loc">Return Location <span class="req" aria-hidden="true">*</span></label>
+                  <select id="b-return-loc" name="returnLocation" required>
+                    <option value="" selected disabled>Select</option>
+                    <option>Marrakech</option>
+                    <option>Casablanca</option>
+                    <option>Tangier</option>
+                    <option>Fez</option>
+                    <option>Other (tell us in message)</option>
+                  </select>
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="field">
+                  <label for="b-pickup-date">Pickup Date <span class="req" aria-hidden="true">*</span></label>
+                  <input id="b-pickup-date" name="pickupDate" type="date" required>
+                  <p class="hint">2-day notice required</p>
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="field">
+                  <label for="b-return-date">Return Date <span class="req" aria-hidden="true">*</span></label>
+                  <input id="b-return-date" name="returnDate" type="date" required>
+                  <p class="hint">Minimum rental: 2 days</p>
+                  <p class="error-msg" role="alert"></p>
+                </div>
+                <div class="field full">
+                  <label for="b-message">Message</label>
+                  <textarea id="b-message" name="message" placeholder="Route plans, gear needs, delivery requests, questions…"></textarea>
+                </div>
+              </div>
+              <div style="margin-top:1.4rem">
+                <button class="btn btn-primary btn-lg btn-block" type="submit">
+                  Request Booking
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </button>
+                <p style="margin-top:0.8rem;font-size:0.82rem;color:var(--text-3);text-align:center">
+                  No online payment. 20% deposit to confirm, balance at pickup.
+                </p>
+              </div>
+              <p class="form-status" role="alert"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SIMILAR BIKES ============ -->
+    <section class="section section-dark">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Keep Exploring</p>
+          <h2>You Might Also Like</h2>
+        </div>
+        <div class="grid grid-3" id="similar-grid" data-fleet-grid data-limit="3"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="nav-logo" href="index.html">
+            <img src="public/logo.png" alt="" data-fallback-applied="1" onerror="this.style.display='none'">
+            <span>Keni<span class="logo-mark">&nbsp;Rides</span></span>
+          </a>
+          <p>Premium adventure motorcycle rental in Morocco. Sahara, Atlas, and two coastlines — one unforgettable ride.</p>
+          <div class="socials" style="margin-top:1.2rem">
+            <a href="https://www.facebook.com/share/ZKKKbiGrdkfL6RLS/?mibextid=LQQJ4d" target="_blank" rel="noopener" aria-label="Keni Rides on Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg></a>
+            <a href="https://www.instagram.com/keni_rides/" target="_blank" rel="noopener" aria-label="Keni Rides on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg></a>
+            <a href="https://www.youtube.com/@KeniRides" target="_blank" rel="noopener" aria-label="Keni Rides on YouTube"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="motorcycles.html">Motorcycles</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="about.html">About the Founder</a></li>
+            <li><a href="conditions.html">Rental Conditions</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Top Bikes</h4>
+          <ul>
+            <li><a href="motorcycle.html?bike=bmw-gs1200-adventure">BMW GS 1200 Adventure</a></li>
+            <li><a href="motorcycle.html?bike=yamaha-tenere-700-world-raid">Ténéré 700 World Raid</a></li>
+            <li><a href="motorcycle.html?bike=yamaha-tenere-700">Yamaha Ténéré 700</a></li>
+            <li><a href="motorcycle.html?bike=honda-transalp-700">Honda Transalp 700</a></li>
+            <li><a href="motorcycle.html?bike=suzuki-dr650">Suzuki DR650</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a data-phone href="tel:+212616712266">+212 616 712266</a></li>
+            <li><a data-whatsapp href="https://wa.me/212616712266" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="contact.html">Contact form</a></li>
+            <li>Marrakech · Casablanca, Morocco</li>
+            <li>Pickup by appointment, Mon–Sun</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> Keni Rides — keni-rides.com. All rights reserved.</span>
+        <a href="conditions.html">Rental Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="fab-stack">
+    <a class="fab fab-call" data-phone href="tel:+212616712266" aria-label="Call Keni Rides">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.4 2.1L8 10a16 16 0 0 0 6 6l1.4-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+    </a>
+    <a class="fab fab-whatsapp" data-whatsapp href="https://wa.me/212616712266" target="_blank" rel="noopener" aria-label="Chat with Keni Rides on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></svg>
+    </a>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/bikes.js"></script>
+  <script>
+    /* Hydrate the page from ?bike=<slug> — must run before fleet.js */
+    (function () {
+      var params = new URLSearchParams(location.search);
+      var slug = params.get('bike');
+      var bike = window.KENI_GET_BIKE(slug) || window.KENI_BIKES[0];
+
+      document.title = bike.name + ' Rental Morocco — from €' + bike.price + '/day | Keni Rides';
+      var meta = document.querySelector('meta[name="description"]');
+      if (meta) meta.content = 'Rent the ' + bike.name + ' in Morocco from €' + bike.price +
+        ' per day. ' + bike.tagline + ' Book with Keni Rides — no online payment.';
+
+      function text(id, value) {
+        var el = document.getElementById(id);
+        if (el) el.textContent = value;
+      }
+
+      var heroImg = document.getElementById('bike-hero-img');
+      heroImg.src = window.KENI_BIKE_IMG(bike.slug);
+      heroImg.alt = bike.name + ' adventure motorcycle';
+      heroImg.dataset.placeholderLabel = bike.short;
+
+      text('crumb-name', bike.short);
+      text('bike-category', bike.category);
+      text('bike-name', bike.name);
+      text('bike-tagline', bike.tagline);
+      text('bike-description', bike.description);
+      text('spec-engine', bike.engine);
+      text('spec-power', bike.power);
+      text('spec-tank', bike.tank);
+      text('spec-seat', bike.seat);
+      text('spec-weight', bike.weight);
+      text('spec-price', '€' + bike.price + ' / day');
+      text('bike-terrain', bike.terrain);
+      text('form-title', 'Book the ' + bike.short);
+      text('form-price', '€' + bike.price);
+
+      var tags = document.getElementById('bike-features');
+      bike.features.forEach(function (f) {
+        var span = document.createElement('span');
+        span.className = 'tag';
+        span.textContent = f;
+        tags.appendChild(span);
+      });
+
+      document.getElementById('field-motorcycle').value = bike.name;
+      document.getElementById('field-slug').value = bike.slug;
+      document.getElementById('field-price').value = bike.price;
+
+      // Similar bikes: same category first, then closest price
+      var others = window.KENI_BIKES.filter(function (b) { return b.slug !== bike.slug; });
+      others.sort(function (a, b) {
+        var catA = a.category === bike.category ? 0 : 1;
+        var catB = b.category === bike.category ? 0 : 1;
+        if (catA !== catB) return catA - catB;
+        return Math.abs(a.price - bike.price) - Math.abs(b.price - bike.price);
+      });
+      document.getElementById('similar-grid').dataset.only = others
+        .slice(0, 3)
+        .map(function (b) { return b.slug; })
+        .join(',');
+
+      // Product structured data
+      var ld = document.createElement('script');
+      ld.type = 'application/ld+json';
+      ld.textContent = JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        name: bike.name + ' — Motorcycle Rental Morocco',
+        description: bike.description,
+        image: 'https://keni-rides.com/' + window.KENI_BIKE_IMG(bike.slug),
+        brand: { '@type': 'Brand', name: bike.name.split(' ')[0] },
+        offers: {
+          '@type': 'Offer',
+          price: String(bike.price),
+          priceCurrency: 'EUR',
+          availability: 'https://schema.org/InStock',
+          url: 'https://keni-rides.com/motorcycle.html?bike=' + bike.slug
+        }
+      });
+      document.head.appendChild(ld);
+    })();
+  </script>
+  <script src="js/fleet.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/forms.js"></script>
+</body>
+</html>

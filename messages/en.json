@@ -1,0 +1,1002 @@
+{
+  "meta": {
+    "siteTitle": "Keni Rides, Premium Motorcycle Adventures in Morocco",
+    "siteDescription": "Rent premium adventure motorcycles in Morocco. BMW GS, Yamaha Ténéré, Honda and Suzuki, ride the Sahara, Atlas Mountains and both coasts with Keni Rides.",
+    "home": {
+      "title": "Keni Rides, Premium Motorcycle Adventures in Morocco"
+    },
+    "motorcycles": {
+      "title": "The Fleet, Adventure Motorcycle Rental",
+      "description": "11 expedition-ready adventure motorcycles for rent in Morocco: BMW GS 1200, Yamaha Ténéré 700, Honda Transalp, Suzuki DR650 and more. From €60 per day."
+    },
+    "gallery": {
+      "title": "Gallery, Morocco by Motorcycle",
+      "description": "Photos from Keni Rides motorcycle adventures across Morocco, Sahara dunes, Atlas passes, Mediterranean coves and Atlantic sunsets."
+    },
+    "testimonials": {
+      "title": "Rider Testimonials, Video Stories",
+      "description": "Watch real riders share their Keni Rides motorcycle adventures across Morocco, video testimonials and reviews from travelers worldwide."
+    },
+    "about": {
+      "title": "About the Founder, Mohamed (Simo) Bennis",
+      "description": "Meet Mohamed (Simo) Bennis, founder of Keni Rides, a lifelong Moroccan rider who turned a childhood of exploration into authentic motorcycle adventures."
+    },
+    "faq": {
+      "title": "FAQ, Motorcycle Rental Questions",
+      "description": "Answers to common questions about renting a motorcycle in Morocco: booking, documents, insurance, delivery, equipment, breakdowns and payments."
+    },
+    "conditions": {
+      "title": "Rental Conditions, Terms & Requirements",
+      "description": "Keni Rides rental conditions: minimum age 21, licence requirements, deposits, documents, delivery prices, safety equipment, insurance and general terms."
+    },
+    "contact": {
+      "title": "Contact Us, Book Your Moroccan Ride",
+      "description": "Contact Keni Rides, phone +212 616 712266, WhatsApp, or send us a message. Motorcycle rental in Marrakech, Casablanca and across Morocco."
+    },
+    "motorcycleDetail": {
+      "titleSuffix": "Rental Morocco, from €{price}/day"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "motorcycles": "Motorcycles",
+    "gallery": "Gallery",
+    "testimonials": "Testimonials",
+    "about": "About",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "bookRide": "Book a Ride"
+  },
+  "fab": {
+    "call": "Call Keni Rides",
+    "whatsapp": "Chat with Keni Rides on WhatsApp",
+    "language": "Change language"
+  },
+  "footer": {
+    "tagline": "Premium adventure motorcycle rental in Morocco. Sahara, Atlas, and two coastlines, one unforgettable ride.",
+    "explore": "Explore",
+    "topBikes": "Top Bikes",
+    "contact": "Contact",
+    "whatsapp": "WhatsApp",
+    "contactForm": "Contact form",
+    "base": "Marrakech · Casablanca, Morocco",
+    "hours": "Pickup by appointment, Mon-Sun",
+    "rights": "© {year} Keni Rides, keni-rides.com. All rights reserved.",
+    "rentalConditions": "Rental Conditions",
+    "links": {
+      "motorcycles": "Motorcycles",
+      "gallery": "Gallery",
+      "testimonials": "Testimonials",
+      "about": "About the Founder",
+      "conditions": "Rental Conditions",
+      "faq": "FAQ"
+    }
+  },
+  "notFound": {
+    "eyebrow": "404",
+    "title": "Page Not Found",
+    "lead": "That road doesn't exist, but plenty of others do.",
+    "back": "Back to Home"
+  },
+  "common": {
+    "from": "From",
+    "perDay": "/ day",
+    "viewAndBook": "View & Book",
+    "chatWhatsapp": "Chat on WhatsApp",
+    "exploreTheFleet": "Explore the Fleet",
+    "bookYourMotorcycle": "Book Your Motorcycle",
+    "readMore": "Read more"
+  },
+  "home": {
+    "heroKicker": "Premium Motorcycle Adventures · Morocco",
+    "heroTitleStart": "Ride the ",
+    "heroTitleEmphasis": "Soul",
+    "heroTitleEnd": "of Morocco",
+    "heroLead": "From the dunes of the Sahara to the peaks of the Atlas, explore Morocco on a premium adventure motorcycle. Expedition-ready machines, local expertise, and the freedom of the open road.",
+    "exploreFleet": "Explore the Fleet",
+    "watchStories": "Watch Rider Stories",
+    "stats": {
+      "bikes": "Adventure Bikes",
+      "regions": "Epic Regions",
+      "riders": "Riders Hosted",
+      "support": "Road Support"
+    },
+    "marquee": "Sahara Desert ◆ Atlas Mountains ◆ Mediterranean Coast ◆ Atlantic Coast ◆ Marrakech ◆ Merzouga ◆ Chefchaouen ◆ Essaouira ◆",
+    "fleet": {
+      "eyebrow": "The Fleet",
+      "titleStart": "Machines Built for ",
+      "titleEmphasis": "Adventure",
+      "lead": "Eleven expedition-ready motorcycles, maintained to the highest standard. From the mighty BMW GS to nimble desert singles, there is a perfect bike for every rider.",
+      "seeAll": "See All 11 Motorcycles"
+    },
+    "why": {
+      "eyebrow": "Why Keni Rides",
+      "title": "More Than a Rental",
+      "lead": "We are riders first. Every detail, from the bikes to the route advice, is built around one goal: your perfect Moroccan adventure.",
+      "features": [
+        {
+          "title": "Expedition-Grade Fleet",
+          "desc": "BMW, Yamaha, Honda and Suzuki adventure machines, fully serviced before every rental, with crash protection and luggage options fitted."
+        },
+        {
+          "title": "Insurance Included",
+          "desc": "Every motorcycle comes with third-party liability insurance, and we help you check your travel cover before you set off."
+        },
+        {
+          "title": "Delivery Across Morocco",
+          "desc": "Pick up in Marrakech or Casablanca, or have your bike delivered to Tangier, Fez and beyond, straight to your hotel."
+        },
+        {
+          "title": "24/7 Road Support",
+          "desc": "Breakdown far from base? We bring you an equivalent motorcycle or an alternative solution so your trip never stops."
+        },
+        {
+          "title": "Born-Here Route Knowledge",
+          "desc": "Founded by a rider who has explored every region of Morocco since childhood. Get insider routes you won't find on any map app."
+        },
+        {
+          "title": "Full Riding Gear",
+          "desc": "Helmets, gloves, jackets and waterproof suits available as extras, arrive with just your licence and sense of adventure."
+        }
+      ]
+    },
+    "destinations": {
+      "eyebrow": "Destinations",
+      "titleStart": "Four Worlds. ",
+      "titleEmphasis": "One Country.",
+      "lead": "Few places on earth pack this much variety into a single ride. Desert, high mountains and two coastlines, all within days of each other.",
+      "items": [
+        {
+          "tag": "South · Merzouga",
+          "name": "Sahara Desert",
+          "desc": "Golden dunes, oasis valleys and nights under a million stars."
+        },
+        {
+          "tag": "Center · Tizi n'Tichka",
+          "name": "Atlas Mountains",
+          "desc": "Legendary passes, Berber villages and switchbacks for days."
+        },
+        {
+          "tag": "North · Al Hoceima",
+          "name": "Mediterranean Coast",
+          "desc": "Turquoise coves and cliff roads from Tangier to Saïdia."
+        },
+        {
+          "tag": "West · Essaouira",
+          "name": "Atlantic Coast",
+          "desc": "Wild surf towns, fishing ports and endless ocean horizons."
+        }
+      ]
+    },
+    "founder": {
+      "eyebrow": "The Story",
+      "title": "The Adventure at the Heart of Keni Rides",
+      "lead": "Keni Rides was founded by Mohamed (Simo) Bennis, a passionate rider who has explored every region of Morocco since childhood. His dream: to let travelers experience the real Morocco through authentic motorcycle adventures.",
+      "caption": "Mohamed “Simo” Bennis, Founder",
+      "checklist": [
+        {
+          "strong": "A lifetime on Moroccan roads",
+          "text": "from Sahara pistes to Rif coast switchbacks."
+        },
+        {
+          "strong": "Rider-to-rider service",
+          "text": "honest advice on bikes, routes and seasons."
+        },
+        {
+          "strong": "Authentic experiences",
+          "text": "the Morocco tourists never see."
+        }
+      ],
+      "meetFounder": "Meet the founder"
+    },
+    "how": {
+      "eyebrow": "Simple Booking",
+      "title": "On the Road in Three Steps",
+      "lead": "No online payment, no complicated process. Request, confirm, ride.",
+      "steps": [
+        {
+          "title": "Choose Your Bike",
+          "desc": "Pick your motorcycle and your pickup & return dates. Minimum rental is just 2 days."
+        },
+        {
+          "title": "Send Your Request",
+          "desc": "Fill in the booking form. Our team contacts you shortly to confirm availability and details."
+        },
+        {
+          "title": "Ride Morocco",
+          "desc": "Pay a 20% deposit to reserve, the rest at pickup. Then the country is yours to explore."
+        }
+      ]
+    },
+    "stories": {
+      "eyebrow": "Rider Stories",
+      "title": "Trusted by Riders Worldwide",
+      "videosLead": "Real riders tell their Morocco adventure, in their own words.",
+      "watchVideos": "Watch video testimonials"
+    },
+    "journey": {
+      "eyebrow": "The Journey",
+      "title": "Moments From the Road",
+      "openGallery": "Open Full Gallery"
+    },
+    "cta": {
+      "titleStart": "Your ",
+      "titleEmphasis": "Adventure",
+      "titleEnd": " Starts Here",
+      "lead": "Choose your machine, pick your dates, and leave the rest to us. No online payment, just a simple request and a confirmation call."
+    }
+  },
+  "reviews": [
+    {
+      "quote": "The Ténéré was flawless and Simo's route through the Atlas was the best week of riding in my life. World-class operation.",
+      "initials": "MK",
+      "name": "Markus K.",
+      "loc": "Germany · Atlas Loop"
+    },
+    {
+      "quote": "Bike delivered to our hotel in Marrakech, spotless and ready. When I dropped it in the sand near Merzouga, help arrived the same day.",
+      "initials": "SL",
+      "name": "Sophie L.",
+      "loc": "France · Sahara Expedition"
+    },
+    {
+      "quote": "First time off-road and they set me up on the perfect CRF250 with full gear. Patient, professional and genuinely passionate people.",
+      "initials": "JR",
+      "name": "James R.",
+      "loc": "UK · Coastal Cruise"
+    },
+    {
+      "quote": "Two GS 1200s for ten days, Casablanca to the desert and back. Flawless machines and Simo answered every message within minutes.",
+      "initials": "AV",
+      "name": "Andrés V.",
+      "loc": "Spain · Grand Tour"
+    },
+    {
+      "quote": "As a solo female traveler I felt completely supported. Great bike, honest advice, and the World Raid handled the dunes like a dream.",
+      "initials": "EN",
+      "name": "Emma N.",
+      "loc": "Netherlands · Desert Raid"
+    },
+    {
+      "quote": "Transalp delivered to Fez, returned in Marrakech. The flexibility made our two-week loop possible. Cannot recommend enough.",
+      "initials": "PT",
+      "name": "Paolo T.",
+      "loc": "Italy · Imperial Cities"
+    }
+  ],
+  "motorcyclesPage": {
+    "heroTitleStart": "The ",
+    "heroTitleEmphasis": "Fleet",
+    "heroLead": "Eleven expedition-ready machines, from the mighty BMW GS 1200 Adventure to featherweight desert singles. Every bike fully serviced, insured, and ready for Moroccan roads and pistes.",
+    "goodToKnow": {
+      "eyebrow": "Good to Know",
+      "title": "Rental Essentials",
+      "items": [
+        {
+          "title": "Minimum 2 Days",
+          "desc": "All rentals start at two days, enough for a proper taste of the Atlas or the coast. Ride longer, pay less per day."
+        },
+        {
+          "title": "20% Deposit to Reserve",
+          "desc": "Secure your bike with a 20% deposit, the balance is paid at pickup. Security deposit is authorized, never charged."
+        },
+        {
+          "title": "Delivery Available",
+          "desc": "Marrakech & Casablanca from €50, Tangier & Fez from €100, or tell us your destination and we'll arrange it."
+        }
+      ]
+    },
+    "readConditions": "Read the full rental conditions",
+    "cta": {
+      "titleStart": "Not Sure Which ",
+      "titleEmphasis": "Bike",
+      "titleEnd": " Fits You?",
+      "lead": "Tell us your experience level, your route and your dates, we'll recommend the perfect machine for your adventure.",
+      "button": "Get a Free Recommendation"
+    }
+  },
+  "motorcycleDetail": {
+    "breadcrumbMotorcycles": "Motorcycles",
+    "whyLoveItEyebrow": "The Machine",
+    "whyLoveItTitle": "Why you'll love it",
+    "specs": {
+      "engine": "Engine",
+      "power": "Power",
+      "tank": "Fuel Tank",
+      "seat": "Seat Height",
+      "weight": "Weight",
+      "from": "From",
+      "deposit": "Security deposit"
+    },
+    "bestTerrain": "Best terrain",
+    "featuresEyebrow": "On board",
+    "featuresTitle": "Equipment & highlights",
+    "included": {
+      "title": "Always included",
+      "text": "Third-party liability insurance · Helmet & gloves (mandatory, available as extras) · 24/7 road assistance with replacement bike if repair is impossible · Route advice from local experts."
+    },
+    "simulator": {
+      "eyebrow": "Estimate",
+      "title": "Estimate your rental",
+      "duration": "Duration",
+      "days": "{count, plural, one {# day} other {# days}}",
+      "perDay": "Daily rate",
+      "total": "Total",
+      "deposit": "Deposit (20%)",
+      "balance": "Balance at pickup",
+      "accessories": "Extras ({count} × €{price}/day)",
+      "securityDeposit": "Security deposit (hold)",
+      "tierHint": "Add {days, plural, one {# more day} other {# more days}} to unlock the €{rate}/day long-term rate.",
+      "note": "Indicative estimate. No online payment: the deposit confirms your booking, the balance is settled at pickup. The security deposit is pre-authorized, never charged, and released at return.",
+      "decrease": "Remove a day",
+      "increase": "Add a day"
+    },
+    "conditions": {
+      "title": "Rental conditions",
+      "items": [
+        "Minimum rental of 2 days",
+        "Minimum age 21, motorcycle licence held over 2 years",
+        "20% deposit to book, balance due at pickup",
+        "Security deposit of €1000 to €2000 (held, never charged)",
+        "Third-party liability insurance included",
+        "Helmet and gloves mandatory, gear available as extras"
+      ]
+    },
+    "conditionsLink": "Rental conditions",
+    "bookThe": "Book the {name}",
+    "keepExploring": "Keep Exploring",
+    "youMightLike": "You Might Also Like",
+    "view3d": {
+      "eyebrow": "360° View",
+      "title": "Explore the bike in 3D"
+    },
+    "gallery": {
+      "eyebrow": "Gallery",
+      "title": "The bike from every angle",
+      "main": "Main photo",
+      "front": "Front three-quarter",
+      "side": "Side profile",
+      "rear": "Rear three-quarter",
+      "zoom": "Enlarge photo",
+      "close": "Close"
+    }
+  },
+  "bookingForm": {
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "country": "Country",
+    "riders": "Number of Riders",
+    "pickupLocation": "Pickup Location",
+    "returnLocation": "Return Location",
+    "pickupDate": "Pickup Date",
+    "returnDate": "Return Date",
+    "message": "Message",
+    "messagePlaceholder": "Route plans, gear needs, delivery requests, questions…",
+    "select": "Select",
+    "locations": {
+      "marrakech": "Marrakech",
+      "casablanca": "Casablanca",
+      "tangier": "Tangier",
+      "fez": "Fez",
+      "other": "Other (tell us in message)"
+    },
+    "pickupHint": "2-day notice required",
+    "returnHint": "Minimum rental: 2 days",
+    "submit": "Request Booking",
+    "sending": "Sending…",
+    "noOnlinePayment": "No online payment. 20% deposit to confirm, balance at pickup.",
+    "successTitle": "Request received",
+    "successMessage": "Thank you. Our team will contact you shortly to confirm your reservation.",
+    "errors": {
+      "required": "This field is required.",
+      "email": "Please enter a valid email address.",
+      "minRental": "Minimum rental is 2 days, please choose a later return date.",
+      "webhookMissing": "The booking system is not connected yet. Please call us or use WhatsApp.",
+      "generic": "Something went wrong sending your request. Please try again, or reach us directly on WhatsApp."
+    }
+  },
+  "accessories": {
+    "title": "Add gear & extras",
+    "perDay": "€15 / day each",
+    "items": {
+      "helmet": "Helmet",
+      "gloves": "Gloves",
+      "jacket": "Riding jacket",
+      "pants": "Riding pants",
+      "boots": "Boots",
+      "gopro": "GoPro camera",
+      "insta360": "Insta360 camera"
+    }
+  },
+  "contactForm": {
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone / WhatsApp",
+    "subject": "Subject",
+    "subjectOptions": {
+      "booking": "Booking question",
+      "quote": "Quote request",
+      "delivery": "Delivery request",
+      "route": "Route advice",
+      "partnership": "Partnership",
+      "other": "Other"
+    },
+    "message": "Message",
+    "messagePlaceholder": "Tell us about your trip, dates, bikes, dreams…",
+    "submit": "Send Message",
+    "sending": "Sending…",
+    "successTitle": "Request received",
+    "successMessage": "Thank you. Our team will contact you shortly.",
+    "errors": {
+      "required": "This field is required.",
+      "email": "Please enter a valid email address.",
+      "webhookMissing": "The contact system is not connected yet. Please call us or use WhatsApp.",
+      "generic": "Something went wrong sending your message. Please try again, or reach us directly on WhatsApp."
+    }
+  },
+  "galleryPage": {
+    "heroTitleStart": "Moments From ",
+    "heroTitleEmphasis": "the Road",
+    "heroLead": "Every photo here was taken on a Keni Rides adventure. This could be your next trip.",
+    "images": [
+      {
+        "alt": "Keni Rides group at a mountain viewpoint in Morocco",
+        "label": "The Viewpoint"
+      },
+      {
+        "alt": "Motorcycle kicking up dust on a Moroccan mountain road",
+        "label": "Mountain Trail"
+      },
+      {
+        "alt": "Riders on a red rock canyon road in Morocco",
+        "label": "Canyon Road"
+      },
+      {
+        "alt": "Motorcycle descending a mountain pass in Morocco",
+        "label": "The Descent"
+      },
+      {
+        "alt": "Aerial view of a mountain pass road in Morocco",
+        "label": "The Pass"
+      },
+      {
+        "alt": "Motorcycle riding through a mountain pass at dusk",
+        "label": "Dusk Ride"
+      },
+      {
+        "alt": "Keni Rides team at a garage in Morocco",
+        "label": "The Garage"
+      },
+      {
+        "alt": "Keni Rides riders sharing a moment together",
+        "label": "Good Company"
+      },
+      {
+        "alt": "Keni Rides rider taking a break in the desert",
+        "label": "Desert Break"
+      },
+      {
+        "alt": "Riders crossing the desert plains of Morocco",
+        "label": "The Plains"
+      },
+      {
+        "alt": "Rider standing on the pegs crossing the Moroccan desert",
+        "label": "Desert Crossing"
+      },
+      {
+        "alt": "Keni Rides group under an acacia tree in the desert",
+        "label": "Shade Break"
+      },
+      {
+        "alt": "Riders greeting each other in the Moroccan desert",
+        "label": "Desert Greeting"
+      },
+      {
+        "alt": "Motorcycle riding a dusty mountain trail in Morocco",
+        "label": "Dust Trail"
+      },
+      {
+        "alt": "Motorcycle blasting through desert dunes in Morocco",
+        "label": "Dune Blast"
+      },
+      {
+        "alt": "Keni Rides riders sharing a moment together",
+        "label": "Good Company"
+      },
+      {
+        "alt": "Keni Rides rider with his motorcycle in Morocco",
+        "label": "The Rider"
+      },
+      {
+        "alt": "Riders repairing a motorcycle tire in the desert",
+        "label": "Trailside Repair"
+      }
+    ],
+    "cta": {
+      "titleStart": "Put ",
+      "titleEmphasis": "Yourself",
+      "titleEnd": " in the Picture",
+      "lead": "These roads are waiting. Pick your motorcycle and start writing your own story.",
+      "button": "Choose Your Motorcycle"
+    }
+  },
+  "testimonialsPage": {
+    "heroTitleStart": "Stories From ",
+    "heroTitleEmphasis": "Our Riders",
+    "heroLead": "Don't take our word for it, hear it straight from the riders who lived it.",
+    "videos": {
+      "eyebrow": "Video Stories",
+      "title": "In Their Own Words",
+      "comingSoon": "Video coming soon",
+      "more": "More rider films on our",
+      "youtubeChannel": "YouTube channel"
+    },
+    "reviews": {
+      "eyebrow": "Reviews",
+      "title": "Five Stars, Every Terrain"
+    },
+    "cta": {
+      "titleStart": "Your Story Is ",
+      "titleEmphasis": "Next",
+      "lead": "Join hundreds of riders who found their perfect Moroccan adventure with Keni Rides.",
+      "button": "Start Your Adventure"
+    }
+  },
+  "aboutPage": {
+    "heroTitle": "The Adventure at the Heart of Keni Rides",
+    "founder": {
+      "eyebrow": "The Founder",
+      "title": "Born to Ride Morocco",
+      "caption": "Mohamed “Simo” Bennis, Founder",
+      "paragraphs": [
+        "Keni Rides was founded by <strong>Mohamed (Simo) Bennis</strong>, a passionate motorcycle rider and explorer. Since childhood he has travelled across Morocco, discovering every region of the country, every pass, every piste, every hidden village café worth stopping at.",
+        "From the golden dunes of the <strong>Sahara Desert</strong> to the snow-capped peaks of the <strong>Atlas Mountains</strong>, from the turquoise coves of the <strong>Mediterranean</strong> to the wild surf of the <strong>Atlantic Coast</strong>, Simo has ridden it all, in every season.",
+        "His dream became a company: a place where travelers experience Morocco not from a tour-bus window, but from the saddle of a great motorcycle, with the freedom to explore and the backup of someone who knows every kilometre."
+      ],
+      "rideWithUs": "Ride With Us",
+      "sayHello": "Say Salam on WhatsApp"
+    },
+    "regions": {
+      "eyebrow": "A Lifetime of Exploration",
+      "titleStart": "Every Region. ",
+      "titleEmphasis": "Every Road.",
+      "items": [
+        {
+          "tag": "South",
+          "name": "Sahara Desert",
+          "desc": "Merzouga, Zagora, and the pistes between the ergs."
+        },
+        {
+          "tag": "Center",
+          "name": "Atlas Mountains",
+          "desc": "Tizi n'Tichka, Tizi n'Test and a hundred nameless passes."
+        },
+        {
+          "tag": "North",
+          "name": "Mediterranean Coast",
+          "desc": "The Rif, Chefchaouen, and the cliff roads to Al Hoceima."
+        },
+        {
+          "tag": "West",
+          "name": "Atlantic Coast",
+          "desc": "Essaouira, Taghazout and the endless ocean highway south."
+        }
+      ]
+    },
+    "values": {
+      "eyebrow": "What We Stand For",
+      "title": "The Keni Rides Promise",
+      "items": [
+        {
+          "title": "Authenticity",
+          "desc": "Real Moroccan adventures designed by someone who grew up on these roads, not imported tour templates."
+        },
+        {
+          "title": "Safety First",
+          "desc": "Meticulously maintained machines, mandatory quality gear, insurance on every bike and 24/7 assistance."
+        },
+        {
+          "title": "Rider Brotherhood",
+          "desc": "You arrive as a customer and leave as a friend. Expect route tips, tea stops, and a WhatsApp reply at any hour."
+        }
+      ]
+    },
+    "cta": {
+      "titleStart": "Come Ride ",
+      "titleEmphasis": "With Us",
+      "lead": "Simo and the team are ready to build your perfect Moroccan adventure.",
+      "explore": "Explore the Fleet",
+      "contact": "Get in Touch"
+    }
+  },
+  "faqPage": {
+    "heroTitleStart": "Frequently Asked ",
+    "heroTitleEmphasis": "Questions",
+    "heroLeadStart": "Everything you need to know before you ride. Still unsure?",
+    "heroLeadLink": "Ask us directly",
+    "items": [
+      {
+        "q": "How do I book a motorcycle?",
+        "a": "Choose your motorcycle and your pickup &amp; return dates, then send the booking form on the bike's page. Our team contacts you shortly to confirm availability. A <strong>20% deposit</strong> secures your reservation and the balance is paid at pickup, <strong>no online payment</strong> is required."
+      },
+      {
+        "q": "Can I ride anywhere in Morocco?",
+        "a": "Yes, from the Sahara to the Atlas and both coasts, the country is yours. We simply ask you to share your planned route so we can advise on road conditions, fuel stops and seasons, and make sure assistance can reach you anywhere."
+      },
+      {
+        "q": "What documents are required?",
+        "a": "Four things: a <strong>motorcycle licence issued more than 2 years ago</strong>, your <strong>passport or national ID</strong>, a <strong>hotel address or proof of accommodation</strong>, and a <strong>credit card under the renter's name</strong>. Minimum age is 21. Details on the rental conditions page."
+      },
+      {
+        "q": "Is insurance included?",
+        "a": "Every motorcycle includes <strong>third-party liability insurance</strong>. In addition, personal travel insurance that covers motorcycle riding is <strong>mandatory</strong>, we may ask for proof before the rental begins."
+      },
+      {
+        "q": "Can motorcycles be delivered?",
+        "a": "Yes. <strong>Marrakech / Casablanca:</strong> €50 delivery, €50 pickup. <strong>Tangier / Fez:</strong> €100 delivery, €100 pickup. Other destinations are quoted individually. Available Monday-Sunday, by appointment, with 2 days notice."
+      },
+      {
+        "q": "Is riding equipment included?",
+        "a": "Helmets, gloves, jackets and waterproof suits are available as <strong>optional extras</strong>. Note that a <strong>helmet and gloves are mandatory</strong> on every rental, bring your own or add ours."
+      },
+      {
+        "q": "What happens in case of breakdown?",
+        "a": "Call us, any day, any hour. If the motorcycle can't be repaired quickly, we provide an <strong>equivalent motorcycle</strong>, an alternative solution, or a rental discount if necessary. Your adventure keeps rolling."
+      },
+      {
+        "q": "Can beginners rent a motorcycle?",
+        "a": "Yes, if you're <strong>21 or older</strong> and have held your motorcycle licence for <strong>more than 2 years</strong>. For newer off-road riders we recommend the friendly Suzuki DR200 or Honda CRF250, and we're happy to suggest gentle routes."
+      },
+      {
+        "q": "What payment methods are accepted?",
+        "a": "The 20% reservation deposit and the balance can be paid by <strong>credit card or cash</strong>. The security deposit (<strong>€1000-€2000</strong> depending on the motorcycle) is <strong>authorized on your card but never charged</strong> unless there is damage."
+      }
+    ],
+    "faqTextPlain": [
+      "Choose your motorcycle and dates on our website and send the booking form. Our team contacts you shortly to confirm availability. A 20% deposit secures your reservation and the balance is paid at pickup. No online payment is required.",
+      "Yes, from the Sahara to the Atlas and both coasts. We simply ask that you tell us your planned route so we can advise on road conditions and set up assistance coverage.",
+      "A motorcycle driving licence issued more than 2 years ago, your passport or national ID, a hotel address or proof of accommodation, and a credit card under the renter's name. Minimum age is 21.",
+      "All motorcycles include third-party liability insurance. Personal travel insurance covering motorcycle riding is mandatory and proof may be requested before rental.",
+      "Yes. Delivery or pickup in Marrakech and Casablanca costs €50 each; Tangier and Fez cost €100 each. Other locations are quoted on request. Delivery is available Monday to Sunday with 2 days notice.",
+      "Helmets, gloves, jackets and waterproof suits are available as optional extras. Helmet and gloves are mandatory for every rental.",
+      "Call us any time. If the motorcycle cannot be repaired quickly we provide an equivalent motorcycle, an alternative solution, or a rental discount if necessary. You are never left stranded.",
+      "Yes, as long as you are 21 or older and have held a motorcycle licence for more than 2 years. We have friendly lightweight bikes like the Suzuki DR200 and Honda CRF250 that are ideal for building confidence.",
+      "The 20% reservation deposit and balance can be paid by credit card or cash. The security deposit (€1000-€2000 depending on the motorcycle) is authorized on your credit card but never charged."
+    ],
+    "readFinePrint": "Read the fine print, it's short and fair.",
+    "fullConditions": "Full Rental Conditions",
+    "cta": {
+      "titleStart": "Ready When ",
+      "titleEmphasis": "You Are",
+      "lead": "Questions answered? The Atlas is calling.",
+      "askWhatsapp": "Ask on WhatsApp"
+    }
+  },
+  "conditionsPage": {
+    "heroTitleStart": "Rental ",
+    "heroTitleEmphasis": "Conditions",
+    "heroLead": "Clear, fair, and rider-friendly. Here is everything you need to know before you book.",
+    "nav": {
+      "minimumRental": "Minimum Rental",
+      "age": "Age",
+      "license": "Driving License",
+      "deposit": "Security Deposit",
+      "reservation": "Reservation",
+      "documents": "Required Documents",
+      "delivery": "Pickup & Delivery",
+      "equipment": "Safety Equipment",
+      "insurance": "Insurance",
+      "breakdown": "Technical Problems",
+      "terms": "General Terms"
+    },
+    "sections": {
+      "minimumRental": {
+        "title": "Minimum Rental",
+        "body": "All rentals have a minimum duration of <strong>2 days</strong>. Morocco deserves at least that, and so does the bike."
+      },
+      "age": {
+        "title": "Age",
+        "body": "The minimum age to rent any motorcycle is <strong>21 years</strong>."
+      },
+      "license": {
+        "title": "Driving License",
+        "body": "You must hold a <strong>motorcycle license issued more than 2 years ago</strong>. An International Driving Permit is recommended alongside your national license."
+      },
+      "deposit": {
+        "title": "Security Deposit",
+        "body": "A security deposit of <strong>€1000-€2000</strong> applies, depending on the motorcycle. The deposit is <strong>authorized but not charged</strong>, the hold is simply released after the bike is returned in good condition.",
+        "list": [
+          "Charged to a <strong>credit card in the renter's name</strong> (pre-authorization), never cash"
+        ]
+      },
+      "reservation": {
+        "title": "Reservation",
+        "body": "A <strong>20% deposit</strong> confirms your reservation. The <strong>remaining balance is paid at pickup</strong>, by credit card or cash. No full online payment, ever."
+      },
+      "documents": {
+        "title": "Required Documents",
+        "list": [
+          "Driving License (motorcycle category)",
+          "Passport or National ID",
+          "Hotel address or proof of accommodation",
+          "Credit card under the renter's name"
+        ]
+      },
+      "delivery": {
+        "title": "Pickup & Delivery",
+        "tableHeaders": {
+          "location": "Location",
+          "delivery": "Delivery",
+          "pickup": "Pickup"
+        },
+        "rows": [
+          {
+            "location": "Marrakech / Casablanca",
+            "delivery": "€50",
+            "pickup": "€50"
+          },
+          {
+            "location": "Tangier / Fez",
+            "delivery": "€100",
+            "pickup": "€100"
+          }
+        ],
+        "otherLocations": "Other locations",
+        "otherPrice": "Price discussed depending on destination",
+        "list": [
+          "Pickup and return <strong>only by appointment</strong>",
+          "Available <strong>Monday-Sunday</strong> with <strong>2-day notice</strong>"
+        ]
+      },
+      "equipment": {
+        "title": "Safety Equipment",
+        "intro": "Available as optional extras:",
+        "list": [
+          "Helmet <strong>(mandatory)</strong>",
+          "Gloves <strong>(mandatory)</strong>",
+          "Jacket",
+          "Waterproof suit"
+        ],
+        "note": "You are welcome to bring your own gear, helmet and gloves must be worn at all times."
+      },
+      "insurance": {
+        "title": "Insurance",
+        "list": [
+          "All motorcycles include <strong>third-party liability insurance</strong>",
+          "<strong>Travel insurance covering motorcycle riding is mandatory</strong>",
+          "Proof of insurance may be requested before rental"
+        ]
+      },
+      "breakdown": {
+        "title": "Technical Problems",
+        "intro": "Our machines are maintained meticulously, but adventure is adventure. If a technical problem occurs:",
+        "list": [
+          "Contact us immediately, we operate <strong>24/7 assistance</strong>",
+          "We first attempt a <strong>quick local repair</strong> through our network of trusted mechanics",
+          "If repair is impossible, we provide an <strong>equivalent motorcycle</strong>",
+          "If no equivalent is available, we arrange an <strong>alternative solution</strong>",
+          "Where appropriate, a <strong>rental discount</strong> is applied for lost riding time"
+        ]
+      },
+      "terms": {
+        "title": "General Terms",
+        "list": [
+          "<strong>Renter responsibility</strong>, the renter is responsible for the motorcycle from pickup to return, and must ride respecting Moroccan traffic law.",
+          "<strong>Damages</strong>, damage beyond normal wear is assessed at return and deducted from the security deposit up to its limit.",
+          "<strong>Traffic fines</strong>, any fines or penalties incurred during the rental period are the renter's responsibility.",
+          "<strong>Illegal use prohibited</strong>, competition, paid passenger transport, subletting, or any illegal activity voids the rental agreement immediately.",
+          "<strong>Return conditions</strong>, return the motorcycle at the agreed time and place, with the same fuel level, in the same condition as delivered. Late or remote returns must be agreed in advance."
+        ]
+      }
+    },
+    "cta": {
+      "titleStart": "Fair Terms. ",
+      "titleEmphasis": "Epic Rides.",
+      "lead": "Any question about the conditions? We answer fast.",
+      "choose": "Choose Your Bike",
+      "ask": "Ask a Question"
+    }
+  },
+  "contactPage": {
+    "heroTitleStart": "Let's Plan Your ",
+    "heroTitleEmphasis": "Ride",
+    "heroLead": "Call, WhatsApp or send a message, we answer fast, seven days a week.",
+    "reach": {
+      "eyebrow": "Reach Us",
+      "title": "Direct lines to the garage"
+    },
+    "tiles": {
+      "phone": "Phone",
+      "whatsapp": "WhatsApp",
+      "whatsappValue": "Fastest reply, usually minutes",
+      "bases": "Bases",
+      "basesValue": "Marrakech & Casablanca",
+      "basesValue2": "Delivery across Morocco",
+      "hours": "Hours",
+      "hoursValue": "Monday-Sunday, 9:00-19:00",
+      "hoursValue2": "Pickup by appointment"
+    },
+    "follow": "Follow the adventure",
+    "formTitle": "Send us a message",
+    "mapCaption": "Exact pickup point shared after booking confirmation."
+  },
+  "bikes": {
+    "bmw-gs1200-adventure": {
+      "category": "Adventure Flagship",
+      "tagline": "The legend of world travel. Cross the Atlas without breaking a sweat.",
+      "engine": "1170 cc",
+      "power": "125 hp",
+      "terrain": "Long distance · Desert pistes · Mountain passes",
+      "description": "The GS 1200 Adventure is the benchmark of adventure touring. With its huge 30-litre tank, electronic suspension and effortless boxer torque, it devours Moroccan highways and desert pistes alike. The perfect machine for riders who want to cross the country in comfort and style.",
+      "features": [
+        "30 L long-range tank",
+        "Aluminium panniers available",
+        "Cruise control",
+        "Heated grips",
+        "Riding modes & ABS Pro",
+        "Crash bars fitted"
+      ]
+    },
+    "yamaha-tenere-700-world-raid": {
+      "category": "Rally Raid",
+      "tagline": "Rally DNA with twin tanks, born for the Sahara.",
+      "engine": "689 cc",
+      "power": "73 hp",
+      "terrain": "Sahara crossings · Rally pistes · Technical off-road",
+      "description": "The World Raid takes the beloved Ténéré 700 and adds twin 23-litre tanks, longer-travel suspension and a rally cockpit. It is the closest you can get to a Dakar machine with a licence plate, ideal for deep desert expeditions.",
+      "features": [
+        "Twin-tank 500 km range",
+        "KYB long-travel suspension",
+        "Rally-style cockpit",
+        "3-mode ABS",
+        "Rugged skid plate",
+        "Off-road tyres"
+      ]
+    },
+    "yamaha-tenere-700": {
+      "category": "Adventure",
+      "tagline": "The modern icon of African adventure riding.",
+      "engine": "689 cc",
+      "power": "73 hp",
+      "terrain": "Mixed touring · Gravel · Mountain trails",
+      "description": "Light, torquey and nearly indestructible, the Ténéré 700 is the go-to adventure bike for Morocco. Agile enough for Atlas switchbacks, stable enough for long desert stretches, a true do-it-all machine.",
+      "features": [
+        "Class-leading agility",
+        "Rally-inspired fairing",
+        "Switchable ABS",
+        "LED rally lights",
+        "Luggage rack fitted",
+        "Crash protection"
+      ]
+    },
+    "bmw-f800gs-adventure": {
+      "category": "Adventure",
+      "tagline": "Long-range comfort with genuine off-road ability.",
+      "engine": "798 cc",
+      "power": "85 hp",
+      "terrain": "Long distance · Gravel roads · Dunes edges",
+      "description": "The F800GS Adventure blends BMW touring comfort with a chassis that genuinely loves dirt. Its 24-litre tank and relaxed ergonomics make it a favourite for week-long loops through the South of Morocco.",
+      "features": [
+        "24 L adventure tank",
+        "Comfort touring seat",
+        "Heated grips",
+        "Pannier mounts",
+        "Switchable ABS",
+        "Tall windscreen"
+      ]
+    },
+    "honda-transalp-700": {
+      "category": "Adventure Touring",
+      "tagline": "Smooth, reliable, ready for every road in Morocco.",
+      "engine": "680 cc",
+      "power": "60 hp",
+      "terrain": "Road touring · Coastal routes · Light gravel",
+      "description": "A legend of dependable travel, the Transalp is silky-smooth on tarmac and confident on gravel. Its lower seat and friendly power delivery make it a superb choice for relaxed touring along the coasts and through the valleys.",
+      "features": [
+        "Accessible seat height",
+        "Smooth V-twin power",
+        "Excellent wind protection",
+        "Luggage rack",
+        "ABS brakes",
+        "All-day comfort"
+      ]
+    },
+    "yamaha-xtz660-tenere": {
+      "category": "Classic Adventure",
+      "tagline": "The original desert racer spirit, built like a tank.",
+      "engine": "660 cc",
+      "power": "48 hp",
+      "terrain": "Desert pistes · Long range · Mixed terrain",
+      "description": "Direct descendant of the Dakar-winning Ténérés, the XTZ660 carries a huge 23-litre tank and a bulletproof single-cylinder engine. Simple, honest and enormously capable, pure adventure without electronics.",
+      "features": [
+        "23 L range tank",
+        "Bulletproof single",
+        "Tall rally screen",
+        "Steel luggage rack",
+        "Simple & reliable",
+        "Great on pistes"
+      ]
+    },
+    "yamaha-xt660r": {
+      "category": "Dual-Sport",
+      "tagline": "Torquey single-cylinder fun on and off the road.",
+      "engine": "660 cc",
+      "power": "48 hp",
+      "terrain": "Trails · Mountain roads · Village pistes",
+      "description": "The XT660R is a big trail bike with a playful heart. Light, torquey and easy to handle, it thrives on Atlas mountain trails and narrow village roads where bigger machines feel heavy.",
+      "features": [
+        "Light & flickable",
+        "Strong low-end torque",
+        "Long-travel suspension",
+        "Proven reliability",
+        "Easy maintenance",
+        "Great first big trail"
+      ]
+    },
+    "suzuki-dr650": {
+      "category": "Dual-Sport",
+      "tagline": "The world traveller's favourite workhorse.",
+      "engine": "644 cc",
+      "power": "46 hp",
+      "terrain": "Everything · Desert · Mountains · City",
+      "description": "Simple, light and famously unbreakable, the DR650 has carried travellers around the planet. It handles sand, rocks and tarmac with equal ease, the definitive go-anywhere Morocco bike.",
+      "features": [
+        "Legendary reliability",
+        "Low running weight",
+        "Easy seat height option",
+        "Field-repairable",
+        "Confident in sand",
+        "Ideal for long trips"
+      ]
+    },
+    "suzuki-dr400": {
+      "category": "Dual-Sport",
+      "tagline": "Light enough to play, strong enough to travel.",
+      "engine": "398 cc",
+      "power": "40 hp",
+      "terrain": "Technical trails · Dunes · Single track",
+      "description": "The DR-Z400 is the sweet spot between a trail toy and a travel bike. Superb in technical terrain and dunes, it rewards riders who want to explore the wilder corners of Morocco.",
+      "features": [
+        "145 kg feather weight",
+        "Excellent suspension",
+        "Nimble in dunes",
+        "Strong 400 single",
+        "Tough as nails",
+        "Pure off-road fun"
+      ]
+    },
+    "honda-crf250": {
+      "category": "Lightweight Trail",
+      "tagline": "Effortless off-road confidence for every rider.",
+      "engine": "250 cc",
+      "power": "25 hp",
+      "terrain": "Trails · Beginners off-road · Day trips",
+      "description": "Light, friendly and impossible to dislike, the CRF250 makes off-road riding accessible to everyone. Perfect for day trips into the hills and for riders taking their first steps off the tarmac.",
+      "features": [
+        "Beginner friendly",
+        "Very light handling",
+        "Low seat height",
+        "Fuel-injected",
+        "Honda reliability",
+        "Ideal day-trip bike"
+      ]
+    },
+    "suzuki-dr200": {
+      "category": "Lightweight Trail",
+      "tagline": "The easiest way to start your Moroccan adventure.",
+      "engine": "199 cc",
+      "power": "20 hp",
+      "terrain": "City · Villages · Easy trails",
+      "description": "Small, simple and confidence-inspiring, the DR200 is the gentlest introduction to adventure riding. Low seat, light weight, and a surprisingly long range, explore at your own pace.",
+      "features": [
+        "Lowest seat height",
+        "Only 126 kg",
+        "13 L long-range tank",
+        "Super economical",
+        "Effortless to ride",
+        "Great for two-up towns"
+      ]
+    }
+  }
+}
