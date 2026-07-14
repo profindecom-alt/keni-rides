@@ -6,6 +6,7 @@ import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
 import FabStack from '@/components/FabStack';
 import Preloader from '@/components/Preloader';
+import TapTracker from '@/components/TapTracker';
 import { routing } from '@/i18n/routing';
 import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from '@/lib/seo';
 import '../globals.css';
@@ -133,6 +134,7 @@ export default async function LocaleLayout({
       </head>
       <body>
         <Preloader />
+        <TapTracker />
         <NextIntlClientProvider>
           <a className="skip-link" href="#main">Skip to content</a>
           <Nav />
