@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next';
+import localFont from 'next/font/local';
 import { NextIntlClientProvider, hasLocale } from 'next-intl';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -10,6 +11,31 @@ import TapTracker from '@/components/TapTracker';
 import { routing } from '@/i18n/routing';
 import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from '@/lib/seo';
 import '../globals.css';
+
+// Self-hosted variable fonts (see app/fonts/*.woff2, from @fontsource-variable).
+// Bundled locally so there is no build-time Google fetch and no render-blocking
+// external request. Each exposes a CSS variable that globals.css maps onto
+// --font-display / --font-body / --font-mono.
+const spaceGrotesk = localFont({
+  src: '../fonts/space-grotesk-latin.woff2',
+  weight: '300 700',
+  variable: '--font-space-grotesk',
+  display: 'swap',
+});
+const manrope = localFont({
+  src: '../fonts/manrope-latin.woff2',
+  weight: '200 800',
+  variable: '--font-manrope',
+  display: 'swap',
+});
+const jetbrainsMono = localFont({
+  src: '../fonts/jetbrains-mono-latin.woff2',
+  weight: '100 800',
+  variable: '--font-jetbrains-mono',
+  display: 'swap',
+});
+
+const fontVariables = `${spaceGrotesk.variable} ${manrope.variable} ${jetbrainsMono.variable}`;
 
 const OG_LOCALE: Record<string, string> = { fr: 'fr_FR', en: 'en_US', es: 'es_ES' };
 
@@ -41,6 +67,7 @@ export async function generateMetadata({
     applicationName: SITE_NAME,
     icons: {
       icon: '/logo.webp',
+      shortcut: '/logo.webp',
       apple: '/logo.webp',
     },
     // Site-wide defaults. Individual pages override these with their own
@@ -63,12 +90,8 @@ export async function generateMetadata({
     robots: {
       index: true,
       follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-      },
+      'max-image-preview': 'large',
+      'max-snippet': -1,
     },
   };
 }
@@ -87,10 +110,8 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className={fontVariables}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <script
           type="application/ld+json"
           // eslint-disable-next-line react/no-danger
@@ -119,7 +140,7 @@ export default async function LocaleLayout({
               // Canonical Google Maps listing (CID from the Business Profile).
               hasMap: 'https://www.google.com/maps?cid=13573386500998719410',
               areaServed: { '@type': 'Country', name: 'Morocco' },
-              priceRange: '€60–€150 / day',
+              priceRange: '€60–€160 / day',
               currenciesAccepted: 'EUR',
               sameAs: [
                 // Google Business Profile — links this site to the Maps listing.

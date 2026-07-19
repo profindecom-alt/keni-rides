@@ -44,7 +44,7 @@ export default function Footer() {
               <li><Link href={{ pathname: '/motorcycles/[slug]', params: { slug: 'bmw-gs1200-adventure' } }}>BMW GS 1200 Adventure</Link></li>
               <li><Link href={{ pathname: '/motorcycles/[slug]', params: { slug: 'yamaha-tenere-700-world-raid' } }}>Ténéré 700 World Raid</Link></li>
               <li><Link href={{ pathname: '/motorcycles/[slug]', params: { slug: 'yamaha-tenere-700' } }}>Yamaha Ténéré 700</Link></li>
-              <li><Link href={{ pathname: '/motorcycles/[slug]', params: { slug: 'honda-transalp-700' } }}>Honda Transalp 700</Link></li>
+              <li><Link href={{ pathname: '/motorcycles/[slug]', params: { slug: 'bmw-f800gs-adventure' } }}>BMW F800GS Adventure</Link></li>
               <li><Link href={{ pathname: '/motorcycles/[slug]', params: { slug: 'suzuki-dr650' } }}>Suzuki DR650</Link></li>
             </ul>
           </div>

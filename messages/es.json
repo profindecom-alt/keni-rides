@@ -7,7 +7,7 @@
     },
     "motorcycles": {
       "title": "La Flota, Alquiler de motos de aventura",
-      "description": "11 motos de aventura listas para expedición en alquiler en Marruecos: BMW GS 1200, Yamaha Ténéré 700, Honda Transalp, Suzuki DR650 y más. Desde 60 €/día."
+      "description": "Alquila motos de aventura listas para expedición en Marruecos: BMW GS 1200, Yamaha Ténéré 700, BMW F800GS, Suzuki DR650 y más. Desde 60 €/día."
     },
     "gallery": {
       "title": "Galería, Marruecos en moto",
@@ -106,8 +106,8 @@
       "eyebrow": "La Flota",
       "titleStart": "Máquinas diseñadas para la ",
       "titleEmphasis": "aventura",
-      "lead": "Once motos listas para la expedición, mantenidas al más alto nivel. Desde la poderosa BMW GS hasta los ágiles monocilíndricos del desierto, hay una moto perfecta para cada rider.",
-      "seeAll": "Ver las 11 motos"
+      "lead": "Motos listas para la expedición, mantenidas al más alto nivel. Desde la poderosa BMW GS hasta los ágiles monocilíndricos del desierto, hay una moto perfecta para cada rider.",
+      "seeAll": "Ver toda la flota"
     },
     "why": {
       "eyebrow": "Por qué Keni Rides",
@@ -258,7 +258,7 @@
       "loc": "Países Bajos · Raid del Desierto"
     },
     {
-      "quote": "Transalp entregada en Fez, devuelta en Marrakech. Esa flexibilidad hizo posible nuestra ruta de dos semanas. Totalmente recomendable.",
+      "quote": "Ténéré 700 entregada en Fez, devuelta en Marrakech. Esa flexibilidad hizo posible nuestra ruta de dos semanas. Totalmente recomendable.",
       "initials": "PT",
       "name": "Paolo T.",
       "loc": "Italia · Ciudades Imperiales"
@@ -267,7 +267,7 @@
   "motorcyclesPage": {
     "heroTitleStart": "La ",
     "heroTitleEmphasis": "Flota",
-    "heroLead": "Once máquinas listas para la expedición, desde la poderosa BMW GS 1200 Adventure hasta los ligeros monocilíndricos del desierto. Todas las motos totalmente revisadas, aseguradas y listas para las carreteras y pistas marroquíes.",
+    "heroLead": "Máquinas listas para la expedición, desde la poderosa BMW GS 1200 Adventure hasta los ligeros monocilíndricos del desierto. Todas las motos totalmente revisadas, aseguradas y listas para las carreteras y pistas marroquíes.",
     "goodToKnow": {
       "eyebrow": "Bueno saberlo",
       "title": "Lo esencial del alquiler",
@@ -646,7 +646,7 @@
       },
       {
         "q": "¿Pueden alquilar los principiantes?",
-        "a": "Sí, si tienes <strong>21 años o más</strong> y llevas tu carnet de moto <strong>más de 2 años</strong>. Para riders con menos experiencia fuera del asfalto recomendamos la agradable Suzuki DR200 o la Honda CRF250, y estaremos encantados de sugerirte rutas suaves."
+        "a": "Sí, si tienes <strong>21 años o más</strong> y llevas tu carnet de moto <strong>más de 2 años</strong>. Para riders con menos experiencia fuera del asfalto recomendamos la agradable Suzuki DR250 o la Honda CRF250, y estaremos encantados de sugerirte rutas suaves."
       },
       {
         "q": "¿Qué métodos de pago se aceptan?",
@@ -661,7 +661,7 @@
       "Sí. La entrega o recogida en Marrakech y Casablanca cuesta 50 € cada una; en Tánger y Fez, 100 € cada una. Otros destinos se presupuestan bajo petición. La entrega está disponible de lunes a domingo con 2 días de aviso.",
       "Cascos, guantes, chaquetas y monos impermeables están disponibles como extras opcionales. El casco y los guantes son obligatorios en cada alquiler.",
       "Llámanos en cualquier momento. Si la moto no se puede reparar rápidamente, te proporcionamos una moto equivalente, una solución alternativa, o un descuento en el alquiler si es necesario. Nunca te dejamos tirado.",
-      "Sí, siempre que tengas 21 años o más y lleves más de 2 años con el carnet de moto. Tenemos motos ligeras y agradables como la Suzuki DR200 y la Honda CRF250, ideales para coger confianza.",
+      "Sí, siempre que tengas 21 años o más y lleves más de 2 años con el carnet de moto. Tenemos motos ligeras y agradables como la Suzuki DR250 y la Honda CRF250, ideales para coger confianza.",
       "El depósito de reserva del 20% y el resto se pueden pagar con tarjeta de crédito o efectivo. La fianza de seguridad (1000 € a 2000 € según la moto) se autoriza en tu tarjeta pero nunca se cobra."
     ],
     "readFinePrint": "Lee la letra pequeña, es breve y justa.",
@@ -886,54 +886,6 @@
         "Parabrisas alto"
       ]
     },
-    "honda-transalp-700": {
-      "category": "Turismo de aventura",
-      "tagline": "Suave, fiable, lista para cualquier carretera de Marruecos.",
-      "engine": "680 cc",
-      "power": "60 CV",
-      "terrain": "Turismo en carretera · Rutas costeras · Grava ligera",
-      "description": "Leyenda del viaje fiable, la Transalp es suave como la seda en el asfalto y segura en la grava. Su asiento más bajo y su entrega de potencia amigable la convierten en una excelente opción para un turismo relajado por las costas y a través de los valles.",
-      "features": [
-        "Altura de asiento accesible",
-        "Potencia en V suave",
-        "Excelente protección al viento",
-        "Portaequipajes",
-        "Frenos ABS",
-        "Comodidad todo el día"
-      ]
-    },
-    "yamaha-xtz660-tenere": {
-      "category": "Aventura clásica",
-      "tagline": "El espíritu original de las carreras del desierto, construida como un tanque.",
-      "engine": "660 cc",
-      "power": "48 CV",
-      "terrain": "Pistas del desierto · Largo alcance · Terreno mixto",
-      "description": "Descendiente directa de las Ténéré ganadoras del Dakar, la XTZ660 lleva un enorme depósito de 23 litros y un monocilíndrico indestructible. Simple, honesta y enormemente capaz, pura aventura sin electrónica.",
-      "features": [
-        "Depósito de largo alcance de 23 L",
-        "Monocilíndrico indestructible",
-        "Cúpula de rally alta",
-        "Portaequipajes de acero",
-        "Simple y fiable",
-        "Excelente en pistas"
-      ]
-    },
-    "yamaha-xt660r": {
-      "category": "Dual-Sport",
-      "tagline": "Diversión monocilíndrica con mucho par, en carretera y fuera de ella.",
-      "engine": "660 cc",
-      "power": "48 CV",
-      "terrain": "Senderos · Carreteras de montaña · Pistas de pueblo",
-      "description": "La XT660R es una gran trail con un espíritu juguetón. Ligera, con mucho par y fácil de manejar, disfruta en los senderos de montaña del Atlas y en las estrechas carreteras de pueblo donde las máquinas más grandes se sienten pesadas.",
-      "features": [
-        "Ligera y manejable",
-        "Fuerte par a bajas revoluciones",
-        "Suspensión de largo recorrido",
-        "Fiabilidad probada",
-        "Mantenimiento sencillo",
-        "Ideal para iniciarse en trail"
-      ]
-    },
     "suzuki-dr650": {
       "category": "Dual-Sport",
       "tagline": "La caballo de batalla favorito de los viajeros del mundo.",
@@ -988,7 +940,7 @@
       "engine": "199 cc",
       "power": "20 CV",
       "terrain": "Ciudad · Pueblos · Senderos fáciles",
-      "description": "Pequeña, simple e inspiradora de confianza, la DR200 es la introducción más suave a la conducción de aventura. Asiento bajo, poco peso y una autonomía sorprendente, explora a tu propio ritmo.",
+      "description": "Pequeña, simple e inspiradora de confianza, la DR250 es la introducción más suave a la conducción de aventura. Asiento bajo, poco peso y una autonomía sorprendente, explora a tu propio ritmo.",
       "features": [
         "La altura de asiento más baja",
         "Solo 126 kg",

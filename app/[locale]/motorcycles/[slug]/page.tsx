@@ -41,6 +41,9 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: `${bike.name} ${t('titleSuffix', { price: bike.price })}`,
     description: bike.tagline,
     image: getBikeImage(bike.slug),
+    // Bike names can be long (e.g. "Yamaha Ténéré 700 World Raid"); skip the
+    // "| Keni Rides" template so the SERP title stays under the truncation point.
+    absoluteTitle: true,
   });
 }
 
@@ -72,12 +75,22 @@ export default async function MotorcyclePage({ params }: PageProps) {
     },
   };
 
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: t('nav.home'), item: absoluteUrl(locale, '/') },
+      { '@type': 'ListItem', position: 2, name: t('motorcycleDetail.breadcrumbMotorcycles'), item: absoluteUrl(locale, '/motorcycles') },
+      { '@type': 'ListItem', position: 3, name: bike.name, item: bikeUrl },
+    ],
+  };
+
   return (
     <>
       <script
         type="application/ld+json"
         // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify([productJsonLd, breadcrumbJsonLd]) }}
       />
       <MotorcycleDetailContent bike={bike} similar={similar} />
     </>

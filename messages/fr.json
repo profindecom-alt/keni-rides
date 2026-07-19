@@ -7,7 +7,7 @@
     },
     "motorcycles": {
       "title": "La Flotte, Location de motos d'aventure",
-      "description": "11 motos d'aventure prêtes à l'expédition à louer au Maroc : BMW GS 1200, Yamaha Ténéré 700, Honda Transalp, Suzuki DR650 et plus. À partir de 60 €/jour."
+      "description": "Louez des motos d'aventure prêtes à l'expédition au Maroc : BMW GS 1200, Yamaha Ténéré 700, BMW F800GS, Suzuki DR650 et plus. À partir de 60 €/jour."
     },
     "gallery": {
       "title": "Galerie, Le Maroc à moto",
@@ -106,8 +106,8 @@
       "eyebrow": "La Flotte",
       "titleStart": "Des machines conçues pour l'",
       "titleEmphasis": "aventure",
-      "lead": "Onze motos prêtes à l'expédition, entretenues selon les plus hauts standards. De la puissante BMW GS aux monocylindres agiles du désert, il y a la moto parfaite pour chaque rider.",
-      "seeAll": "Voir les 11 motos"
+      "lead": "Des motos prêtes à l'expédition, entretenues selon les plus hauts standards. De la puissante BMW GS aux monocylindres agiles du désert, il y a la moto parfaite pour chaque rider.",
+      "seeAll": "Voir toute la flotte"
     },
     "why": {
       "eyebrow": "Pourquoi Keni Rides",
@@ -258,7 +258,7 @@
       "loc": "Pays-Bas · Raid Désert"
     },
     {
-      "quote": "Transalp livrée à Fès, rendue à Marrakech. Cette flexibilité a rendu notre boucle de deux semaines possible. Je recommande vivement.",
+      "quote": "Ténéré 700 livrée à Fès, rendue à Marrakech. Cette flexibilité a rendu notre boucle de deux semaines possible. Je recommande vivement.",
       "initials": "PT",
       "name": "Paolo T.",
       "loc": "Italie · Villes Impériales"
@@ -267,7 +267,7 @@
   "motorcyclesPage": {
     "heroTitleStart": "La ",
     "heroTitleEmphasis": "Flotte",
-    "heroLead": "Onze machines prêtes à l'expédition, de la puissante BMW GS 1200 Adventure aux monocylindres légers du désert. Chaque moto entièrement révisée, assurée, et prête pour les routes et pistes marocaines.",
+    "heroLead": "Des machines prêtes à l'expédition, de la puissante BMW GS 1200 Adventure aux monocylindres légers du désert. Chaque moto entièrement révisée, assurée, et prête pour les routes et pistes marocaines.",
     "goodToKnow": {
       "eyebrow": "Bon à savoir",
       "title": "L'essentiel de la location",
@@ -646,7 +646,7 @@
       },
       {
         "q": "Les débutants peuvent-ils louer une moto ?",
-        "a": "Oui, si vous avez <strong>21 ans ou plus</strong> et détenez votre permis moto depuis <strong>plus de 2 ans</strong>. Pour les riders moins expérimentés en tout-terrain, nous recommandons la sympathique Suzuki DR200 ou la Honda CRF250, et nous sommes ravis de vous suggérer des itinéraires en douceur."
+        "a": "Oui, si vous avez <strong>21 ans ou plus</strong> et détenez votre permis moto depuis <strong>plus de 2 ans</strong>. Pour les riders moins expérimentés en tout-terrain, nous recommandons la sympathique Suzuki DR250 ou la Honda CRF250, et nous sommes ravis de vous suggérer des itinéraires en douceur."
       },
       {
         "q": "Quels moyens de paiement sont acceptés ?",
@@ -661,7 +661,7 @@
       "Oui. La livraison ou la reprise à Marrakech et Casablanca coûte 50 € chacune ; à Tanger et Fès, 100 € chacune. Les autres destinations sont chiffrées sur demande. La livraison est disponible du lundi au dimanche avec 2 jours de préavis.",
       "Casques, gants, blousons et combinaisons imperméables sont disponibles en option. Le casque et les gants sont obligatoires pour chaque location.",
       "Appelez-nous à tout moment. Si la moto ne peut pas être réparée rapidement, nous fournissons une moto équivalente, une solution alternative, ou une remise sur la location si nécessaire. Vous n'êtes jamais laissé en rade.",
-      "Oui, à condition d'avoir 21 ans ou plus et de détenir un permis moto depuis plus de 2 ans. Nous avons des motos légères et sympathiques comme la Suzuki DR200 et la Honda CRF250, idéales pour prendre confiance.",
+      "Oui, à condition d'avoir 21 ans ou plus et de détenir un permis moto depuis plus de 2 ans. Nous avons des motos légères et sympathiques comme la Suzuki DR250 et la Honda CRF250, idéales pour prendre confiance.",
       "L'acompte de réservation de 20 % et le solde peuvent être réglés par carte bancaire ou en espèces. La caution de sécurité (1000 € à 2000 € selon la moto) est autorisée sur votre carte mais jamais débitée."
     ],
     "readFinePrint": "Lisez les petites lignes, elles sont courtes et justes.",
@@ -886,54 +886,6 @@
         "Grand pare-brise"
       ]
     },
-    "honda-transalp-700": {
-      "category": "Aventure Routière",
-      "tagline": "Douce, fiable, prête pour toutes les routes du Maroc.",
-      "engine": "680 cm³",
-      "power": "60 ch",
-      "terrain": "Voyage routier · Routes côtières · Piste légère",
-      "description": "Légende de la fiabilité en voyage, la Transalp est soyeuse sur route et confiante sur piste. Sa selle plus basse et sa puissance accessible en font un excellent choix pour un tourisme détendu le long des côtes et à travers les vallées.",
-      "features": [
-        "Hauteur de selle accessible",
-        "Puissance en V douce",
-        "Excellente protection au vent",
-        "Porte-bagages",
-        "Freins ABS",
-        "Confort toute la journée"
-      ]
-    },
-    "yamaha-xtz660-tenere": {
-      "category": "Aventure Classique",
-      "tagline": "L'esprit originel du raid désert, construite comme un char.",
-      "engine": "660 cm³",
-      "power": "48 ch",
-      "terrain": "Pistes du désert · Longue autonomie · Terrain mixte",
-      "description": "Descendante directe des Ténéré victorieuses au Dakar, la XTZ660 embarque un immense réservoir de 23 litres et un monocylindre increvable. Simple, honnête et redoutablement capable, l'aventure pure, sans électronique.",
-      "features": [
-        "Réservoir grande autonomie de 23 L",
-        "Monocylindre increvable",
-        "Haute bulle rallye",
-        "Porte-bagages en acier",
-        "Simple et fiable",
-        "Excellente sur piste"
-      ]
-    },
-    "yamaha-xt660r": {
-      "category": "Dual-Sport",
-      "tagline": "Le plaisir du monocylindre plein de couple, sur route comme hors piste.",
-      "engine": "660 cm³",
-      "power": "48 ch",
-      "terrain": "Sentiers · Routes de montagne · Pistes de village",
-      "description": "La XT660R est une grande trail au tempérament joueur. Légère, pleine de couple et facile à manier, elle s'épanouit sur les sentiers de l'Atlas et les routes étroites de village où les machines plus lourdes se sentent encombrantes.",
-      "features": [
-        "Légère et maniable",
-        "Fort couple à bas régime",
-        "Suspension longue course",
-        "Fiabilité éprouvée",
-        "Entretien facile",
-        "Idéale pour débuter en trail"
-      ]
-    },
     "suzuki-dr650": {
       "category": "Dual-Sport",
       "tagline": "La préférée des grands voyageurs du monde entier.",
@@ -988,7 +940,7 @@
       "engine": "199 cm³",
       "power": "20 ch",
       "terrain": "Ville · Villages · Sentiers faciles",
-      "description": "Petite, simple et rassurante, la DR200 est l'introduction la plus douce à la conduite d'aventure. Selle basse, poids léger, et une autonomie surprenante, explorez à votre rythme.",
+      "description": "Petite, simple et rassurante, la DR250 est l'introduction la plus douce à la conduite d'aventure. Selle basse, poids léger, et une autonomie surprenante, explorez à votre rythme.",
       "features": [
         "Selle la plus basse",
         "Seulement 126 kg",

@@ -7,7 +7,7 @@
     },
     "motorcycles": {
       "title": "The Fleet, Adventure Motorcycle Rental",
-      "description": "11 expedition-ready adventure motorcycles for rent in Morocco: BMW GS 1200, Yamaha Ténéré 700, Honda Transalp, Suzuki DR650 and more. From €60 per day."
+      "description": "Rent expedition-ready adventure motorcycles in Morocco: BMW GS 1200, Yamaha Ténéré 700, BMW F800GS, Suzuki DR650 and more. From €60 per day."
     },
     "gallery": {
       "title": "Gallery, Morocco by Motorcycle",
@@ -106,8 +106,8 @@
       "eyebrow": "The Fleet",
       "titleStart": "Machines Built for ",
       "titleEmphasis": "Adventure",
-      "lead": "Eleven expedition-ready motorcycles, maintained to the highest standard. From the mighty BMW GS to nimble desert singles, there is a perfect bike for every rider.",
-      "seeAll": "See All 11 Motorcycles"
+      "lead": "Expedition-ready motorcycles, maintained to the highest standard. From the mighty BMW GS to nimble desert singles, there is a perfect bike for every rider.",
+      "seeAll": "See the Full Fleet"
     },
     "why": {
       "eyebrow": "Why Keni Rides",
@@ -258,7 +258,7 @@
       "loc": "Netherlands · Desert Raid"
     },
     {
-      "quote": "Transalp delivered to Fez, returned in Marrakech. The flexibility made our two-week loop possible. Cannot recommend enough.",
+      "quote": "Ténéré 700 delivered to Fez, returned in Marrakech. The flexibility made our two-week loop possible. Cannot recommend enough.",
       "initials": "PT",
       "name": "Paolo T.",
       "loc": "Italy · Imperial Cities"
@@ -267,7 +267,7 @@
   "motorcyclesPage": {
     "heroTitleStart": "The ",
     "heroTitleEmphasis": "Fleet",
-    "heroLead": "Eleven expedition-ready machines, from the mighty BMW GS 1200 Adventure to featherweight desert singles. Every bike fully serviced, insured, and ready for Moroccan roads and pistes.",
+    "heroLead": "Expedition-ready machines, from the mighty BMW GS 1200 Adventure to featherweight desert singles. Every bike fully serviced, insured, and ready for Moroccan roads and pistes.",
     "goodToKnow": {
       "eyebrow": "Good to Know",
       "title": "Rental Essentials",
@@ -646,7 +646,7 @@
       },
       {
         "q": "Can beginners rent a motorcycle?",
-        "a": "Yes, if you're <strong>21 or older</strong> and have held your motorcycle licence for <strong>more than 2 years</strong>. For newer off-road riders we recommend the friendly Suzuki DR200 or Honda CRF250, and we're happy to suggest gentle routes."
+        "a": "Yes, if you're <strong>21 or older</strong> and have held your motorcycle licence for <strong>more than 2 years</strong>. For newer off-road riders we recommend the friendly Suzuki DR250 or Honda CRF250, and we're happy to suggest gentle routes."
       },
       {
         "q": "What payment methods are accepted?",
@@ -661,7 +661,7 @@
       "Yes. Delivery or pickup in Marrakech and Casablanca costs €50 each; Tangier and Fez cost €100 each. Other locations are quoted on request. Delivery is available Monday to Sunday with 2 days notice.",
       "Helmets, gloves, jackets and waterproof suits are available as optional extras. Helmet and gloves are mandatory for every rental.",
       "Call us any time. If the motorcycle cannot be repaired quickly we provide an equivalent motorcycle, an alternative solution, or a rental discount if necessary. You are never left stranded.",
-      "Yes, as long as you are 21 or older and have held a motorcycle licence for more than 2 years. We have friendly lightweight bikes like the Suzuki DR200 and Honda CRF250 that are ideal for building confidence.",
+      "Yes, as long as you are 21 or older and have held a motorcycle licence for more than 2 years. We have friendly lightweight bikes like the Suzuki DR250 and Honda CRF250 that are ideal for building confidence.",
       "The 20% reservation deposit and balance can be paid by credit card or cash. The security deposit (€1000-€2000 depending on the motorcycle) is authorized on your credit card but never charged."
     ],
     "readFinePrint": "Read the fine print, it's short and fair.",
@@ -886,54 +886,6 @@
         "Tall windscreen"
       ]
     },
-    "honda-transalp-700": {
-      "category": "Adventure Touring",
-      "tagline": "Smooth, reliable, ready for every road in Morocco.",
-      "engine": "680 cc",
-      "power": "60 hp",
-      "terrain": "Road touring · Coastal routes · Light gravel",
-      "description": "A legend of dependable travel, the Transalp is silky-smooth on tarmac and confident on gravel. Its lower seat and friendly power delivery make it a superb choice for relaxed touring along the coasts and through the valleys.",
-      "features": [
-        "Accessible seat height",
-        "Smooth V-twin power",
-        "Excellent wind protection",
-        "Luggage rack",
-        "ABS brakes",
-        "All-day comfort"
-      ]
-    },
-    "yamaha-xtz660-tenere": {
-      "category": "Classic Adventure",
-      "tagline": "The original desert racer spirit, built like a tank.",
-      "engine": "660 cc",
-      "power": "48 hp",
-      "terrain": "Desert pistes · Long range · Mixed terrain",
-      "description": "Direct descendant of the Dakar-winning Ténérés, the XTZ660 carries a huge 23-litre tank and a bulletproof single-cylinder engine. Simple, honest and enormously capable, pure adventure without electronics.",
-      "features": [
-        "23 L range tank",
-        "Bulletproof single",
-        "Tall rally screen",
-        "Steel luggage rack",
-        "Simple & reliable",
-        "Great on pistes"
-      ]
-    },
-    "yamaha-xt660r": {
-      "category": "Dual-Sport",
-      "tagline": "Torquey single-cylinder fun on and off the road.",
-      "engine": "660 cc",
-      "power": "48 hp",
-      "terrain": "Trails · Mountain roads · Village pistes",
-      "description": "The XT660R is a big trail bike with a playful heart. Light, torquey and easy to handle, it thrives on Atlas mountain trails and narrow village roads where bigger machines feel heavy.",
-      "features": [
-        "Light & flickable",
-        "Strong low-end torque",
-        "Long-travel suspension",
-        "Proven reliability",
-        "Easy maintenance",
-        "Great first big trail"
-      ]
-    },
     "suzuki-dr650": {
       "category": "Dual-Sport",
       "tagline": "The world traveller's favourite workhorse.",
@@ -988,7 +940,7 @@
       "engine": "199 cc",
       "power": "20 hp",
       "terrain": "City · Villages · Easy trails",
-      "description": "Small, simple and confidence-inspiring, the DR200 is the gentlest introduction to adventure riding. Low seat, light weight, and a surprisingly long range, explore at your own pace.",
+      "description": "Small, simple and confidence-inspiring, the DR250 is the gentlest introduction to adventure riding. Low seat, light weight, and a surprisingly long range, explore at your own pace.",
       "features": [
         "Lowest seat height",
         "Only 126 kg",

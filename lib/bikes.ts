@@ -40,13 +40,10 @@ export const BIKE_BASE: BikeBase[] = [
   { slug: 'yamaha-tenere-700-world-raid', name: 'Yamaha Ténéré 700 World Raid', short: 'Ténéré 700 World Raid', price: 140, priceShort: 150, deposit: 1500, seat: '890 mm', weight: '220 kg', tank: '23 L' },
   { slug: 'yamaha-tenere-700', name: 'Yamaha Ténéré 700', short: 'Ténéré 700', price: 120, priceShort: 140, deposit: 1500, seat: '875 mm', weight: '204 kg', tank: '16 L' },
   { slug: 'bmw-f800gs-adventure', name: 'BMW F800GS Adventure', short: 'BMW F800GS', price: 120, priceShort: 140, deposit: 2000, seat: '890 mm', weight: '229 kg', tank: '24 L' },
-  { slug: 'honda-transalp-700', name: 'Honda Transalp 700', short: 'Transalp 700', price: 85, priceShort: 95, deposit: 1000, seat: '841 mm', weight: '214 kg', tank: '17.5 L' },
-  { slug: 'yamaha-xtz660-tenere', name: 'Yamaha XTZ660 Ténéré', short: 'XTZ660 Ténéré', price: 80, priceShort: 85, deposit: 1500, seat: '895 mm', weight: '206 kg', tank: '23 L' },
-  { slug: 'yamaha-xt660r', name: 'Yamaha XT660R', short: 'XT660R', price: 75, priceShort: 85, deposit: 1000, seat: '865 mm', weight: '181 kg', tank: '15 L' },
-  { slug: 'suzuki-dr650', name: 'Suzuki DR650', short: 'DR650', price: 75, priceShort: 75, deposit: 1000, seat: '885 mm', weight: '166 kg', tank: '13 L' },
-  { slug: 'suzuki-dr400', name: 'Suzuki DR400', short: 'DR400', price: 70, priceShort: 70, deposit: 1000, seat: '935 mm', weight: '145 kg', tank: '10 L' },
-  { slug: 'honda-crf250', name: 'Honda CRF250', short: 'CRF250', price: 70, priceShort: 80, deposit: 1000, seat: '830 mm', weight: '144 kg', tank: '7.8 L' },
-  { slug: 'suzuki-dr200', name: 'Suzuki DR200', short: 'DR200', price: 60, priceShort: 70, deposit: 1000, seat: '810 mm', weight: '126 kg', tank: '13 L' },
+  { slug: 'suzuki-dr650', name: 'Suzuki DR650', short: 'DR650', price: 75, priceShort: 90, deposit: 1000, seat: '885 mm', weight: '166 kg', tank: '13 L' },
+  { slug: 'suzuki-dr400', name: 'Suzuki DR400', short: 'DR400', price: 75, priceShort: 90, deposit: 1000, seat: '935 mm', weight: '145 kg', tank: '10 L' },
+  { slug: 'honda-crf250', name: 'Honda CRF250', short: 'CRF250', price: 65, priceShort: 75, deposit: 1000, seat: '830 mm', weight: '144 kg', tank: '7.8 L' },
+  { slug: 'suzuki-dr200', name: 'Suzuki DR250', short: 'DR250', price: 60, priceShort: 70, deposit: 1000, seat: '810 mm', weight: '126 kg', tank: '13 L' },
 ];
 
 /** Number of days at or above which the long-term (lower) daily rate applies. */
@@ -63,7 +60,6 @@ export const BIKE_SLUGS = BIKE_BASE.map((b) => b.slug);
 // real extension per slug so we point at the actual file instead of guessing.
 const BIKE_IMAGE_EXT: Record<string, string> = {
   'yamaha-tenere-700-world-raid': 'jpg',
-  'yamaha-xtz660-tenere': 'jpg',
 };
 
 export function getBikeImage(slug: string): string {

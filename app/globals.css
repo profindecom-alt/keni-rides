@@ -5,7 +5,9 @@
    CTA band and footer so sections separate clearly.
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+/* Fonts are self-hosted via next/font/google (see app/[locale]/layout.tsx),
+   which injects --font-space-grotesk / --font-manrope / --font-jetbrains-mono.
+   No render-blocking @import or Google Fonts round-trip. */
 
 /* ------------------------------------------------------------
    1. Tokens — light "sahara" base
@@ -42,9 +44,9 @@
   --ghost-border-hover: rgba(46, 35, 22, 0.4);
 
   /* type */
-  --font-display: 'Space Grotesk', system-ui, sans-serif;
-  --font-body: 'Manrope', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --font-display: var(--font-space-grotesk), 'Space Grotesk', system-ui, sans-serif;
+  --font-body: var(--font-manrope), 'Manrope', system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), 'JetBrains Mono', ui-monospace, monospace;
 
   /* rhythm */
   --space-1: 0.5rem;

@@ -18,7 +18,6 @@ const FEATURED_SLUGS = [
   'yamaha-tenere-700-world-raid',
   'yamaha-tenere-700',
   'bmw-f800gs-adventure',
-  'honda-transalp-700',
   'suzuki-dr650',
 ];
 
@@ -109,7 +108,7 @@ function HomeContent() {
               <Link className="btn btn-ghost btn-lg" href="/testimonials">{t('watchStories')}</Link>
             </Reveal>
             <Reveal as="div" className="hero-stats" delay={0.3}>
-              <div className="stat"><strong><Counter value={11} /></strong><span>{t('stats.bikes')}</span></div>
+              <div className="stat"><strong><Counter value={35} suffix="+" /></strong><span>{t('stats.bikes')}</span></div>
               <div className="stat"><strong><Counter value={4} /></strong><span>{t('stats.regions')}</span></div>
               <div className="stat"><strong><Counter value={500} suffix="+" /></strong><span>{t('stats.riders')}</span></div>
               <div className="stat"><strong>24/7</strong><span>{t('stats.support')}</span></div>

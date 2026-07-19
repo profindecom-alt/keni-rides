@@ -63,7 +63,7 @@ export default function Preloader() {
         <img
           className="preloader-logo"
           src="/logo.webp"
-          alt=""
+          alt="Keni Rides"
           width={96}
           height={96}
           decoding="async"
