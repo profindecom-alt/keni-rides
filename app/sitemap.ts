@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
 import { BIKE_SLUGS } from '@/lib/bikes';
+import { CITY_SLUGS } from '@/lib/cities';
 import { absoluteUrl, type Href } from '@/lib/seo';
 
 // Static routes that exist in every locale, with a rough crawl priority.
@@ -44,5 +45,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  return [...staticEntries, ...bikeEntries];
+  const cityEntries: MetadataRoute.Sitemap = CITY_SLUGS.map((city) => {
+    const href: Href = { pathname: '/rentals/[city]', params: { city } };
+    return {
+      url: absoluteUrl(routing.defaultLocale, href),
+      lastModified,
+      changeFrequency: 'monthly',
+      priority: 0.85,
+      alternates: { languages: languagesFor(href) },
+    };
+  });
+
+  return [...staticEntries, ...bikeEntries, ...cityEntries];
 }

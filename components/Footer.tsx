@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import FallbackImg from './FallbackImg';
 import { CONFIG } from '@/lib/config';
+import { CITY_BASE } from '@/lib/cities';
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -26,6 +27,20 @@ export default function Footer() {
                 <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.3 31.3 0 0 0 24 12a31.3 31.3 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg>
               </a>
             </div>
+            <a
+              href={CONFIG.google.profile}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={t('googleRatingAria', { rating: CONFIG.google.rating, count: CONFIG.google.reviewCount })}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '0.55rem', marginTop: '1.4rem', fontSize: '0.9rem', color: 'var(--text-2)', textDecoration: 'none' }}
+            >
+              <span aria-hidden="true" style={{ display: 'inline-flex', gap: 2, color: 'var(--brand)' }}>
+                {[0, 1, 2, 3, 4].map((i) => (
+                  <svg key={i} viewBox="0 0 24 24" fill="currentColor" style={{ width: 15, height: 15 }} aria-hidden="true"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2z"/></svg>
+                ))}
+              </span>
+              <span><strong style={{ color: 'var(--text)' }}>{CONFIG.google.rating}</strong> · {t('googleReviews', { count: CONFIG.google.reviewCount })}</span>
+            </a>
           </div>
           <div>
             <h4>{t('explore')}</h4>
@@ -36,6 +51,11 @@ export default function Footer() {
               <li><Link href="/about">{t('links.about')}</Link></li>
               <li><Link href="/conditions">{t('links.conditions')}</Link></li>
               <li><Link href="/faq">{t('links.faq')}</Link></li>
+              {CITY_BASE.map((c) => (
+                <li key={c.slug}>
+                  <Link href={{ pathname: '/rentals/[city]', params: { city: c.slug } }}>{t('cityLink', { city: c.name })}</Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>

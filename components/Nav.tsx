@@ -8,8 +8,8 @@ import FallbackImg from './FallbackImg';
 
 const LANGUAGE_LABELS: Record<string, string> = { fr: 'FR', en: 'EN', es: 'ES' };
 
-// Static nav destinations (no dynamic [slug] routes here).
-type StaticPathname = Exclude<AppPathname, '/motorcycles/[slug]'>;
+// Static nav destinations (no dynamic [slug]/[city] routes here).
+type StaticPathname = Exclude<AppPathname, '/motorcycles/[slug]' | '/rentals/[city]'>;
 
 export default function Nav() {
   const t = useTranslations('nav');

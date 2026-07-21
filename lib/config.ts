@@ -21,6 +21,15 @@ export const CONFIG = {
   phone: '+212 616 712266',
   phoneHref: 'tel:+212616712266',
   whatsapp: 'https://wa.me/212616712266',
+  // Real Google Business Profile rating (Kénitra listing). Bump these two
+  // numbers as reviews accumulate; they feed both the footer badge and the
+  // LocalBusiness AggregateRating schema so the markup always matches what
+  // visitors see on the page.
+  google: {
+    rating: 4.8,
+    reviewCount: 48,
+    profile: 'https://www.google.com/maps?cid=13573386500998719410',
+  },
   social: {
     facebook: 'https://www.facebook.com/share/ZKKKbiGrdkfL6RLS/?mibextid=LQQJ4d',
     instagram: 'https://www.instagram.com/keni_rides/',

@@ -142,6 +142,11 @@ export default async function LocaleLayout({
               areaServed: { '@type': 'Country', name: 'Morocco' },
               priceRange: '€60–€160 / day',
               currenciesAccepted: 'EUR',
+              // NOTE: no aggregateRating here on purpose. Google treats a
+              // business rating self-published in structured data on its own
+              // site as a "self-serving review" — not eligible for star rich
+              // results. The real 4.8★ already shows via the Business Profile
+              // in the map pack, and the footer links to it. Keep it out of JSON-LD.
               sameAs: [
                 // Google Business Profile — links this site to the Maps listing.
                 'https://www.google.com/maps?cid=13573386500998719410',

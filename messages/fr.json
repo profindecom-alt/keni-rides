@@ -63,6 +63,9 @@
     "hours": "Prise en charge sur rendez-vous, lun.-dim.",
     "rights": "© {year} Keni Rides, keni-rides.com. Tous droits réservés.",
     "rentalConditions": "Conditions de location",
+    "cityLink": "Location moto {city}",
+    "googleReviews": "{count} avis Google",
+    "googleRatingAria": "Note {rating} sur 5 · {count} avis Google, voir sur Google",
     "links": {
       "motorcycles": "Motos",
       "gallery": "Galerie",
@@ -86,6 +89,78 @@
     "exploreTheFleet": "Découvrir la flotte",
     "bookYourMotorcycle": "Réserver votre moto",
     "readMore": "En savoir plus"
+  },
+  "rentalCity": {
+    "metaTitle": "Location de moto à {city}, dès 60 €/jour",
+    "heroTitle": "Location de motos à",
+    "heroAlt": "Location de moto d'aventure à {city} avec Keni Rides",
+    "breadcrumbLabel": "Location à {city}",
+    "introEyebrow": "Votre point de départ",
+    "routesEyebrow": "Sur la route",
+    "routesTitle": "Itinéraires au départ de {city}",
+    "fleetEyebrow": "La flotte",
+    "fleetTitle": "Nos motos, livrées à {city}",
+    "fleetLead": "Toute la flotte Keni Rides est disponible à {city}, révisée et livrée prête à rouler.",
+    "faqEyebrow": "Bon à savoir",
+    "faqTitle": "Questions fréquentes",
+    "cta": {
+      "title": "Prêt à rouler depuis {city} ?",
+      "lead": "Donnez-nous vos dates et votre itinéraire : nous préparons la moto idéale et vous répondons dans la journée.",
+      "button": "Demander un devis"
+    },
+    "cities": {
+      "marrakech": {
+        "lead": "Récupérez une moto d'aventure au cœur de Marrakech et prenez la route de l'Atlas et du Sahara en quelques heures. Livraison à votre riad ou hôtel, moto préparée et itinéraires sur mesure.",
+        "intro": [
+          "Marrakech est le point de départ idéal pour un road trip à moto au Maroc. En une matinée, vous quittez l'effervescence de la médina pour les lacets du Haut Atlas ; en une journée, vous atteignez les portes du désert. Keni Rides vous livre une BMW GS, une Yamaha Ténéré ou une Suzuki DR préparée et prête à partir, directement à votre hébergement.",
+          "Chaque location comprend un briefing d'itinéraire, l'équipement de sécurité et une assistance en français, anglais et espagnol pendant tout votre voyage. Que vous visiez le col du Tizi n'Tichka, la vallée de l'Ourika ou les dunes de Merzouga, nous adaptons la moto et le parcours à votre niveau."
+        ],
+        "routes": [
+          { "title": "Marrakech → Merzouga (Sahara)", "desc": "Trois à quatre jours par Ouarzazate et la vallée du Dadès jusqu'aux grandes dunes de l'erg Chebbi." },
+          { "title": "Col du Tizi n'Tichka", "desc": "La route de montagne mythique vers Ouarzazate : virages sans fin et panoramas sur le Haut Atlas." },
+          { "title": "Boucle de l'Ourika", "desc": "Une journée parfaite : vallée verdoyante, villages berbères et cols d'altitude à moins de deux heures de la ville." }
+        ],
+        "faq": [
+          { "q": "Où récupérer la moto à Marrakech ?", "a": "Nous livrons gratuitement à votre riad, votre hôtel ou à l'aéroport Marrakech-Ménara dans un rayon convenu. Vous pouvez aussi passer à notre point de rendez-vous sur simple accord." },
+          { "q": "Puis-je rendre la moto dans une autre ville ?", "a": "Oui. La location aller simple est possible, par exemple départ de Marrakech et restitution à Casablanca, Fès ou Kénitra, moyennant un supplément de convoyage." },
+          { "q": "Quelle moto choisir au départ de Marrakech ?", "a": "Pour l'Atlas et le Sahara, la Yamaha Ténéré 700 et la BMW GS sont idéales. Pour une première expérience tout-terrain, la Honda CRF250 ou la Suzuki DR, plus légères, sont plus faciles à prendre en main." }
+        ]
+      },
+      "casablanca": {
+        "lead": "Atterrissez à Casablanca et partez à moto le jour même. Livraison à l'aéroport Mohammed V ou à votre hôtel, moto d'aventure préparée et assistance sur toute la route.",
+        "intro": [
+          "Casablanca et son aéroport international Mohammed V sont la porte d'entrée la plus pratique du Maroc. Keni Rides vous y livre votre moto d'aventure, prête à rouler, pour rejoindre la côte atlantique, l'Atlas ou Marrakech sans perdre une journée.",
+          "Nos motos — BMW GS, Yamaha Ténéré, Honda et Suzuki — sont révisées avant chaque départ et livrées avec l'équipement de sécurité. Vous profitez d'un briefing complet et d'une assistance multilingue, de la remise des clés jusqu'à la restitution."
+        ],
+        "routes": [
+          { "title": "Casablanca → Côte atlantique", "desc": "El Jadida, la lagune d'Oualidia et Essaouira : falaises, ports de pêche et longues routes en bord d'océan." },
+          { "title": "Casablanca → Marrakech", "desc": "Une mise en jambes facile vers le sud, avant de basculer sur l'Atlas et le désert." },
+          { "title": "Casablanca → Moyen Atlas", "desc": "Par Beni Mellal et les cascades d'Ouzoud, vers les forêts de cèdres et les lacs d'altitude." }
+        ],
+        "faq": [
+          { "q": "Livrez-vous à l'aéroport Mohammed V ?", "a": "Oui, nous livrons la moto directement à l'aéroport de Casablanca ou à votre hôtel, pour que vous puissiez partir dès votre arrivée." },
+          { "q": "Ai-je besoin d'un permis international ?", "a": "Un permis moto valide suffit pour la plupart des nationalités ; le permis international est recommandé. Nous vérifions vos documents avant la remise des clés." },
+          { "q": "Puis-je commencer à Casablanca et finir dans le désert ?", "a": "Absolument. Beaucoup de nos clients partent de Casablanca vers le Sahara et rendent la moto à Marrakech ou Fès. Contactez-nous pour organiser le convoyage." }
+        ]
+      },
+      "kenitra": {
+        "lead": "Kénitra, c'est notre base. Prise en charge immédiate, tarifs au plus juste et un accès direct au nord du Maroc : Rif, Chefchaouen, côte atlantique et villes impériales.",
+        "intro": [
+          "Kénitra est le port d'attache de Keni Rides. C'est ici que nos motos sont entretenues et préparées, ce qui vous garantit une prise en charge rapide, des conseils de première main et nos meilleurs tarifs. Depuis Kénitra, tout le nord du Maroc s'ouvre à vous : les montagnes du Rif, la ville bleue de Chefchaouen, la lagune de Moulay Bousselham et les villes impériales de Meknès et Fès.",
+          "Vous roulez sur une BMW GS, une Yamaha Ténéré ou une Suzuki DR révisée dans notre atelier, avec l'équipement de sécurité et une assistance en français, anglais et espagnol tout au long du voyage."
+        ],
+        "routes": [
+          { "title": "Kénitra → Chefchaouen", "desc": "Cap au nord vers le Rif et la célèbre ville bleue, entre cols verdoyants et villages de montagne." },
+          { "title": "Kénitra → Moulay Bousselham", "desc": "Une échappée côtière vers la lagune et sa réserve d'oiseaux, le long de l'Atlantique nord." },
+          { "title": "Kénitra → Meknès et Fès", "desc": "Les villes impériales à portée de guidon : médinas, remparts et routes de campagne." }
+        ],
+        "faq": [
+          { "q": "Pourquoi partir de Kénitra ?", "a": "Kénitra est notre base : la moto est prête immédiatement, vous bénéficiez de nos meilleurs tarifs et de conseils d'itinéraire directement de l'équipe qui connaît chaque route du nord." },
+          { "q": "Kénitra est-elle loin de Rabat et de l'aéroport ?", "a": "Non, Kénitra est à moins d'une heure de Rabat. Nous pouvons aussi livrer la moto à Rabat ou organiser une prise en charge depuis l'aéroport Rabat-Salé." },
+          { "q": "Quels itinéraires depuis Kénitra ?", "a": "Le nord se prête magnifiquement à la moto : le Rif et Chefchaouen, la côte atlantique vers Moulay Bousselham, et les villes impériales de Meknès et Fès." }
+        ]
+      }
+    }
   },
   "home": {
     "heroKicker": "Aventures à moto premium · Maroc",

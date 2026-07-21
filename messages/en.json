@@ -63,6 +63,9 @@
     "hours": "Pickup by appointment, Mon-Sun",
     "rights": "© {year} Keni Rides, keni-rides.com. All rights reserved.",
     "rentalConditions": "Rental Conditions",
+    "cityLink": "Motorcycle rental {city}",
+    "googleReviews": "{count} Google reviews",
+    "googleRatingAria": "Rated {rating} out of 5 · {count} Google reviews, view on Google",
     "links": {
       "motorcycles": "Motorcycles",
       "gallery": "Gallery",
@@ -86,6 +89,78 @@
     "exploreTheFleet": "Explore the Fleet",
     "bookYourMotorcycle": "Book Your Motorcycle",
     "readMore": "Read more"
+  },
+  "rentalCity": {
+    "metaTitle": "Motorcycle Rental in {city}, from €60/day",
+    "heroTitle": "Motorcycle rental in",
+    "heroAlt": "Adventure motorcycle rental in {city} with Keni Rides",
+    "breadcrumbLabel": "Rental in {city}",
+    "introEyebrow": "Your starting point",
+    "routesEyebrow": "On the road",
+    "routesTitle": "Rides starting from {city}",
+    "fleetEyebrow": "The fleet",
+    "fleetTitle": "Our motorcycles, delivered in {city}",
+    "fleetLead": "The full Keni Rides fleet is available in {city}, serviced and delivered ready to ride.",
+    "faqEyebrow": "Good to know",
+    "faqTitle": "Frequently asked questions",
+    "cta": {
+      "title": "Ready to ride out of {city}?",
+      "lead": "Send us your dates and route and we will prepare the right motorcycle and reply the same day.",
+      "button": "Request a quote"
+    },
+    "cities": {
+      "marrakech": {
+        "lead": "Pick up an adventure motorcycle in the heart of Marrakech and be on the road to the Atlas and the Sahara within hours. Delivery to your riad or hotel, bike fully prepped and routes tailored to you.",
+        "intro": [
+          "Marrakech is the perfect launch pad for a motorcycle road trip in Morocco. In one morning you swap the buzz of the medina for the switchbacks of the High Atlas; in a single day you reach the edge of the desert. Keni Rides delivers a BMW GS, a Yamaha Ténéré or a Suzuki DR, serviced and ready to go, straight to where you are staying.",
+          "Every rental includes a route briefing, safety gear and support in English, French and Spanish throughout your trip. Whether you are aiming for the Tizi n'Tichka pass, the Ourika valley or the dunes of Merzouga, we match the bike and the route to your level."
+        ],
+        "routes": [
+          { "title": "Marrakech → Merzouga (Sahara)", "desc": "Three to four days via Ouarzazate and the Dadès valley to the great dunes of Erg Chebbi." },
+          { "title": "Tizi n'Tichka pass", "desc": "The legendary mountain road to Ouarzazate: endless hairpins and sweeping High Atlas views." },
+          { "title": "Ourika loop", "desc": "A perfect day out: green valley, Berber villages and high passes less than two hours from town." }
+        ],
+        "faq": [
+          { "q": "Where do I pick up the motorcycle in Marrakech?", "a": "We deliver free of charge to your riad, hotel or to Marrakech-Menara airport within an agreed radius. You are also welcome to collect it from our meeting point by arrangement." },
+          { "q": "Can I return the bike in another city?", "a": "Yes. One-way rentals are possible, for example starting in Marrakech and returning in Casablanca, Fès or Kénitra, for a transfer surcharge." },
+          { "q": "Which motorcycle should I choose from Marrakech?", "a": "For the Atlas and the Sahara, the Yamaha Ténéré 700 and the BMW GS are ideal. For a first off-road experience, the lighter Honda CRF250 or Suzuki DR are easier to handle." }
+        ]
+      },
+      "casablanca": {
+        "lead": "Land in Casablanca and ride out the same day. Delivery to Mohammed V airport or your hotel, adventure bike fully prepped and support all along the road.",
+        "intro": [
+          "Casablanca and its Mohammed V international airport are the most convenient gateway to Morocco. Keni Rides delivers your adventure motorcycle there, ready to ride, so you can reach the Atlantic coast, the Atlas or Marrakech without losing a day.",
+          "Our bikes — BMW GS, Yamaha Ténéré, Honda and Suzuki — are serviced before every departure and handed over with safety gear. You get a full briefing and multilingual support from key handover to return."
+        ],
+        "routes": [
+          { "title": "Casablanca → Atlantic coast", "desc": "El Jadida, the Oualidia lagoon and Essaouira: cliffs, fishing ports and long ocean-side roads." },
+          { "title": "Casablanca → Marrakech", "desc": "An easy warm-up ride south, before dropping into the Atlas and the desert." },
+          { "title": "Casablanca → Middle Atlas", "desc": "Via Beni Mellal and the Ouzoud waterfalls to cedar forests and mountain lakes." }
+        ],
+        "faq": [
+          { "q": "Do you deliver to Mohammed V airport?", "a": "Yes, we deliver the motorcycle directly to Casablanca airport or your hotel so you can set off as soon as you arrive." },
+          { "q": "Do I need an international licence?", "a": "A valid motorcycle licence is enough for most nationalities; an international permit is recommended. We check your documents before handover." },
+          { "q": "Can I start in Casablanca and finish in the desert?", "a": "Absolutely. Many of our riders leave Casablanca for the Sahara and return the bike in Marrakech or Fès. Contact us to arrange the transfer." }
+        ]
+      },
+      "kenitra": {
+        "lead": "Kénitra is our home base. Immediate handover, our keenest rates and direct access to northern Morocco: the Rif, Chefchaouen, the Atlantic coast and the imperial cities.",
+        "intro": [
+          "Kénitra is the home base of Keni Rides. This is where our motorcycles are maintained and prepared, which means a fast handover, first-hand advice and our best rates. From Kénitra the whole north of Morocco opens up: the Rif mountains, the blue city of Chefchaouen, the Moulay Bousselham lagoon and the imperial cities of Meknès and Fès.",
+          "You ride a BMW GS, a Yamaha Ténéré or a Suzuki DR serviced in our own workshop, with safety gear and support in English, French and Spanish throughout the journey."
+        ],
+        "routes": [
+          { "title": "Kénitra → Chefchaouen", "desc": "North into the Rif and the famous blue city, through green passes and mountain villages." },
+          { "title": "Kénitra → Moulay Bousselham", "desc": "A coastal escape to the lagoon and its bird reserve, along the northern Atlantic." },
+          { "title": "Kénitra → Meknès & Fès", "desc": "The imperial cities within easy reach: medinas, ramparts and country roads." }
+        ],
+        "faq": [
+          { "q": "Why start from Kénitra?", "a": "Kénitra is our base: the bike is ready immediately, you get our best rates and route advice straight from the team that knows every road in the north." },
+          { "q": "Is Kénitra far from Rabat and the airport?", "a": "No, Kénitra is less than an hour from Rabat. We can also deliver the bike to Rabat or arrange pick-up from Rabat-Salé airport." },
+          { "q": "What routes can I ride from Kénitra?", "a": "The north is superb by motorcycle: the Rif and Chefchaouen, the Atlantic coast towards Moulay Bousselham, and the imperial cities of Meknès and Fès." }
+        ]
+      }
+    }
   },
   "home": {
     "heroKicker": "Premium Motorcycle Adventures · Morocco",

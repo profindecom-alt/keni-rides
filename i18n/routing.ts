@@ -20,6 +20,11 @@ export const routing = defineRouting({
       en: '/motorcycles/[slug]',
       es: '/motorcycles/[slug]',
     },
+    '/rentals/[city]': {
+      fr: '/location-moto/[city]',
+      en: '/motorcycle-rental/[city]',
+      es: '/alquiler-motos/[city]',
+    },
     '/gallery': {
       fr: '/gallerie',
       en: '/gallery',
