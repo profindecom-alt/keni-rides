@@ -9,6 +9,7 @@ import Reveal from '@/components/Reveal';
 import ParallaxHero from '@/components/ParallaxHero';
 import BikeViewer3D from '@/components/BikeViewer3D';
 import BikeGallery from '@/components/BikeGallery';
+import CityLinks from '@/components/CityLinks';
 import { routing } from '@/i18n/routing';
 import { BIKE_SLUGS, findBike, getBikeImage, getBikeGallery, getSimilarBikes, mergeBikes, type Bike, type BikeTranslation } from '@/lib/bikes';
 import { has3DModel, get3DModelPath } from '@/lib/models3d';
@@ -100,14 +101,16 @@ export default async function MotorcyclePage({ params }: PageProps) {
 function MotorcycleDetailContent({ bike, similar }: { bike: Bike; similar: Bike[] }) {
   const t = useTranslations('motorcycleDetail');
   const tNav = useTranslations('nav');
+  const tCommon = useTranslations('common');
   const conditionItems = t.raw('conditions.items') as string[];
+  const galleryLabels = [t('gallery.main'), t('gallery.front'), t('gallery.side'), t('gallery.rear')];
 
   return (
     <>
       <section className="hero hero-sub">
         <ParallaxHero
           src={getBikeImage(bike.slug)}
-          alt={`${bike.name} adventure motorcycle`}
+          alt={tCommon('bikeImageAlt', { bike: bike.name })}
           placeholderLabel={bike.short}
           speed={0.18}
           fetchPriority="high"
@@ -138,7 +141,8 @@ function MotorcycleDetailContent({ bike, similar }: { bike: Bike; similar: Bike[
               <BikeGallery
                 images={getBikeGallery(bike.slug)}
                 name={bike.name}
-                labels={[t('gallery.main'), t('gallery.front'), t('gallery.side'), t('gallery.rear')]}
+                labels={galleryLabels}
+                alts={galleryLabels.map((angle) => tCommon('bikeAngleAlt', { bike: bike.name, angle }))}
                 zoomLabel={t('gallery.zoom')}
                 closeLabel={t('gallery.close')}
               />
@@ -173,7 +177,7 @@ function MotorcycleDetailContent({ bike, similar }: { bike: Bike; similar: Bike[
                 <h3 style={{ marginBottom: '1rem' }}>{t('view3d.title')}</h3>
                 <BikeViewer3D
                   src={get3DModelPath(bike.slug)}
-                  alt={`Interactive 3D model of the ${bike.name}`}
+                  alt={tCommon('bike3dAlt', { bike: bike.name })}
                   poster={getBikeImage(bike.slug)}
                 />
               </Reveal>
@@ -220,6 +224,8 @@ function MotorcycleDetailContent({ bike, similar }: { bike: Bike; similar: Bike[
           </div>
         </div>
       </section>
+
+      <CityLinks />
 
       <section className="section section-dark">
         <div className="container">

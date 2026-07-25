@@ -7,6 +7,7 @@ import PageHero from '@/components/PageHero';
 import GalleryGrid, { type GalleryImage } from '@/components/GalleryGrid';
 import FallbackImg from '@/components/FallbackImg';
 import Reveal from '@/components/Reveal';
+import { GALLERY_SRCS } from '@/lib/gallery';
 
 export async function generateMetadata({
   params,
@@ -17,27 +18,6 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'meta.gallery' });
   return pageMetadata({ locale, href: '/gallery', title: t('title'), description: t('description') });
 }
-
-const IMAGE_SRCS: { src: string; size?: 'wide' | 'tall' }[] = [
-  { src: '/gallery/DSC01210.jpg', size: 'wide' },
-  { src: '/gallery/DSC01332.jpg' },
-  { src: '/gallery/DSC01352.jpg', size: 'tall' },
-  { src: '/gallery/DSC01895.jpg' },
-  { src: '/gallery/DSC01993.jpg', size: 'tall' },
-  { src: '/gallery/DSC02225.jpg' },
-  { src: '/gallery/DSC02705.jpg', size: 'wide' },
-  { src: '/gallery/DSC02757.jpg' },
-  { src: '/gallery/DSC02961.jpg' },
-  { src: '/gallery/DSC03120.jpg', size: 'tall' },
-  { src: '/gallery/DSC03230.jpg' },
-  { src: '/gallery/DSC03273.jpg', size: 'wide' },
-  { src: '/gallery/DSC03818.jpg' },
-  { src: '/gallery/DSC03952.jpg' },
-  { src: '/gallery/DSC04394.jpg', size: 'wide' },
-  { src: '/gallery/DSC05655.jpg', size: 'tall' },
-  { src: '/gallery/DSC05672.jpg' },
-  { src: '/gallery/DSC05794.jpg' },
-];
 
 export default async function GalleryPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -50,7 +30,7 @@ function GalleryContent() {
   const tNav = useTranslations('nav');
   const translatedImages = t.raw('images') as { alt: string; label: string }[];
 
-  const images: GalleryImage[] = IMAGE_SRCS.map((img, i) => ({
+  const images: GalleryImage[] = GALLERY_SRCS.map((img, i) => ({
     src: img.src,
     size: img.size,
     alt: translatedImages[i]?.alt || '',

@@ -3,6 +3,7 @@ import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import PageHero from '@/components/PageHero';
 import FleetGrid from '@/components/FleetGrid';
+import CityLinks from '@/components/CityLinks';
 import FallbackImg from '@/components/FallbackImg';
 import Reveal from '@/components/Reveal';
 import { mergeBikes, type BikeTranslation } from '@/lib/bikes';
@@ -38,7 +39,7 @@ function MotorcyclesContent() {
     <>
       <PageHero
         image="/gallery/DSC03230.jpg"
-        imageAlt="Rider standing on the pegs crossing the Moroccan desert"
+        imageAlt={t('heroAlt')}
         placeholderLabel="The Fleet"
         crumbLabel={tNav('motorcycles')}
         title={<>{t('heroTitleStart')}<span className="text-gradient">{t('heroTitleEmphasis')}</span></>}
@@ -81,7 +82,9 @@ function MotorcyclesContent() {
         </div>
       </section>
 
-      <section className="section">
+      <CityLinks />
+
+      <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <Reveal as="div" className="cta-band" direction="zoom">
             <FallbackImg src="/gallery/DSC01332.jpg" alt="" placeholderLabel="" />

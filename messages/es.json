@@ -88,7 +88,16 @@
     "chatWhatsapp": "Chatear por WhatsApp",
     "exploreTheFleet": "Explorar la flota",
     "bookYourMotorcycle": "Reserva tu moto",
-    "readMore": "Saber más"
+    "readMore": "Saber más",
+    "bikeImageAlt": "Alquiler de {bike} en Marruecos — Keni Rides",
+    "bikeAngleAlt": "{bike} de alquiler en Marruecos — {angle}",
+    "bike3dAlt": "Modelo 3D interactivo de la {bike} de alquiler en Marruecos"
+  },
+  "cityLinks": {
+    "eyebrow": "Entrega y recogida",
+    "title": "Alquila tu moto en tu ciudad",
+    "lead": "Entregamos en todo Marruecos desde nuestra base en Kénitra. Elige tu punto de partida:",
+    "linkLabel": "Alquiler de motos {city}"
   },
   "rentalCity": {
     "metaTitle": "Alquiler de motos en {city}, desde 60 €/día",
@@ -163,6 +172,7 @@
     }
   },
   "home": {
+    "heroAlt": "Moto de aventura cruzando las dunas del desierto en Marruecos",
     "heroKicker": "Aventuras en moto premium · Marruecos",
     "heroTitleStart": "Siente el ",
     "heroTitleEmphasis": "alma",
@@ -340,6 +350,7 @@
     }
   ],
   "motorcyclesPage": {
+    "heroAlt": "Rider de pie sobre las estriberas cruzando el desierto marroquí en una moto de alquiler",
     "heroTitleStart": "La ",
     "heroTitleEmphasis": "Flota",
     "heroLead": "Máquinas listas para la expedición, desde la poderosa BMW GS 1200 Adventure hasta los ligeros monocilíndricos del desierto. Todas las motos totalmente revisadas, aseguradas y listas para las carreteras y pistas marroquíes.",

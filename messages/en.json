@@ -88,7 +88,16 @@
     "chatWhatsapp": "Chat on WhatsApp",
     "exploreTheFleet": "Explore the Fleet",
     "bookYourMotorcycle": "Book Your Motorcycle",
-    "readMore": "Read more"
+    "readMore": "Read more",
+    "bikeImageAlt": "{bike} motorcycle rental in Morocco — Keni Rides",
+    "bikeAngleAlt": "{bike} for rent in Morocco — {angle}",
+    "bike3dAlt": "Interactive 3D model of the {bike} available to rent in Morocco"
+  },
+  "cityLinks": {
+    "eyebrow": "Delivery & pickup",
+    "title": "Rent your motorcycle in your city",
+    "lead": "We deliver anywhere in Morocco from our base in Kénitra. Pick your starting point:",
+    "linkLabel": "Motorcycle rental {city}"
   },
   "rentalCity": {
     "metaTitle": "Motorcycle Rental in {city}, from €60/day",
@@ -163,6 +172,7 @@
     }
   },
   "home": {
+    "heroAlt": "Adventure motorcycle blasting through desert dunes in Morocco",
     "heroKicker": "Premium Motorcycle Adventures · Morocco",
     "heroTitleStart": "Ride the ",
     "heroTitleEmphasis": "Soul",
@@ -340,6 +350,7 @@
     }
   ],
   "motorcyclesPage": {
+    "heroAlt": "Rider standing on the pegs crossing the Moroccan desert on a rental motorcycle",
     "heroTitleStart": "The ",
     "heroTitleEmphasis": "Fleet",
     "heroLead": "Expedition-ready machines, from the mighty BMW GS 1200 Adventure to featherweight desert singles. Every bike fully serviced, insured, and ready for Moroccan roads and pistes.",

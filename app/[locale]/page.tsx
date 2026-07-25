@@ -89,7 +89,7 @@ function HomeContent() {
       <section className="hero">
         <ParallaxHero
           src="/gallery/DSC02225.jpg"
-          alt="Motorcycle blasting through desert dunes in Morocco"
+          alt={t('heroAlt')}
           placeholderLabel="Ride Morocco"
           speed={0.18}
           fetchPriority="high"

@@ -23,10 +23,24 @@ const LEGACY_REDIRECTS = [
   { source: '/produit/suzuki-dr-200', destination: '/nos-motos/suzuki-dr200' },
   { source: '/produit/suzuki-dr-400', destination: '/nos-motos/suzuki-dr400' },
   { source: '/produit/suzuki-dr-650-a-louer-au-maroc', destination: '/nos-motos/suzuki-dr650' },
+  // Second batch, from the 2026-07-25 Search Console 404 export: the same bikes
+  // were also published under shorter slugs. The catch-all below would flatten
+  // these to the fleet listing, which throws away the per-bike ranking, so map
+  // each one explicitly.
+  { source: '/produit/suzuki-dr-650', destination: '/nos-motos/suzuki-dr650' },
+  { source: '/produit/gs-1200-adventure', destination: '/nos-motos/bmw-gs1200-adventure' },
+  { source: '/produit/gs-1200-adventure-copie', destination: '/nos-motos/bmw-gs1200-adventure' },
+  { source: '/produit/tenere-700-world-raid', destination: '/nos-motos/yamaha-tenere-700-world-raid' },
   // Bikes no longer in the fleet → the fleet listing (still relevant, not a 404).
   { source: '/produit/honda-transalp-700', destination: '/nos-motos' },
   // Any other old /produit/* we didn't map explicitly → the fleet listing.
   { source: '/produit/:path*', destination: '/nos-motos' },
+
+  // --- Pre-WooCommerce /inventory/<slug> listing URLs (still being crawled) ---
+  { source: '/inventory/honda-crf-250', destination: '/nos-motos/honda-crf250' },
+  { source: '/inventory/suzuki-dr-200', destination: '/nos-motos/suzuki-dr200' },
+  { source: '/inventory/suzuki-dr-650', destination: '/nos-motos/suzuki-dr650' },
+  { source: '/inventory/:path*', destination: '/nos-motos' },
 
   // --- Fleet slugs that changed shape during the migration, per locale.
   // These are exact dead slugs, so they don't shadow the live /[slug] bikes.
@@ -40,6 +54,14 @@ const LEGACY_REDIRECTS = [
   // --- WooCommerce / booking-plugin taxonomies → fleet listing ---
   { source: '/panier', destination: '/nos-motos' },
   { source: '/boutique', destination: '/nos-motos' },
+  { source: '/shop', destination: '/nos-motos' },
+  { source: '/shop/:path*', destination: '/nos-motos' },
+  // Booking-plugin search/listing endpoints and a duplicate fleet page that
+  // WordPress had published, all still in Google's 404 report.
+  { source: '/nos-motos-2', destination: '/nos-motos' },
+  { source: '/rent-list', destination: '/nos-motos' },
+  { source: '/rental-search', destination: '/nos-motos' },
+  { source: '/quote-checkout-redirect', destination: '/nos-motos' },
   { source: '/categorie-produit/:path*', destination: '/nos-motos' },
   { source: '/pickup_location/:path*', destination: '/nos-motos' },
   { source: '/dropoff_location/:path*', destination: '/nos-motos' },
@@ -47,6 +69,7 @@ const LEGACY_REDIRECTS = [
 
   // --- Old WordPress content pages → closest current page ---
   { source: '/histoire', destination: '/a-propos-de-nous' },
+  { source: '/a-propos', destination: '/a-propos-de-nous' },
   { source: '/informations-generales', destination: '/conditions-de-location' },
   { source: '/blog', destination: '/' },
   { source: '/blog-2', destination: '/' },

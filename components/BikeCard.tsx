@@ -13,7 +13,7 @@ export default function BikeCard({ bike, delay = 0 }: { bike: Bike; delay?: numb
         <span className="bike-badge">{bike.category}</span>
         <FallbackImg
           src={getBikeImage(bike.slug)}
-          alt={bike.name}
+          alt={t('bikeImageAlt', { bike: bike.name })}
           placeholderLabel={bike.short}
           width={800}
           height={600}

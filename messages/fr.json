@@ -88,7 +88,16 @@
     "chatWhatsapp": "Discuter sur WhatsApp",
     "exploreTheFleet": "Découvrir la flotte",
     "bookYourMotorcycle": "Réserver votre moto",
-    "readMore": "En savoir plus"
+    "readMore": "En savoir plus",
+    "bikeImageAlt": "Location {bike} au Maroc — Keni Rides",
+    "bikeAngleAlt": "{bike} en location au Maroc — {angle}",
+    "bike3dAlt": "Modèle 3D interactif du {bike} en location au Maroc"
+  },
+  "cityLinks": {
+    "eyebrow": "Livraison et retrait",
+    "title": "Louez votre moto dans votre ville",
+    "lead": "Nous livrons partout au Maroc depuis notre base de Kénitra. Choisissez votre point de départ :",
+    "linkLabel": "Location moto {city}"
   },
   "rentalCity": {
     "metaTitle": "Location de moto à {city}, dès 60 €/jour",
@@ -163,6 +172,7 @@
     }
   },
   "home": {
+    "heroAlt": "Moto d'aventure traversant les dunes du désert au Maroc",
     "heroKicker": "Aventures à moto premium · Maroc",
     "heroTitleStart": "Roulez vers l'",
     "heroTitleEmphasis": "âme",
@@ -340,6 +350,7 @@
     }
   ],
   "motorcyclesPage": {
+    "heroAlt": "Rider debout sur les cale-pieds traversant le désert marocain en moto de location",
     "heroTitleStart": "La ",
     "heroTitleEmphasis": "Flotte",
     "heroLead": "Des machines prêtes à l'expédition, de la puissante BMW GS 1200 Adventure aux monocylindres légers du désert. Chaque moto entièrement révisée, assurée, et prête pour les routes et pistes marocaines.",
