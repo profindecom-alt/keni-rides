@@ -1963,6 +1963,9 @@ input[type='date'] { color-scheme: light; }
   color: var(--text-3);
 }
 .footer-bottom a:hover { color: var(--brand-bright); }
+/* Visible locale links — the only ones Google sees without opening the FAB. */
+.footer-locales { display: flex; flex-wrap: wrap; gap: 0.9rem; }
+.footer-locales a[aria-current] { color: var(--text-2); font-weight: 600; }
 
 /* ------------------------------------------------------------
    22. Floating action buttons (WhatsApp + mobile call)
@@ -2028,7 +2031,9 @@ input[type='date'] { color-scheme: light; }
   position: absolute;
   bottom: calc(100% + 0.6rem);
   right: 0;
-  display: flex;
+  /* Stays mounted while closed so the locale links are in the served HTML
+     (see LangFab); `display: none` keeps them out of the tab order too. */
+  display: none;
   flex-direction: column;
   gap: 0.3rem;
   padding: 0.4rem;
@@ -2037,6 +2042,9 @@ input[type='date'] { color-scheme: light; }
   background: #fff;
   border: 1px solid var(--border);
   box-shadow: 0 16px 40px -10px rgba(24, 17, 10, 0.4);
+}
+.fab-lang-menu.open {
+  display: flex;
   animation: fabLangIn 0.16s var(--ease-out) both;
 }
 @keyframes fabLangIn {

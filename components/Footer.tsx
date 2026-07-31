@@ -1,11 +1,14 @@
-import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/navigation';
+import { useLocale, useTranslations } from 'next-intl';
+import { getPathname, Link } from '@/i18n/navigation';
 import FallbackImg from './FallbackImg';
 import { CONFIG } from '@/lib/config';
 import { CITY_BASE } from '@/lib/cities';
+import { localeLabel } from '@/lib/locales';
+import { routing } from '@/i18n/routing';
 
 export default function Footer() {
   const t = useTranslations('footer');
+  const locale = useLocale();
 
   return (
     <footer className="footer">
@@ -81,6 +84,22 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <span>{t('rights', { year: new Date().getFullYear() })}</span>
+          {/* Every page links to each locale's home. Without these the English
+              and Spanish trees had no inbound link at all — Google found them
+              through hreflang and the sitemap, but they inherited no internal
+              link equity, and stayed "crawled, currently not indexed". */}
+          <nav className="footer-locales" aria-label={t('language')}>
+            {routing.locales.map((loc) => (
+              <a
+                key={loc}
+                href={getPathname({ href: '/', locale: loc })}
+                hrefLang={loc}
+                aria-current={loc === locale ? 'true' : undefined}
+              >
+                {localeLabel(loc).name}
+              </a>
+            ))}
+          </nav>
           <Link href="/conditions">{t('rentalConditions')}</Link>
         </div>
       </div>
