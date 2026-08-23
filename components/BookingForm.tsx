@@ -6,6 +6,15 @@ import { CONFIG } from '@/lib/config';
 import type { Bike } from '@/lib/bikes';
 import { ACCESSORY_SLUGS, ACCESSORY_PRICE_PER_DAY } from '@/lib/accessories';
 
+/**
+ * Pickup / return points, in the order riders see them.
+ *
+ * Kénitra leads because it is where the bikes actually live — it was missing
+ * from this list entirely, so nobody could choose the home base. The rest are
+ * delivery destinations; anywhere else goes through "other".
+ */
+const LOCATION_KEYS = ['kenitra', 'marrakech', 'casablanca', 'agadir', 'tangier', 'fez', 'other'] as const;
+
 function isoDate(d: Date): string {
   return d.toISOString().split('T')[0];
 }
@@ -166,11 +175,9 @@ export default function BookingForm({
           <label htmlFor="b-pickup-loc">{t('pickupLocation')} <span className="req" aria-hidden="true">*</span></label>
           <select id="b-pickup-loc" name="pickupLocation" defaultValue="">
             <option value="" disabled>{t('select')}</option>
-            <option>{t('locations.marrakech')}</option>
-            <option>{t('locations.casablanca')}</option>
-            <option>{t('locations.tangier')}</option>
-            <option>{t('locations.fez')}</option>
-            <option>{t('locations.other')}</option>
+            {LOCATION_KEYS.map((key) => (
+              <option key={key}>{t(`locations.${key}`)}</option>
+            ))}
           </select>
           <p className="error-msg" role="alert">{errors.pickupLocation}</p>
         </div>
@@ -178,11 +185,9 @@ export default function BookingForm({
           <label htmlFor="b-return-loc">{t('returnLocation')} <span className="req" aria-hidden="true">*</span></label>
           <select id="b-return-loc" name="returnLocation" defaultValue="">
             <option value="" disabled>{t('select')}</option>
-            <option>{t('locations.marrakech')}</option>
-            <option>{t('locations.casablanca')}</option>
-            <option>{t('locations.tangier')}</option>
-            <option>{t('locations.fez')}</option>
-            <option>{t('locations.other')}</option>
+            {LOCATION_KEYS.map((key) => (
+              <option key={key}>{t(`locations.${key}`)}</option>
+            ))}
           </select>
           <p className="error-msg" role="alert">{errors.returnLocation}</p>
         </div>

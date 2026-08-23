@@ -31,7 +31,7 @@
     },
     "contact": {
       "title": "Contact Us, Book Your Moroccan Ride",
-      "description": "Contact Keni Rides, phone +212 616 712266, WhatsApp, or send us a message. Motorcycle rental in Marrakech, Casablanca and across Morocco."
+      "description": "Contact Keni Rides, phone +212 616 712266, WhatsApp, or send us a message. Motorcycle rental in Kénitra, Marrakech, Casablanca and across Morocco."
     },
     "motorcycleDetail": {
       "titleSuffix": "Rental Morocco, from €{price}/day"
@@ -59,7 +59,7 @@
     "contact": "Contact",
     "whatsapp": "WhatsApp",
     "contactForm": "Contact form",
-    "base": "Marrakech · Casablanca, Morocco",
+    "base": "Kénitra, Morocco",
     "hours": "Pickup by appointment, Mon-Sun",
     "rights": "© {year} Keni Rides, keni-rides.com. All rights reserved.",
     "rentalConditions": "Rental Conditions",
@@ -210,7 +210,7 @@
         },
         {
           "title": "Delivery Across Morocco",
-          "desc": "Pick up in Marrakech or Casablanca, or have your bike delivered to Tangier, Fez and beyond, straight to your hotel."
+          "desc": "Pick up your bike in Kénitra, or have it delivered to Marrakech, Casablanca, Agadir, Tangier and beyond, straight to your hotel."
         },
         {
           "title": "24/7 Road Support",
@@ -462,8 +462,10 @@
     "messagePlaceholder": "Route plans, gear needs, delivery requests, questions…",
     "select": "Select",
     "locations": {
+      "kenitra": "Kénitra",
       "marrakech": "Marrakech",
       "casablanca": "Casablanca",
+      "agadir": "Agadir",
       "tangier": "Tangier",
       "fez": "Fez",
       "other": "Other (tell us in message)"
@@ -898,7 +900,7 @@
       "whatsapp": "WhatsApp",
       "whatsappValue": "Fastest reply, usually minutes",
       "bases": "Bases",
-      "basesValue": "Marrakech & Casablanca",
+      "basesValue": "Kénitra",
       "basesValue2": "Delivery across Morocco",
       "hours": "Hours",
       "hoursValue": "Monday-Sunday, 9:00-19:00",

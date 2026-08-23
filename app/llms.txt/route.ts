@@ -14,7 +14,7 @@
    ============================================================ */
 import messages from '@/messages/en.json';
 import { BIKE_BASE, LONG_TERM_MIN_DAYS } from '@/lib/bikes';
-import { CITY_BASE } from '@/lib/cities';
+import { CITY_BASE, DELIVERY_CITIES } from '@/lib/cities';
 import { CONFIG } from '@/lib/config';
 import { FLEET_MAX_DAILY, FLEET_MIN_DAILY } from '@/lib/schema';
 import { SITE_URL, absoluteUrl, type Href } from '@/lib/seo';
@@ -77,7 +77,11 @@ roadside support; riders plan their own route or ask us for one.
 ## Key facts
 
 - Operator: Keni Rides, ${CONFIG.phone} (also WhatsApp: ${CONFIG.whatsapp})
-- Base: 362 A. du N, Kénitra, Morocco. Delivery to other cities on request.
+- Based in Kénitra: 362 A. du N, Kénitra, Morocco. That is where the fleet
+  lives and where handover is immediate.
+- Delivered anywhere in Morocco. Cities riders most often ask for:
+  ${[...CITY_BASE.map((c) => c.name), ...DELIVERY_CITIES].join(', ')}. Anywhere
+  else is arranged on request — ask rather than assuming a city is excluded.
 - Open: every day, 09:00-19:00
 - Rated ${CONFIG.google.rating}/5 from ${CONFIG.google.reviewCount} Google reviews: ${CONFIG.google.profile}
 - Site languages: French (default, unprefixed URLs), English (/en/...), Spanish (/es/...)
@@ -89,7 +93,7 @@ roadside support; riders plan their own route or ask us for one.
 
 ${fleetSection()}
 
-## Cities we deliver to
+## Cities with their own page
 
 ${citiesSection()}
 

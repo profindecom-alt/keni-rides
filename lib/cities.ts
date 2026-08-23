@@ -25,6 +25,16 @@ export const CITY_BASE: CityBase[] = [
 
 export const CITY_SLUGS = CITY_BASE.map((c) => c.slug);
 
+/**
+ * Cities we deliver to that don't have a landing page yet.
+ *
+ * Named in the business's areaServed and in /llms.txt so the real service area
+ * is explicit — the bikes are based in Kénitra and go anywhere in Morocco.
+ * Promote one into CITY_BASE when it earns a page with its own translated
+ * copy; listing a city here costs nothing and creates no thin page.
+ */
+export const DELIVERY_CITIES = ['Agadir', 'Tanger', 'Fès'];
+
 export function findCity(slug: string | undefined | null): CityBase | undefined {
   return CITY_BASE.find((c) => c.slug === slug);
 }

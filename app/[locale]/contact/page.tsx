@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { pageMetadata, absoluteUrl } from '@/lib/seo';
 import { businessRef } from '@/lib/schema';
+import { findCity } from '@/lib/cities';
 import JsonLd from '@/components/JsonLd';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
@@ -28,6 +29,9 @@ export async function generateMetadata({
  * strongest query. There is now one business entity, declared once in the
  * layout; this page only points at it.
  */
+/** The bikes live in Kénitra; the map shows there, not a delivery city. */
+const HOME_CITY = findCity('kenitra')!;
+
 function contactJsonLd(locale: string) {
   return {
     '@type': 'ContactPage',
@@ -111,8 +115,13 @@ function ContactContent() {
           <Reveal as="div" style={{ marginTop: '3.5rem' }}>
             <div className="map-frame">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54339.83625566703!2d-8.038169!3d31.6294723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2sMarrakesh!5e0!3m2!1sen!2sma!4v1700000000000!5m2!1sen!2sma"
-                title="Keni Rides location · Marrakech, Morocco"
+                // Kénitra, from the same coordinates the LocalBusiness node and
+                // the Kénitra city page use. This previously showed Marrakech,
+                // which is a delivery destination, not where the bikes are.
+                // City-level zoom is deliberate — the caption below says the
+                // exact handover point is agreed after booking.
+                src={`https://www.google.com/maps?q=${HOME_CITY.lat},${HOME_CITY.lng}&z=12&output=embed`}
+                title="Keni Rides · Kénitra, Morocco"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 allowFullScreen

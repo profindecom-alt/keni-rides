@@ -13,13 +13,16 @@
    every page under BUSINESS_ID. Nothing else redeclares it.
    ============================================================ */
 import { BIKE_BASE, LONG_TERM_MIN_DAYS, getBikeGallery, type Bike } from './bikes';
-import { CITY_BASE, type CityBase } from './cities';
+import { CITY_BASE, DELIVERY_CITIES, findCity, type CityBase } from './cities';
 import { CONFIG } from './config';
 import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from './seo';
 import { routing } from '@/i18n/routing';
 
 /** @id of the one LocalBusiness node, declared in the root layout. */
 export const BUSINESS_ID = `${SITE_URL}/#business`;
+
+/** Where the fleet physically lives and hands over. Everything else is delivery. */
+const HOME_CITY = findCity('kenitra')!;
 
 /** @id of the WebSite node, also declared in the root layout. */
 export const WEBSITE_ID = `${SITE_URL}/#website`;
@@ -61,23 +64,24 @@ export const BUSINESS_NODE = {
     addressLocality: 'Kénitra',
     addressCountry: 'MA',
   },
-  // FIXME: these coordinates sit ~100 km south of Kénitra and disagree with the
-  // Kénitra entry in lib/cities.ts (34.261, -6.5802). A geo point that
-  // contradicts addressLocality weakens exactly the local signal behind our
-  // best-performing query — confirm the real pickup point on the Google
-  // Business Profile and correct one or the other.
+  // Taken from the Kénitra entry in lib/cities.ts rather than restated, so the
+  // business's own coordinates can never drift from the city page's. (These
+  // used to point ~100 km south of Kénitra, contradicting addressLocality and
+  // weakening the local signal behind our best-performing query.)
   geo: {
     '@type': 'GeoCoordinates',
-    latitude: 33.2960489,
-    longitude: -6.5358158,
+    latitude: HOME_CITY.lat,
+    longitude: HOME_CITY.lng,
   },
   // Canonical Google Maps listing (CID from the Business Profile).
   hasMap: CONFIG.google.profile,
-  // The country plus each city with its own landing page, so "moto rental in
-  // <city>" resolves to this operator.
+  // The bikes are based in Kénitra and delivered anywhere in Morocco. The
+  // Country entry carries "anywhere"; the named cities are the ones riders
+  // actually ask for, whether or not they have a landing page yet.
   areaServed: [
     { '@type': 'Country', name: 'Morocco' },
     ...CITY_BASE.map((city) => ({ '@type': 'City', name: city.name })),
+    ...DELIVERY_CITIES.map((name) => ({ '@type': 'City', name })),
   ],
   knowsLanguage: [...routing.locales],
   openingHours: 'Mo-Su 09:00-19:00',

@@ -31,7 +31,7 @@
     },
     "contact": {
       "title": "Contáctanos, Reserva tu aventura",
-      "description": "Contacta con Keni Rides, teléfono +212 616 712266, WhatsApp, o envíanos un mensaje. Alquiler de motos en Marrakech, Casablanca y toda Marruecos."
+      "description": "Contacta con Keni Rides, teléfono +212 616 712266, WhatsApp, o envíanos un mensaje. Alquiler de motos en Kénitra, Marrakech, Casablanca y toda Marruecos."
     },
     "motorcycleDetail": {
       "titleSuffix": "Alquiler Marruecos, desde {price} €/día"
@@ -59,7 +59,7 @@
     "contact": "Contacto",
     "whatsapp": "WhatsApp",
     "contactForm": "Formulario de contacto",
-    "base": "Marrakech · Casablanca, Marruecos",
+    "base": "Kénitra, Marruecos",
     "hours": "Recogida con cita previa, lun.-dom.",
     "rights": "© {year} Keni Rides, keni-rides.com. Todos los derechos reservados.",
     "rentalConditions": "Condiciones de alquiler",
@@ -210,7 +210,7 @@
         },
         {
           "title": "Entrega en toda Marruecos",
-          "desc": "Recoge en Marrakech o Casablanca, o haz que te entreguen la moto en Tánger, Fez y más allá, directamente en tu hotel."
+          "desc": "Recoge tu moto en Kénitra, o haz que te la entreguen en Marrakech, Casablanca, Agadir, Tánger y más allá, directamente en tu hotel."
         },
         {
           "title": "Asistencia en ruta 24/7",
@@ -462,8 +462,10 @@
     "messagePlaceholder": "Planes de ruta, necesidades de equipo, solicitudes de entrega, preguntas…",
     "select": "Seleccionar",
     "locations": {
+      "kenitra": "Kénitra",
       "marrakech": "Marrakech",
       "casablanca": "Casablanca",
+      "agadir": "Agadir",
       "tangier": "Tánger",
       "fez": "Fez",
       "other": "Otro (indícalo en el mensaje)"
@@ -898,7 +900,7 @@
       "whatsapp": "WhatsApp",
       "whatsappValue": "Respuesta más rápida, normalmente en minutos",
       "bases": "Bases",
-      "basesValue": "Marrakech y Casablanca",
+      "basesValue": "Kénitra",
       "basesValue2": "Entrega en toda Marruecos",
       "hours": "Horario",
       "hoursValue": "Lunes-domingo, 9:00-19:00",

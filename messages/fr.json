@@ -31,7 +31,7 @@
     },
     "contact": {
       "title": "Contactez-nous, Réservez votre aventure",
-      "description": "Contactez Keni Rides, téléphone +212 616 712266, WhatsApp, ou envoyez-nous un message. Location de motos à Marrakech, Casablanca et partout au Maroc."
+      "description": "Contactez Keni Rides, téléphone +212 616 712266, WhatsApp, ou envoyez-nous un message. Location de motos à Kénitra, Marrakech, Casablanca et partout au Maroc."
     },
     "motorcycleDetail": {
       "titleSuffix": "Location Maroc, à partir de {price} €/jour"
@@ -59,7 +59,7 @@
     "contact": "Contact",
     "whatsapp": "WhatsApp",
     "contactForm": "Formulaire de contact",
-    "base": "Marrakech · Casablanca, Maroc",
+    "base": "Kénitra, Maroc",
     "hours": "Prise en charge sur rendez-vous, lun.-dim.",
     "rights": "© {year} Keni Rides, keni-rides.com. Tous droits réservés.",
     "rentalConditions": "Conditions de location",
@@ -210,7 +210,7 @@
         },
         {
           "title": "Livraison partout au Maroc",
-          "desc": "Récupérez votre moto à Marrakech ou Casablanca, ou faites-la livrer à Tanger, Fès et au-delà, directement à votre hôtel."
+          "desc": "Récupérez votre moto à Kénitra, ou faites-la livrer à Marrakech, Casablanca, Agadir, Tanger et au-delà, directement à votre hôtel."
         },
         {
           "title": "Assistance route 24/7",
@@ -462,8 +462,10 @@
     "messagePlaceholder": "Projets d'itinéraire, besoins en équipement, demandes de livraison, questions…",
     "select": "Sélectionner",
     "locations": {
+      "kenitra": "Kénitra",
       "marrakech": "Marrakech",
       "casablanca": "Casablanca",
+      "agadir": "Agadir",
       "tangier": "Tanger",
       "fez": "Fès",
       "other": "Autre (précisez dans le message)"
@@ -898,7 +900,7 @@
       "whatsapp": "WhatsApp",
       "whatsappValue": "Réponse la plus rapide, généralement en quelques minutes",
       "bases": "Bases",
-      "basesValue": "Marrakech et Casablanca",
+      "basesValue": "Kénitra",
       "basesValue2": "Livraison partout au Maroc",
       "hours": "Horaires",
       "hoursValue": "Lundi-dimanche, 9h-19h",
