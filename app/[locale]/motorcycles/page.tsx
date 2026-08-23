@@ -8,7 +8,9 @@ import FallbackImg from '@/components/FallbackImg';
 import Reveal from '@/components/Reveal';
 import { mergeBikes, type BikeTranslation } from '@/lib/bikes';
 import { CONFIG } from '@/lib/config';
-import { pageMetadata } from '@/lib/seo';
+import { pageMetadata, absoluteUrl } from '@/lib/seo';
+import { motorcycleNode, breadcrumbNode, businessRef, WEBSITE_ID } from '@/lib/schema';
+import JsonLd from '@/components/JsonLd';
 import type { Metadata } from 'next';
 
 export async function generateMetadata({
@@ -24,7 +26,54 @@ export async function generateMetadata({
 export default async function MotorcyclesPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  return <MotorcyclesContent />;
+
+  const t = await getTranslations({ locale });
+  const bikes = mergeBikes(t.raw('bikes') as Record<string, BikeTranslation>);
+  const fleetUrl = absoluteUrl(locale, '/motorcycles');
+
+  /**
+   * The whole fleet, enumerated in one place.
+   *
+   * Each bike detail page describes itself, but nothing previously stated that
+   * these eight bikes are *the* fleet. An OfferCatalog on the listing page lets
+   * a crawler — or an assistant asked "what can I rent from Keni Rides and for
+   * how much" — answer from this single URL instead of visiting eight.
+   */
+  const graph = [
+    {
+      '@type': 'CollectionPage',
+      '@id': `${fleetUrl}#fleet`,
+      url: fleetUrl,
+      name: t('meta.motorcycles.title'),
+      description: t('meta.motorcycles.description'),
+      isPartOf: { '@id': WEBSITE_ID },
+      about: {
+        '@type': 'OfferCatalog',
+        name: t('motorcyclesPage.heroTitleEmphasis').trim(),
+        numberOfItems: bikes.length,
+        provider: businessRef,
+        itemListElement: bikes.map((bike, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          item: motorcycleNode(
+            bike,
+            absoluteUrl(locale, { pathname: '/motorcycles/[slug]', params: { slug: bike.slug } }),
+          ),
+        })),
+      },
+    },
+    breadcrumbNode([
+      { name: t('nav.home'), url: absoluteUrl(locale, '/') },
+      { name: t('nav.motorcycles'), url: fleetUrl },
+    ]),
+  ];
+
+  return (
+    <>
+      <JsonLd graph={graph} />
+      <MotorcyclesContent />
+    </>
+  );
 }
 
 function MotorcyclesContent() {

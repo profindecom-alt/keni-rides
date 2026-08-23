@@ -22,9 +22,9 @@ export const CONFIG = {
   phoneHref: 'tel:+212616712266',
   whatsapp: 'https://wa.me/212616712266',
   // Real Google Business Profile rating (Kénitra listing). Bump these two
-  // numbers as reviews accumulate; they feed both the footer badge and the
-  // LocalBusiness AggregateRating schema so the markup always matches what
-  // visitors see on the page.
+  // numbers as reviews accumulate; they feed the footer badge and /llms.txt.
+  // Deliberately NOT in the LocalBusiness JSON-LD — see the note in
+  // lib/schema.ts on self-serving reviews.
   google: {
     rating: 4.8,
     reviewCount: 48,

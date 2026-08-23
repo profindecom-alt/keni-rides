@@ -10,6 +10,8 @@ import Preloader from '@/components/Preloader';
 import TapTracker from '@/components/TapTracker';
 import { routing } from '@/i18n/routing';
 import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from '@/lib/seo';
+import { BUSINESS_NODE, WEBSITE_NODE } from '@/lib/schema';
+import JsonLd from '@/components/JsonLd';
 import '../globals.css';
 
 // Self-hosted variable fonts (see app/fonts/*.woff2, from @fontsource-variable).
@@ -112,51 +114,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className={fontVariables}>
       <head>
-        <script
-          type="application/ld+json"
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'LocalBusiness',
-              '@id': `${SITE_URL}/#business`,
-              name: SITE_NAME,
-              description: 'Premium adventure motorcycle rental in Morocco.',
-              url: SITE_URL,
-              logo: `${SITE_URL}/logo.webp`,
-              image: `${SITE_URL}${DEFAULT_OG_IMAGE}`,
-              telephone: '+212616712266',
-              address: {
-                '@type': 'PostalAddress',
-                streetAddress: '362 A. du N',
-                addressLocality: 'Kénitra',
-                addressCountry: 'MA',
-              },
-              geo: {
-                '@type': 'GeoCoordinates',
-                latitude: 33.2960489,
-                longitude: -6.5358158,
-              },
-              // Canonical Google Maps listing (CID from the Business Profile).
-              hasMap: 'https://www.google.com/maps?cid=13573386500998719410',
-              areaServed: { '@type': 'Country', name: 'Morocco' },
-              priceRange: '€60–€160 / day',
-              currenciesAccepted: 'EUR',
-              // NOTE: no aggregateRating here on purpose. Google treats a
-              // business rating self-published in structured data on its own
-              // site as a "self-serving review" — not eligible for star rich
-              // results. The real 4.8★ already shows via the Business Profile
-              // in the map pack, and the footer links to it. Keep it out of JSON-LD.
-              sameAs: [
-                // Google Business Profile — links this site to the Maps listing.
-                'https://www.google.com/maps?cid=13573386500998719410',
-                'https://www.facebook.com/share/ZKKKbiGrdkfL6RLS/?mibextid=LQQJ4d',
-                'https://www.instagram.com/keni_rides/',
-                'https://www.youtube.com/@KeniRides',
-              ],
-            }),
-          }}
-        />
+        <JsonLd graph={[BUSINESS_NODE, WEBSITE_NODE]} />
       </head>
       <body>
         <Preloader />

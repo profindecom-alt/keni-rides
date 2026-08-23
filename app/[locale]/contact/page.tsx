@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
-import { pageMetadata } from '@/lib/seo';
+import { pageMetadata, absoluteUrl } from '@/lib/seo';
+import { businessRef } from '@/lib/schema';
+import JsonLd from '@/components/JsonLd';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import PageHero from '@/components/PageHero';
@@ -17,28 +19,29 @@ export async function generateMetadata({
   return pageMetadata({ locale, href: '/contact', title: t('title'), description: t('description') });
 }
 
-const contactJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Keni Rides',
-  url: 'https://keni-rides.com',
-  telephone: '+212616712266',
-  areaServed: 'Morocco',
-  address: { '@type': 'PostalAddress', addressLocality: 'Marrakech', addressCountry: 'MA' },
-  openingHours: 'Mo-Su 09:00-19:00',
-  sameAs: [CONFIG.social.facebook, CONFIG.social.instagram, CONFIG.social.youtube],
-};
+/**
+ * This page used to publish a second, standalone LocalBusiness node that put
+ * the company in Marrakech, contradicting the site-wide node in the root
+ * layout (Kénitra, with the geo point and Google Business Profile CID). Two
+ * LocalBusiness entities with different addresses is a NAP conflict — it
+ * undercuts exactly the local signal that makes "location moto kenitra" our
+ * strongest query. There is now one business entity, declared once in the
+ * layout; this page only points at it.
+ */
+function contactJsonLd(locale: string) {
+  return {
+    '@type': 'ContactPage',
+    url: absoluteUrl(locale, '/contact'),
+    mainEntity: businessRef,
+  };
+}
 
 export default async function ContactPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
   return (
     <>
-      <script
-        type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }}
-      />
+      <JsonLd graph={[contactJsonLd(locale)]} />
       <ContactContent />
     </>
   );

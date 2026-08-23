@@ -12,6 +12,8 @@ import { CITY_SLUGS, findCity, type CityBase } from '@/lib/cities';
 import { mergeBikes, type BikeTranslation } from '@/lib/bikes';
 import { CONFIG } from '@/lib/config';
 import { pageMetadata, absoluteUrl } from '@/lib/seo';
+import { cityServiceNode, breadcrumbNode, faqNode } from '@/lib/schema';
+import JsonLd from '@/components/JsonLd';
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) => CITY_SLUGS.map((city) => ({ locale, city })));
@@ -47,32 +49,23 @@ export default async function RentalCityPage({ params }: PageProps) {
   const faq = t.raw(`cities.${c.slug}.faq`) as { q: string; a: string }[];
   const cityUrl = absoluteUrl(locale, { pathname: '/rentals/[city]', params: { city: c.slug } });
 
-  const breadcrumbJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: tNav('home'), item: absoluteUrl(locale, '/') },
-      { '@type': 'ListItem', position: 2, name: t('breadcrumbLabel', { city: c.name }), item: cityUrl },
-    ],
-  };
-
-  const faqJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: faq.map((f) => ({
-      '@type': 'Question',
-      name: f.q,
-      acceptedAnswer: { '@type': 'Answer', text: f.a },
-    })),
-  };
+  const graph = [
+    cityServiceNode({
+      city: c,
+      url: cityUrl,
+      name: t('metaTitle', { city: c.name }),
+      description: t(`cities.${c.slug}.lead`),
+    }),
+    breadcrumbNode([
+      { name: tNav('home'), url: absoluteUrl(locale, '/') },
+      { name: t('breadcrumbLabel', { city: c.name }), url: cityUrl },
+    ]),
+    faqNode(faq),
+  ];
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([breadcrumbJsonLd, faqJsonLd]) }}
-      />
+      <JsonLd graph={graph} />
       <RentalCityContent city={c} />
     </>
   );

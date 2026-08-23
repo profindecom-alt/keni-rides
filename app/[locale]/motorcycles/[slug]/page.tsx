@@ -13,7 +13,9 @@ import CityLinks from '@/components/CityLinks';
 import { routing } from '@/i18n/routing';
 import { BIKE_SLUGS, findBike, getBikeImage, getBikeGallery, getSimilarBikes, mergeBikes, type Bike, type BikeTranslation } from '@/lib/bikes';
 import { has3DModel, get3DModelPath } from '@/lib/models3d';
-import { pageMetadata, absoluteUrl, SITE_URL } from '@/lib/seo';
+import { pageMetadata, absoluteUrl } from '@/lib/seo';
+import { motorcycleNode, breadcrumbNode } from '@/lib/schema';
+import JsonLd from '@/components/JsonLd';
 
 export function generateStaticParams() {
   return routing.locales.flatMap((locale) => BIKE_SLUGS.map((slug) => ({ locale, slug })));
@@ -59,40 +61,18 @@ export default async function MotorcyclePage({ params }: PageProps) {
   const similar = getSimilarBikes(bikes, bike, 3);
   const bikeUrl = absoluteUrl(locale, { pathname: '/motorcycles/[slug]', params: { slug: bike.slug } });
 
-  const productJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Product',
-    name: `${bike.name} · Motorcycle Rental Morocco`,
-    description: bike.description,
-    image: `${SITE_URL}${getBikeImage(bike.slug)}`,
-    brand: { '@type': 'Brand', name: bike.name.split(' ')[0] },
-    offers: {
-      '@type': 'AggregateOffer',
-      lowPrice: String(bike.price),
-      highPrice: String(bike.priceShort),
-      priceCurrency: 'EUR',
-      availability: 'https://schema.org/InStock',
-      url: bikeUrl,
-    },
-  };
-
-  const breadcrumbJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: t('nav.home'), item: absoluteUrl(locale, '/') },
-      { '@type': 'ListItem', position: 2, name: t('motorcycleDetail.breadcrumbMotorcycles'), item: absoluteUrl(locale, '/motorcycles') },
-      { '@type': 'ListItem', position: 3, name: bike.name, item: bikeUrl },
-    ],
-  };
+  const graph = [
+    motorcycleNode(bike, bikeUrl),
+    breadcrumbNode([
+      { name: t('nav.home'), url: absoluteUrl(locale, '/') },
+      { name: t('motorcycleDetail.breadcrumbMotorcycles'), url: absoluteUrl(locale, '/motorcycles') },
+      { name: bike.name, url: bikeUrl },
+    ]),
+  ];
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
-        dangerouslySetInnerHTML={{ __html: JSON.stringify([productJsonLd, breadcrumbJsonLd]) }}
-      />
+      <JsonLd graph={graph} />
       <MotorcycleDetailContent bike={bike} similar={similar} />
     </>
   );
