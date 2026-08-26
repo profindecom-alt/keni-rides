@@ -13,7 +13,7 @@ import { CITY_SLUGS, findCity, type CityBase } from '@/lib/cities';
 import { mergeBikes, type BikeTranslation } from '@/lib/bikes';
 import { CONFIG } from '@/lib/config';
 import { pageMetadata, absoluteUrl } from '@/lib/seo';
-import { cityServiceNode, breadcrumbNode, faqNode } from '@/lib/schema';
+import { cityServiceNode, breadcrumbNode, faqNode, tripNodes } from '@/lib/schema';
 import JsonLd from '@/components/JsonLd';
 
 export function generateStaticParams() {
@@ -70,6 +70,13 @@ export default async function RentalCityPage({ params }: PageProps) {
       { name: t('breadcrumbLabel', { city: cityName }), url: cityUrl },
     ]),
     faqNode(faq),
+    // One TouristTrip per suggested route, waypoints in order.
+    ...tripNodes({
+      city: c,
+      url: cityUrl,
+      routes: t.raw(`cities.${c.slug}.routes`) as { title: string; desc: string }[],
+      levelLabel: (level) => t(`itinerary.levels.${level}`),
+    }),
   ];
 
   return (

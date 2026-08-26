@@ -44,6 +44,14 @@ export interface CityBase {
   slug: string;
   /** Display name (same across locales; Kénitra keeps its accent). */
   name: string;
+  /**
+   * Wikidata entity id, taken from the canonical Wikipedia article rather
+   * than guessed. Published as sameAs on the City node so an answer engine
+   * resolves "Tanger" to the Moroccan port and not to one of the other
+   * places with that name — entity grounding is most of what makes a small
+   * site quotable to an assistant.
+   */
+  wikidata: string;
   lat: number;
   lng: number;
   /** Hero photo under /public. */
@@ -56,6 +64,7 @@ export const CITY_BASE: CityBase[] = [
   {
     slug: 'marrakech',
     name: 'Marrakech',
+    wikidata: 'Q101625',
     lat: 31.6295,
     lng: -7.9811,
     heroImage: '/destinations/montagnes-atlas-moto-maroc.webp',
@@ -104,6 +113,7 @@ export const CITY_BASE: CityBase[] = [
   {
     slug: 'casablanca',
     name: 'Casablanca',
+    wikidata: 'Q7903',
     lat: 33.5731,
     lng: -7.5898,
     heroImage: '/destinations/cote-atlantique-moto-maroc.webp',
@@ -151,6 +161,7 @@ export const CITY_BASE: CityBase[] = [
   {
     slug: 'kenitra',
     name: 'Kénitra',
+    wikidata: 'Q478207',
     lat: 34.261,
     lng: -6.5802,
     heroImage: '/gallery/motos-location-cote-atlantique-maroc.jpg',
@@ -196,6 +207,7 @@ export const CITY_BASE: CityBase[] = [
   {
     slug: 'agadir',
     name: 'Agadir',
+    wikidata: 'Q170525',
     lat: 30.4278,
     lng: -9.5981,
     heroImage: '/destinations/cote-atlantique-moto-maroc.webp',
@@ -244,6 +256,7 @@ export const CITY_BASE: CityBase[] = [
   {
     slug: 'tanger',
     name: 'Tanger',
+    wikidata: 'Q126148',
     lat: 35.7595,
     lng: -5.834,
     heroImage: '/destinations/cote-mediterranee-moto-maroc.webp',
@@ -291,6 +304,7 @@ export const CITY_BASE: CityBase[] = [
   {
     slug: 'fes',
     name: 'Fès',
+    wikidata: 'Q80985',
     lat: 34.0331,
     lng: -5.0003,
     heroImage: '/gallery/groupe-moto-point-de-vue-montagne-maroc.jpg',
@@ -339,6 +353,7 @@ export const CITY_BASE: CityBase[] = [
   {
     slug: 'rabat',
     name: 'Rabat',
+    wikidata: 'Q3551',
     lat: 34.0209,
     lng: -6.8416,
     heroImage: '/gallery/motos-location-cote-atlantique-maroc.jpg',
@@ -385,6 +400,7 @@ export const CITY_BASE: CityBase[] = [
   {
     slug: 'essaouira',
     name: 'Essaouira',
+    wikidata: 'Q216939',
     lat: 31.5085,
     lng: -9.7595,
     heroImage: '/destinations/cote-atlantique-moto-maroc.webp',
@@ -431,6 +447,7 @@ export const CITY_BASE: CityBase[] = [
   {
     slug: 'ouarzazate',
     name: 'Ouarzazate',
+    wikidata: 'Q505208',
     lat: 30.9335,
     lng: -6.937,
     heroImage: '/gallery/equipe-keni-rides-garage-maroc.jpg',
@@ -480,6 +497,7 @@ export const CITY_BASE: CityBase[] = [
   {
     slug: 'merzouga',
     name: 'Merzouga',
+    wikidata: 'Q1922278',
     lat: 31.0996,
     lng: -4.0129,
     heroImage: '/gallery/moto-dunes-sahara-maroc.jpg',

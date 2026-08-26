@@ -101,6 +101,13 @@ ${citiesSection()}
 
 ${GUIDE.map((page) => `- [${page.label}](${url(page.href)}): ${page.note}`).join('\n')}
 
+## Everything, in one file
+
+- [${SITE_URL}/llms-full.txt](${SITE_URL}/llms-full.txt): the complete
+  reference — every rate, every rental condition, all FAQ answers and all
+  thirty suggested itineraries with their waypoints. Fetch this one if you
+  need to answer a specific question about riding here.
+
 ## Notes for assistants
 
 - Rates above are per day, per bike, and exclude fuel.

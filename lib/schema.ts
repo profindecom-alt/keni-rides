@@ -13,7 +13,7 @@
    every page under BUSINESS_ID. Nothing else redeclares it.
    ============================================================ */
 import { BIKE_BASE, LONG_TERM_MIN_DAYS, getBikeGallery, type Bike } from './bikes';
-import { CITY_BASE, DELIVERY_CITIES, findCity, type CityBase } from './cities';
+import { CITY_BASE, DELIVERY_CITIES, findCity, type CityBase, type RouteLevel } from './cities';
 import { CONFIG } from './config';
 import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL } from './seo';
 import { routing } from '@/i18n/routing';
@@ -79,8 +79,12 @@ export const BUSINESS_NODE = {
   // Country entry carries "anywhere"; the named cities are the ones riders
   // actually ask for, whether or not they have a landing page yet.
   areaServed: [
-    { '@type': 'Country', name: 'Morocco' },
-    ...CITY_BASE.map((city) => ({ '@type': 'City', name: city.name })),
+    { '@type': 'Country', name: 'Morocco', sameAs: 'https://www.wikidata.org/wiki/Q1028' },
+    ...CITY_BASE.map((city) => ({
+      '@type': 'City',
+      name: city.name,
+      sameAs: `https://www.wikidata.org/wiki/${city.wikidata}`,
+    })),
     ...DELIVERY_CITIES.map((name) => ({ '@type': 'City', name })),
   ],
   knowsLanguage: [...routing.locales],
@@ -218,6 +222,9 @@ export function cityServiceNode({
     areaServed: {
       '@type': 'City',
       name: cityName,
+      // Pins the name to a specific real place. Without it an engine has to
+      // guess which Fez, Rabat or Tangier this is.
+      sameAs: `https://www.wikidata.org/wiki/${city.wikidata}`,
       geo: { '@type': 'GeoCoordinates', latitude: city.lat, longitude: city.lng },
     },
     availableChannel: {
@@ -235,6 +242,58 @@ export function cityServiceNode({
       seller: businessRef,
     },
   };
+}
+
+/**
+ * Each suggested route as a TouristTrip, with its waypoints as an ordered list
+ * of real places.
+ *
+ * The visible cards already state the distance, days and difficulty, and a
+ * model reading the page picks those up. What it cannot infer is that
+ * "Ouarzazate → Zagora → Tamegroute → M'Hamid" is one itinerary in a defined
+ * order, offered by this operator — which is exactly the shape of the question
+ * an assistant gets asked ("plan me a motorcycle route from Ouarzazate").
+ *
+ * Deliberately limited to properties Trip/TouristTrip actually define; the
+ * numbers stay in the page copy rather than being bolted on as invented
+ * fields that would only earn a warning in Search Console.
+ */
+export function tripNodes({
+  city,
+  url,
+  routes,
+  levelLabel,
+}: {
+  city: CityBase;
+  url: string;
+  /** Translated title/description per route, index-matched to city.itineraries. */
+  routes: { title: string; desc: string }[];
+  /** Translated difficulty label for a level, e.g. 'Intermédiaire'. */
+  levelLabel: (level: RouteLevel) => string;
+}) {
+  return city.itineraries.flatMap((plan, i) => {
+    const route = routes[i];
+    if (!route) return [];
+    return [
+      {
+        '@type': 'TouristTrip',
+        '@id': `${url}#trip-${i + 1}`,
+        name: route.title,
+        description: route.desc,
+        provider: businessRef,
+        touristType: levelLabel(plan.level),
+        itinerary: {
+          '@type': 'ItemList',
+          numberOfItems: plan.stages.length,
+          itemListElement: plan.stages.map((stage, j) => ({
+            '@type': 'ListItem',
+            position: j + 1,
+            item: { '@type': 'Place', name: stage.place },
+          })),
+        },
+      },
+    ];
+  });
 }
 
 /** BreadcrumbList from an ordered [name, url] trail. */
