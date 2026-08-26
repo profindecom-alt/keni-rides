@@ -221,6 +221,17 @@ function RentalCityContent({ city }: { city: CityBase }) {
               </Reveal>
             ))}
           </div>
+          {/* These per-city FAQs are a subset; the site-wide FAQ and the
+              conditions page answer the rest, and neither was reachable from
+              here. */}
+          <Reveal as="p" style={{ marginTop: '2rem', textAlign: 'center', display: 'flex', flexWrap: 'wrap', gap: '1.5rem', justifyContent: 'center' }}>
+            <Link className="link-arrow" href="/faq">{tCommon('readFaq')}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </Link>
+            <Link className="link-arrow" href="/conditions">{tCommon('readConditions')}
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </Link>
+          </Reveal>
         </div>
       </section>
 

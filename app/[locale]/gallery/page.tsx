@@ -7,6 +7,7 @@ import PageHero from '@/components/PageHero';
 import GalleryGrid, { type GalleryImage } from '@/components/GalleryGrid';
 import FallbackImg from '@/components/FallbackImg';
 import Reveal from '@/components/Reveal';
+import CityLinks from '@/components/CityLinks';
 import { GALLERY_SRCS } from '@/lib/gallery';
 
 export async function generateMetadata({
@@ -54,6 +55,11 @@ function GalleryContent() {
           <GalleryGrid images={images} />
         </div>
       </section>
+
+      {/* The gallery was the site's biggest dead end — two outbound links,
+          none to a bookable page. These photos are of the regions these city
+          pages cover, so it is the natural next step as well as a link path. */}
+      <CityLinks dark />
 
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">

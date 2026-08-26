@@ -126,6 +126,14 @@ function MotorcycleDetailContent({ bike, similar }: { bike: Bike; similar: Bike[
                 zoomLabel={t('gallery.zoom')}
                 closeLabel={t('gallery.close')}
               />
+              {/* /gallerie had two inbound links in the whole site despite
+                  image search being our largest source of impressions. Someone
+                  looking at this bike's photos is exactly who wants the rest. */}
+              <p style={{ marginTop: '1rem' }}>
+                <Link className="link-arrow" href="/gallery">{tCommon('seeGallery')}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </Link>
+              </p>
             </Reveal>
           </div>
 
@@ -195,8 +203,14 @@ function MotorcycleDetailContent({ bike, similar }: { bike: Bike; similar: Bike[
                 ))}
               </ul>
               <p style={{ marginTop: '1.1rem', color: 'var(--text-2)' }}>{t('included.text')}</p>
-              <p style={{ marginTop: '0.8rem' }}>
+              {/* The FAQ answers the questions this summary raises — licence,
+                  age, deposit, insurance — and had no in-content link anywhere
+                  on the site before this. */}
+              <p style={{ marginTop: '0.8rem', display: 'flex', flexWrap: 'wrap', gap: '1.2rem' }}>
                 <Link className="link-arrow" href="/conditions">{t('conditionsLink')}
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </Link>
+                <Link className="link-arrow" href="/faq">{tCommon('readFaq')}
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
                 </Link>
               </p>

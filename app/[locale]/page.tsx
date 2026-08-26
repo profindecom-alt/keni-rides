@@ -6,6 +6,7 @@ import ParallaxHero from '@/components/ParallaxHero';
 import Counter from '@/components/Counter';
 import FleetGrid from '@/components/FleetGrid';
 import Marquee from '@/components/Marquee';
+import CityLinks from '@/components/CityLinks';
 import FallbackImg from '@/components/FallbackImg';
 import YouTubeEmbed from '@/components/YouTubeEmbed';
 import { mergeBikes, pickBikes, type BikeTranslation } from '@/lib/bikes';
@@ -256,6 +257,12 @@ function HomeContent() {
           </div>
         </div>
       </section>
+
+      {/* CITIES — the homepage carries more authority than any other page and
+          was passing none of it to the ten city pages in content: it linked six
+          bikes and zero cities. Sits right after DESTINATIONS, which sets up
+          the regions these cities open onto. */}
+      <CityLinks />
 
       {/* WHY KENI */}
       <section className="section section-dark">
