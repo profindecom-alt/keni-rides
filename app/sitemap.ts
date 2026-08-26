@@ -59,15 +59,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
-  const cityEntries: MetadataRoute.Sitemap = CITY_BASE.map(({ slug, heroImage }) => {
+  const cityEntries: MetadataRoute.Sitemap = CITY_BASE.map(({ slug, heroImage, itineraries }) => {
     const href: Href = { pathname: '/rentals/[city]', params: { city: slug } };
+    // The hero plus every itinerary photo. Declaring only the hero left three
+    // quarters of each city page's imagery out of the image sitemap, and image
+    // search is this site's largest impression source. Deduped because a city
+    // can legitimately reuse one photo for its hero and a route.
+    const photos = [...new Set([heroImage, ...itineraries.map((i) => i.image)])];
     return {
       url: absoluteUrl(routing.defaultLocale, href),
       lastModified,
       changeFrequency: 'monthly',
       priority: 0.85,
       alternates: { languages: languagesFor(href) },
-      images: imageUrls([heroImage]),
+      images: imageUrls(photos),
     };
   });
 
