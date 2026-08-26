@@ -3,6 +3,7 @@ import { getPathname, Link } from '@/i18n/navigation';
 import FallbackImg from './FallbackImg';
 import { CONFIG } from '@/lib/config';
 import { CITY_BASE } from '@/lib/cities';
+import { BIKE_BASE } from '@/lib/bikes';
 import { localeLabel } from '@/lib/locales';
 import { routing } from '@/i18n/routing';
 
@@ -56,9 +57,23 @@ export default function Footer() {
               <li><Link href="/about">{t('links.about')}</Link></li>
               <li><Link href="/conditions">{t('links.conditions')}</Link></li>
               <li><Link href="/faq">{t('links.faq')}</Link></li>
+            </ul>
+          </div>
+          {/* Cities get their own column, two names across. Folded into
+              "Explore" they made that list sixteen items long against five in
+              every other column, which is what left the footer so tall. The
+              anchor is the plain city name here: the keyword-bearing
+              "Location moto <city>" version still appears in CityLinks on the
+              bike, fleet and city pages, where in-content links actually
+              count, rather than being repeated in boilerplate on every page. */}
+          <div className="footer-cities">
+            <h4>{t('cities')}</h4>
+            <ul>
               {CITY_BASE.map((c) => (
                 <li key={c.slug}>
-                  <Link href={{ pathname: '/rentals/[city]', params: { city: c.slug } }}>{t('cityLink', { city: tCity(`cities.${c.slug}.name`) })}</Link>
+                  <Link href={{ pathname: '/rentals/[city]', params: { city: c.slug } }}>
+                    {tCity(`cities.${c.slug}.name`)}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -66,11 +81,12 @@ export default function Footer() {
           <div>
             <h4>{t('topBikes')}</h4>
             <ul>
-              <li><Link href={{ pathname: '/motorcycles/[slug]', params: { slug: 'bmw-gs1200-adventure' } }}>BMW GS 1200 Adventure</Link></li>
-              <li><Link href={{ pathname: '/motorcycles/[slug]', params: { slug: 'yamaha-tenere-700-world-raid' } }}>Ténéré 700 World Raid</Link></li>
-              <li><Link href={{ pathname: '/motorcycles/[slug]', params: { slug: 'yamaha-tenere-700' } }}>Yamaha Ténéré 700</Link></li>
-              <li><Link href={{ pathname: '/motorcycles/[slug]', params: { slug: 'bmw-f800gs-adventure' } }}>BMW F800GS Adventure</Link></li>
-              <li><Link href={{ pathname: '/motorcycles/[slug]', params: { slug: 'suzuki-dr650' } }}>Suzuki DR650</Link></li>
+              {/* Straight off the fleet data, so this can't drift from it. */}
+              {BIKE_BASE.slice(0, 5).map((bike) => (
+                <li key={bike.slug}>
+                  <Link href={{ pathname: '/motorcycles/[slug]', params: { slug: bike.slug } }}>{bike.name}</Link>
+                </li>
+              ))}
             </ul>
           </div>
           <div>

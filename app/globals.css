@@ -2033,11 +2033,24 @@ input[type='date'] { color-scheme: light; }
 }
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+  /* Brand, Explore, Cities, Bikes, Contact. Cities earns its own column —
+     ten of them inside "Explore" was what made this footer so tall. */
+  grid-template-columns: 1.5fr 0.9fr 1.1fr 1.1fr 1fr;
   gap: 2.5rem;
 }
-@media (max-width: 900px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 560px) { .footer-grid { grid-template-columns: 1fr; } }
+/* Ten cities read as two short columns rather than one long list, so every
+   column in the footer lands within a row or two of the others. */
+.footer-cities ul {
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.2rem;
+}
+@media (max-width: 1180px) { .footer-grid { grid-template-columns: 1fr 1fr 1fr; } }
+@media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; } }
+@media (max-width: 460px) {
+  .footer-grid { grid-template-columns: 1fr; }
+  /* One column is narrow enough that two city names side by side would wrap. */
+  .footer-cities ul { grid-template-columns: 1fr 1fr; }
+}
 .footer h4 {
   font-family: var(--font-mono);
   font-size: 0.7rem;
