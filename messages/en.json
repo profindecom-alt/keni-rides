@@ -120,6 +120,7 @@
     },
     "cities": {
       "marrakech": {
+        "name": "Marrakech",
         "lead": "Pick up an adventure motorcycle in the heart of Marrakech and be on the road to the Atlas and the Sahara within hours. Delivery to your riad or hotel, bike fully prepped and routes tailored to you.",
         "intro": [
           "Marrakech is the perfect launch pad for a motorcycle road trip in Morocco. In one morning you swap the buzz of the medina for the switchbacks of the High Atlas; in a single day you reach the edge of the desert. Keni Rides delivers a BMW GS, a Yamaha Ténéré or a Suzuki DR, serviced and ready to go, straight to where you are staying.",
@@ -133,10 +134,13 @@
         "faq": [
           { "q": "Where do I pick up the motorcycle in Marrakech?", "a": "We deliver free of charge to your riad, hotel or to Marrakech-Menara airport within an agreed radius. You are also welcome to collect it from our meeting point by arrangement." },
           { "q": "Can I return the bike in another city?", "a": "Yes. One-way rentals are possible, for example starting in Marrakech and returning in Casablanca, Fès or Kénitra, for a transfer surcharge." },
-          { "q": "Which motorcycle should I choose from Marrakech?", "a": "For the Atlas and the Sahara, the Yamaha Ténéré 700 and the BMW GS are ideal. For a first off-road experience, the lighter Honda CRF250 or Suzuki DR are easier to handle." }
+          { "q": "Which motorcycle should I choose from Marrakech?", "a": "For the Atlas and the Sahara, the Yamaha Ténéré 700 and the BMW GS are ideal. For a first off-road experience, the lighter Honda CRF250 or Suzuki DR are easier to handle." },
+          { "q": "When is the best time to ride from Marrakech?", "a": "March to May and September to November are ideal: mild temperatures on the plain and open Atlas passes. In summer the city regularly passes 40 °C and you need an early start. In winter the Tizi n'Tichka can close for a few hours after snowfall." },
+          { "q": "How many days should I allow from Marrakech?", "a": "Allow three days minimum for a round trip to the desert via Ouarzazate, and five to seven for a proper Atlas-Sahara loop without rushing. Two days is enough for the Ourika valley and the nearby passes." }
         ]
       },
       "casablanca": {
+        "name": "Casablanca",
         "lead": "Land in Casablanca and ride out the same day. Delivery to Mohammed V airport or your hotel, adventure bike fully prepped and support all along the road.",
         "intro": [
           "Casablanca and its Mohammed V international airport are the most convenient gateway to Morocco. Keni Rides delivers your adventure motorcycle there, ready to ride, so you can reach the Atlantic coast, the Atlas or Marrakech without losing a day.",
@@ -150,10 +154,13 @@
         "faq": [
           { "q": "Do you deliver to Mohammed V airport?", "a": "Yes, we deliver the motorcycle directly to Casablanca airport or your hotel so you can set off as soon as you arrive." },
           { "q": "Do I need an international licence?", "a": "A valid motorcycle licence is enough for most nationalities; an international permit is recommended. We check your documents before handover." },
-          { "q": "Can I start in Casablanca and finish in the desert?", "a": "Absolutely. Many of our riders leave Casablanca for the Sahara and return the bike in Marrakech or Fès. Contact us to arrange the transfer." }
+          { "q": "Can I start in Casablanca and finish in the desert?", "a": "Absolutely. Many of our riders leave Casablanca for the Sahara and return the bike in Marrakech or Fès. Contact us to arrange the transfer." },
+          { "q": "When is the best time to ride from Casablanca?", "a": "Casablanca rides well all year: the ocean tempers the summer and winters stay mild. The only thing to watch is the morning sea mist on the coast, which usually lifts by mid-morning." },
+          { "q": "How many days should I allow from Casablanca?", "a": "Two days for the Atlantic coast, four to five to reach the Sahara via Marrakech or Fez, and a week for a full loop combining mountains and desert." }
         ]
       },
       "kenitra": {
+        "name": "Kénitra",
         "lead": "Kénitra is our home base. Immediate handover, our keenest rates and direct access to northern Morocco: the Rif, Chefchaouen, the Atlantic coast and the imperial cities.",
         "intro": [
           "Kénitra is the home base of Keni Rides. This is where our motorcycles are maintained and prepared, which means a fast handover, first-hand advice and our best rates. From Kénitra the whole north of Morocco opens up: the Rif mountains, the blue city of Chefchaouen, the Moulay Bousselham lagoon and the imperial cities of Meknès and Fès.",
@@ -167,7 +174,149 @@
         "faq": [
           { "q": "Why start from Kénitra?", "a": "Kénitra is our base: the bike is ready immediately, you get our best rates and route advice straight from the team that knows every road in the north." },
           { "q": "Is Kénitra far from Rabat and the airport?", "a": "No, Kénitra is less than an hour from Rabat. We can also deliver the bike to Rabat or arrange pick-up from Rabat-Salé airport." },
-          { "q": "What routes can I ride from Kénitra?", "a": "The north is superb by motorcycle: the Rif and Chefchaouen, the Atlantic coast towards Moulay Bousselham, and the imperial cities of Meknès and Fès." }
+          { "q": "What routes can I ride from Kénitra?", "a": "The north is superb by motorcycle: the Rif and Chefchaouen, the Atlantic coast towards Moulay Bousselham, and the imperial cities of Meknès and Fès." },
+          { "q": "When is the best time to ride in the north?", "a": "The north rides well almost all year. Spring is the finest: the Rif is green and the temperatures are perfect. Winter stays mild on the coast but wet; summer is hot inland yet tempered near the Atlantic." },
+          { "q": "How many days should I allow from Kénitra?", "a": "Two days is enough for Chefchaouen and the Rif, three to four to add Meknes and Fez, and a week to ride down to the desert and come back by a different road." }
+        ]
+      },
+      "agadir": {
+        "name": "Agadir",
+        "lead": "Pick up your motorcycle in Agadir and ride between the Atlantic and the Anti-Atlas. Delivery to your hotel or to Al-Massira airport, bike fully prepped and routes built around the Souss region.",
+        "intro": [
+          "Agadir brings together what few Moroccan cities offer at once: a long Atlantic beach, a well-served international airport and, less than an hour inland, mountains rising above 2,000 metres. It is an ideal starting point if you want to alternate flowing coast roads with Anti-Atlas passes without spending whole days on trunk roads.",
+          "Keni Rides delivers a prepped BMW GS, Yamaha Ténéré or Suzuki DR to you in Agadir, with safety gear and support in French, English and Spanish. We match the bike to the plan: a big road-biased machine for the coast and long days, a light single if you are heading for the Anti-Atlas tracks."
+        ],
+        "routes": [
+          { "title": "Agadir → Paradise Valley and Immouzzer", "desc": "A day in the Tamraght gorges: palm groves, natural rock pools and a beautifully twisting mountain road." },
+          { "title": "Agadir → Tafraoute via the Anti-Atlas", "desc": "Two days to the pink granite boulders and the villages of the Ameln valley, on one of southern Morocco's finest roads." },
+          { "title": "The coast road to Essaouira", "desc": "170 km of Atlantic along the argan groves, through Taghazout, Tamri and Sidi Kaouki." }
+        ],
+        "faq": [
+          { "q": "Do you deliver to Agadir airport?", "a": "Yes. We deliver to Agadir Al-Massira airport, to your hotel or riad within an agreed radius. Send us your arrival time and the bike will be waiting, fuelled and ready to ride." },
+          { "q": "Which bike suits the Anti-Atlas?", "a": "The main roads to Tafraoute and Tiznit are paved and ride beautifully on a Ténéré 700 or a BMW GS. If you want to explore Anti-Atlas tracks, the lighter Suzuki DR650 or Honda CRF250 are far easier to handle." },
+          { "q": "Can I reach the desert from Agadir?", "a": "Yes, via Tata and Foum Zguid: allow two to three days to reach the Zagora region and Erg Chegaga. It is a wilder, far quieter route than the Marrakech-Merzouga corridor." },
+          { "q": "When is the best time to ride from Agadir?", "a": "Agadir is one of the most reliable destinations in Morocco: mild in winter, bearable in summer thanks to the ocean. Just avoid the Anti-Atlas interior in high summer, where it gets markedly hotter than on the coast." },
+          { "q": "How many days should I allow from Agadir?", "a": "Two days for Paradise Valley and the coast, three to four for the Tafraoute and Anti-Atlas loop, and a week if you push on to the desert via the Tata road." }
+        ]
+      },
+      "tanger": {
+        "name": "Tangier",
+        "lead": "Pick up your motorcycle in Tangier, at Europe's doorstep, and ride out to the Rif, Chefchaouen and the Mediterranean coast. Delivery to the port, to Ibn Battouta airport or to your hotel.",
+        "intro": [
+          "Tangier is the natural entry point for riders arriving from Spain. The ferry from Tarifa or Algeciras puts northern Morocco a few hours from Andalusia, and the road starts climbing into the Rif as soon as you leave the city. It is also the best base if you want to ride the Mediterranean coast, which most classic itineraries skip entirely.",
+          "Renting here rather than shipping your own bike across saves you the customs paperwork, the wear of the approach ride and the insurance extension. We hand you a machine already registered and insured in Morocco, with gear and support in French, English and Spanish."
+        ],
+        "routes": [
+          { "title": "Tangier → Chefchaouen", "desc": "Two and a half hours to the blue city through the Rif hills: the perfect warm-up after the ferry." },
+          { "title": "The Mediterranean road to Al Hoceima", "desc": "One of the country's finest coast roads: cliffs, coves and long sweepers above the Mediterranean." },
+          { "title": "Cap Spartel and Tetouan loop", "desc": "A day between the Caves of Hercules, the Atlantic shore and the white medina of Tetouan." }
+        ],
+        "faq": [
+          { "q": "I arrive by ferry from Spain — where do I collect the bike?", "a": "We deliver to Tanger Med port and to Tangier City port, as well as to Ibn Battouta airport and city-centre hotels. Send us your crossing time and we schedule the handover around your arrival." },
+          { "q": "Is renting easier than bringing my own motorcycle?", "a": "Far easier. No temporary import declaration, no green card extension, no approach mileage: you arrive and take the keys to a bike already road-legal in Morocco." },
+          { "q": "Can I ride south and drop the bike elsewhere?", "a": "Yes. Plenty of riders start in Tangier and return the bike in Fez, Marrakech or at our Kénitra base, for a transfer surcharge." },
+          { "q": "When is the best time to ride in the Rif?", "a": "Spring and autumn are perfect. Winter is mild on the coast but the passes can be damp and foggy; summer is pleasant by the Mediterranean, with noticeably heavier traffic around Tangier in August." },
+          { "q": "How many days should I allow from Tangier?", "a": "Two days is enough for Chefchaouen and back, four for the Mediterranean coast as far as Al Hoceima, and a week to ride south to Fez and the imperial cities." }
+        ]
+      },
+      "fes": {
+        "name": "Fez",
+        "lead": "Pick up your motorcycle in Fez and head for the Middle Atlas, the cedar forests of Ifrane and the Sahara. Delivery to your riad in the medina or to Fès-Saïss airport.",
+        "intro": [
+          "Fez is the gateway to the Middle Atlas. Within an hour's ride you go from the largest medina in the world to the cedar forests of Ifrane and Azrou, where the air is cool and the roads empty. It is also the most direct start for the Sahara, via Midelt and Errachidia, without doubling back through Marrakech.",
+          "We deliver a prepped BMW GS, Yamaha Ténéré or Suzuki DR to you in Fez, with safety gear and a route briefing. The medina is pedestrian, so we agree a handover point you can reach on foot from your riad."
+        ],
+        "routes": [
+          { "title": "Fez → Ifrane and the Azrou cedar forest", "desc": "A day in the Middle Atlas: forest switchbacks, Barbary macaques and a plateau at 1,600 metres." },
+          { "title": "Fez → Merzouga via Midelt", "desc": "Two days due south to Erg Chebbi, over the Zad pass and down the Ziz gorges." },
+          { "title": "Fez → Chefchaouen via Ouezzane", "desc": "The foothills of the Rif and quiet country roads up to the blue city." }
+        ],
+        "faq": [
+          { "q": "Where do I collect the bike in Fez?", "a": "At your riad or hotel, at Fès-Saïss airport, or at a meeting point in the Ville Nouvelle. Since the medina is pedestrian, we agree the nearest accessible point to your door." },
+          { "q": "Is Fez a good start for the desert?", "a": "It is the most direct route. Via Midelt, Errachidia and the Ziz gorges you reach Merzouga in two enjoyable days, with far less traffic than the Marrakech corridor." },
+          { "q": "Which bike for the Middle Atlas?", "a": "The roads are paved and flowing, so the Ténéré 700 and the BMW GS are perfect. In winter, be aware that it can snow above 1,500 metres — we will advise on timing and gear before you set off." },
+          { "q": "When is the best time to ride from Fez?", "a": "Spring and autumn are the best seasons. In winter the Middle Atlas is beautiful under snow but the passes demand care; in summer the medina and the plain easily pass 40 °C while the cedar forest stays cool." },
+          { "q": "How many days should I allow from Fez?", "a": "One day for Ifrane and Azrou, two days to Chefchaouen, and two to three days to reach Merzouga — so allow five to six days for a comfortable round trip to the Sahara." }
+        ]
+      },
+      "rabat": {
+        "name": "Rabat",
+        "lead": "Pick up your motorcycle in Rabat, less than an hour from our Kénitra workshop. Delivery to Rabat-Salé airport, to the station or to your hotel, at our shortest notice.",
+        "intro": [
+          "Rabat is the city we deliver to fastest: our Kénitra base is forty minutes up the road. In practice that means a bike available at short notice, a straightforward swap if you need one, and a team that can reach you quickly if anything comes up in the first few days.",
+          "The capital is also an excellent starting point. The Atlantic coast runs both north and south, the Mamora cork forest begins at the edge of town, and the imperial cities and the Rif mountains are a day's ride away."
+        ],
+        "routes": [
+          { "title": "Rabat → Chefchaouen", "desc": "A fine day heading north: Kénitra, Ouezzane and the climb into the Rif to the blue city." },
+          { "title": "The Atlantic coast to Moulay Bousselham", "desc": "Beaches, a lagoon and a bird reserve, following the ocean north of the capital." },
+          { "title": "Rabat → Meknes and Volubilis", "desc": "The imperial cities and the Roman ruins of Volubilis, on the country roads of the Gharb." }
+        ],
+        "faq": [
+          { "q": "Why is delivery so quick in Rabat?", "a": "Because our bikes are maintained in Kénitra, forty minutes from Rabat. We can often deliver the same day and reach you quickly if you need anything during the rental." },
+          { "q": "Do you deliver to Rabat-Salé airport?", "a": "Yes — to the airport, to Rabat-Agdal and Rabat-Ville stations, and to your hotel. Give us the time and the place and the bike will be there." },
+          { "q": "Can I collect in Rabat and return the bike elsewhere?", "a": "Yes. Returning in another city is possible for a transfer surcharge; if you return the bike to our Kénitra base there is no surcharge at all." },
+          { "q": "When is the best time to ride from Rabat?", "a": "The Atlantic coast rides well all year, with mild winters and summers tempered by the ocean. Spring is the most pleasant, while the Gharb hinterland is still green." },
+          { "q": "How many days should I allow from Rabat?", "a": "One day for the coast and the Mamora forest, two to three days for Meknes, Volubilis and Fez, and four to five for a loop through the Rif and Chefchaouen." }
+        ]
+      },
+      "essaouira": {
+        "name": "Essaouira",
+        "lead": "Pick up your motorcycle in Essaouira and ride the Atlantic shore, between argan groves and surf beaches. Delivery to your riad in the medina or at the edge of the old town.",
+        "intro": [
+          "Essaouira is a town of wind, white ramparts and blue fishing boats, and it is an underrated place to start a ride. The coast road to Agadir is among the finest in the country, and the argan-covered hinterland takes you towards Marrakech on back roads far more interesting than the main highway.",
+          "We deliver a prepped bike straight to Essaouira, with gear and support in French, English and Spanish. The medina is pedestrian, so we agree a handover point a few steps from your riad."
+        ],
+        "routes": [
+          { "title": "Essaouira → Agadir along the coast", "desc": "170 km of Atlantic via Sidi Kaouki, Tamri and Taghazout: sweeping bends, cliffs and surf spots." },
+          { "title": "Essaouira → Marrakech through the hinterland", "desc": "Back roads through argan groves and the Chiadma villages, away from the traffic of the main road." },
+          { "title": "Sidi Kaouki and Cap Sim loop", "desc": "Half a day along the beaches and dunes south of town." }
+        ],
+        "faq": [
+          { "q": "Where do I collect the bike in Essaouira?", "a": "At your riad, your hotel, or at a meeting point on the edge of the medina. Since the old town is pedestrian, we agree the nearest accessible point to your door." },
+          { "q": "Is the wind a problem on a motorcycle?", "a": "Essaouira is known for its trade winds, especially in spring and summer. You feel the crosswind on the coast road: a slightly heavier bike like the BMW GS or the Ténéré is more reassuring than a light single." },
+          { "q": "Can I ride here and back from Marrakech?", "a": "Yes — many riders rent in Marrakech and do Essaouira over two or three days. We can also deliver in Essaouira and collect the bike in Marrakech for a transfer surcharge." },
+          { "q": "When is the best time to ride from Essaouira?", "a": "April to October for the sunshine, bearing in mind the wind is strongest from May to August. If you would rather ride in calm air, aim for spring or autumn; winter stays mild but wetter." },
+          { "q": "How many days should I allow from Essaouira?", "a": "One day for the coast around Sidi Kaouki, two days to reach Agadir along the coast road, and three to four for an Essaouira-Marrakech loop through the argan hinterland." }
+        ]
+      },
+      "ouarzazate": {
+        "name": "Ouarzazate",
+        "lead": "Pick up your motorcycle in Ouarzazate, at the gateway to the desert. Aït Benhaddou, the Draa valley and the Dades and Todra gorges all start here.",
+        "intro": [
+          "Ouarzazate is the crossroads of southern Morocco. The Draa valley runs down to Zagora and Erg Chegaga, the Road of a Thousand Kasbahs heads for the Dades and Todra gorges, and Aït Benhaddou is thirty kilometres away. Starting here instead of Marrakech saves you a full day of riding each way and drops you straight into the landscapes you came to see.",
+          "We deliver a bike prepped for the terrain, with safety gear and a briefing on the region's tracks. This is an area where the choice of machine genuinely matters, so we talk it through with you before you arrive."
+        ],
+        "routes": [
+          { "title": "Ouarzazate → Zagora and the Draa valley", "desc": "Morocco's largest palm grove, rammed-earth kasbahs and the desert road towards Erg Chegaga." },
+          { "title": "Dades and Todra gorges", "desc": "The Road of a Thousand Kasbahs up to the famous Dades hairpins and the Todra cliffs." },
+          { "title": "Aït Benhaddou and the Tizi n'Tichka pass", "desc": "The World Heritage ksar, then the legendary climb into the High Atlas." }
+        ],
+        "faq": [
+          { "q": "Why start in Ouarzazate rather than Marrakech?", "a": "Because you save the Tizi n'Tichka day of riding both ways. From Ouarzazate you are already in the south: the Draa, the Dades and the Todra are immediately within reach." },
+          { "q": "Do I need an off-road bike here?", "a": "Not for the main routes, which are paved and spectacular. But if you want to ride the tracks towards Erg Chegaga or Jbel Saghro, take a Suzuki DR650 or a Honda CRF250 — far easier to pick up and to handle in sand." },
+          { "q": "Do you deliver to Ouarzazate airport?", "a": "Yes, to the airport as well as to your hotel or kasbah. Let us know your arrival time and the bike will be waiting, fuelled and ready." },
+          { "q": "When is the best time to ride from Ouarzazate?", "a": "October to April, without hesitation. Spring and autumn are perfect; winter is cold at night but very clear by day. In summer the Draa and Dades valleys become stifling in the middle of the day." },
+          { "q": "How many days should I allow from Ouarzazate?", "a": "Two days for the Dades and Todra gorges, three to ride down the Draa valley to Zagora, and four to five to link both into a single loop." }
+        ]
+      },
+      "merzouga": {
+        "name": "Merzouga",
+        "lead": "Pick up your motorcycle in Merzouga, at the foot of the Erg Chebbi dunes. Delivery to your camp or guesthouse, on a bike prepped for sand and tracks.",
+        "intro": [
+          "Merzouga is the Sahara, immediately. The Erg Chebbi dunes rise a hundred and fifty metres at the edge of the village, and all around lie the tracks of the Tafilalet: stony hamada, dry riverbeds and sand sections that built Morocco's reputation among off-road riders.",
+          "This is where the choice of bike and the briefing matter most. We prepare the machine for the terrain, set tyre pressures and talk you through which tracks are rideable for the season. Riding sand is not something to improvise: tell us your experience and we will match both the bike and the route to it."
+        ],
+        "routes": [
+          { "title": "The Erg Chebbi circuit", "desc": "A loop of tracks around the big dunes, past nomad camps and the Dayet Srji lake." },
+          { "title": "Merzouga → Rissani and the Tafilalet", "desc": "The historic souk at Rissani, ruined ksour and the palm groves of the Tafilalet." },
+          { "title": "Merzouga → Todra gorges", "desc": "Due west through Erfoud and Tinghir to the Todra cliffs, between desert and mountain." }
+        ],
+        "faq": [
+          { "q": "Do I need experience to ride here?", "a": "For the paved roads, no. For the Erg Chebbi sand, yes: it is demanding terrain where you will drop and pick the bike up more than once. If it is your first time, take a light machine and tell us — we will point you at tracks that build up gradually." },
+          { "q": "Which bike for the Sahara?", "a": "The Honda CRF250 and the Suzuki DR are easiest in sand thanks to their weight. The Yamaha Ténéré 700 is the best compromise if you are mixing tarmac and track. The BMW GS 1200 is superb on asphalt but heavy to lift off-road." },
+          { "q": "When is the best time to come?", "a": "October to April. In summer, temperatures in the Tafilalet regularly pass 45 °C, which makes riding in the middle of the day genuinely dangerous." },
+          { "q": "Can I ride in the dunes themselves?", "a": "Yes, but only with a guide and on a suitable bike. Erg Chebbi is deep sand where you bog down and lose your bearings very quickly. We point you towards the safer tracks around the edge, and towards a guide if you want to go into the big dunes." },
+          { "q": "How many days should I allow from Merzouga?", "a": "Two days for the Erg Chebbi circuit and the Tafilalet, three to four to reach the Todra and Dades gorges, and a week if you then ride north to Fez or Marrakech through the great valleys." }
         ]
       }
     }

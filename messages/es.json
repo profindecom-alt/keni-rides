@@ -120,6 +120,7 @@
     },
     "cities": {
       "marrakech": {
+        "name": "Marrakech",
         "lead": "Recoge una moto de aventura en el corazón de Marrakech y ponte rumbo al Atlas y al Sahara en pocas horas. Entrega en tu riad u hotel, moto preparada e itinerarios a medida.",
         "intro": [
           "Marrakech es el punto de partida ideal para un road trip en moto por Marruecos. En una mañana cambias el bullicio de la medina por las curvas del Alto Atlas; en un día llegas a las puertas del desierto. Keni Rides te entrega una BMW GS, una Yamaha Ténéré o una Suzuki DR, revisada y lista para salir, directamente en tu alojamiento.",
@@ -133,10 +134,13 @@
         "faq": [
           { "q": "¿Dónde recojo la moto en Marrakech?", "a": "Entregamos gratis en tu riad, tu hotel o en el aeropuerto Marrakech-Menara dentro de un radio acordado. También puedes recogerla en nuestro punto de encuentro previa cita." },
           { "q": "¿Puedo devolver la moto en otra ciudad?", "a": "Sí. El alquiler de solo ida es posible, por ejemplo salida en Marrakech y devolución en Casablanca, Fez o Kénitra, con un suplemento de traslado." },
-          { "q": "¿Qué moto elijo desde Marrakech?", "a": "Para el Atlas y el Sahara, la Yamaha Ténéré 700 y la BMW GS son ideales. Para una primera experiencia off-road, la Honda CRF250 o la Suzuki DR, más ligeras, son más fáciles de manejar." }
+          { "q": "¿Qué moto elijo desde Marrakech?", "a": "Para el Atlas y el Sahara, la Yamaha Ténéré 700 y la BMW GS son ideales. Para una primera experiencia off-road, la Honda CRF250 o la Suzuki DR, más ligeras, son más fáciles de manejar." },
+          { "q": "¿Cuál es la mejor época para rodar desde Marrakech?", "a": "De marzo a mayo y de septiembre a noviembre son ideales: temperaturas suaves en el llano y puertos del Atlas despejados. En verano la ciudad supera con frecuencia los 40 °C y hay que salir muy temprano. En invierno el Tizi n'Tichka puede cerrar unas horas tras una nevada." },
+          { "q": "¿Cuántos días hay que reservar saliendo de Marrakech?", "a": "Calcula tres días como mínimo para ir y volver al desierto por Uarzazate, y de cinco a siete para una buena vuelta Atlas-Sáhara sin prisas. Con dos días tienes de sobra para el valle del Ourika y los puertos cercanos." }
         ]
       },
       "casablanca": {
+        "name": "Casablanca",
         "lead": "Aterriza en Casablanca y sal en moto el mismo día. Entrega en el aeropuerto Mohammed V o en tu hotel, moto de aventura preparada y asistencia en toda la ruta.",
         "intro": [
           "Casablanca y su aeropuerto internacional Mohammed V son la puerta de entrada más práctica a Marruecos. Keni Rides te entrega allí tu moto de aventura, lista para rodar, para llegar a la costa atlántica, al Atlas o a Marrakech sin perder un día.",
@@ -150,10 +154,13 @@
         "faq": [
           { "q": "¿Entregáis en el aeropuerto Mohammed V?", "a": "Sí, entregamos la moto directamente en el aeropuerto de Casablanca o en tu hotel para que puedas salir nada más llegar." },
           { "q": "¿Necesito carnet internacional?", "a": "Un carnet de moto válido basta para la mayoría de nacionalidades; se recomienda el permiso internacional. Revisamos tus documentos antes de la entrega." },
-          { "q": "¿Puedo empezar en Casablanca y terminar en el desierto?", "a": "Por supuesto. Muchos de nuestros clientes salen de Casablanca hacia el Sahara y devuelven la moto en Marrakech o Fez. Contáctanos para organizar el traslado." }
+          { "q": "¿Puedo empezar en Casablanca y terminar en el desierto?", "a": "Por supuesto. Muchos de nuestros clientes salen de Casablanca hacia el Sahara y devuelven la moto en Marrakech o Fez. Contáctanos para organizar el traslado." },
+          { "q": "¿Cuál es la mejor época para rodar desde Casablanca?", "a": "Casablanca se rueda todo el año: el océano suaviza el verano y los inviernos son templados. Lo único a tener en cuenta es la niebla marina de primera hora en la costa, que suele levantar a media mañana." },
+          { "q": "¿Cuántos días hay que reservar saliendo de Casablanca?", "a": "Dos días para la costa atlántica, de cuatro a cinco para llegar al Sáhara por Marrakech o Fez, y una semana para una vuelta completa que combine montaña y desierto." }
         ]
       },
       "kenitra": {
+        "name": "Kenitra",
         "lead": "Kénitra es nuestra base. Entrega inmediata, nuestras mejores tarifas y acceso directo al norte de Marruecos: Rif, Chefchaouen, costa atlántica y ciudades imperiales.",
         "intro": [
           "Kénitra es el puerto de origen de Keni Rides. Aquí es donde se mantienen y preparan nuestras motos, lo que te garantiza una entrega rápida, consejos de primera mano y nuestras mejores tarifas. Desde Kénitra se abre todo el norte de Marruecos: las montañas del Rif, la ciudad azul de Chefchaouen, la laguna de Moulay Bousselham y las ciudades imperiales de Mequinez y Fez.",
@@ -167,7 +174,149 @@
         "faq": [
           { "q": "¿Por qué salir desde Kénitra?", "a": "Kénitra es nuestra base: la moto está lista de inmediato, disfrutas de nuestras mejores tarifas y de consejos de ruta directamente del equipo que conoce cada carretera del norte." },
           { "q": "¿Está Kénitra lejos de Rabat y del aeropuerto?", "a": "No, Kénitra está a menos de una hora de Rabat. También podemos entregar la moto en Rabat u organizar la recogida desde el aeropuerto Rabat-Salé." },
-          { "q": "¿Qué rutas puedo hacer desde Kénitra?", "a": "El norte es magnífico en moto: el Rif y Chefchaouen, la costa atlántica hacia Moulay Bousselham, y las ciudades imperiales de Mequinez y Fez." }
+          { "q": "¿Qué rutas puedo hacer desde Kénitra?", "a": "El norte es magnífico en moto: el Rif y Chefchaouen, la costa atlántica hacia Moulay Bousselham, y las ciudades imperiales de Mequinez y Fez." },
+          { "q": "¿Cuál es la mejor época para rodar por el norte?", "a": "El norte se rueda casi todo el año. La primavera es la mejor: el Rif está verde y las temperaturas son perfectas. El invierno sigue siendo suave en la costa aunque lluvioso; el verano es caluroso en el interior pero templado cerca del Atlántico." },
+          { "q": "¿Cuántos días hay que reservar desde Kenitra?", "a": "Con dos días tienes para Chefchaouen y el Rif, de tres a cuatro para añadir Mequinez y Fez, y una semana para bajar hasta el desierto y volver por otra carretera." }
+        ]
+      },
+      "agadir": {
+        "name": "Agadir",
+        "lead": "Recoge tu moto en Agadir y rueda entre el Atlántico y el Anti-Atlas. Entrega en tu hotel o en el aeropuerto Al-Massira, moto preparada e itinerarios pensados para la región del Sus.",
+        "intro": [
+          "Agadir reúne lo que pocas ciudades marroquíes ofrecen a la vez: una gran playa atlántica, un aeropuerto internacional bien conectado y, a menos de una hora hacia el interior, montañas que superan los 2.000 metros. Es un punto de partida ideal si quieres alternar carreteras costeras fluidas con puertos del Anti-Atlas sin pasar días enteros en carreteras principales.",
+          "Keni Rides te entrega en Agadir una BMW GS, una Yamaha Ténéré o una Suzuki DR preparada, con el equipo de seguridad y asistencia en francés, inglés y español. Adaptamos la moto al plan: una trail grande para la costa y las etapas largas, una monocilíndrica ligera si vas a por las pistas del Anti-Atlas."
+        ],
+        "routes": [
+          { "title": "Agadir → Paradise Valley e Immouzzer", "desc": "Un día en las gargantas del Tamraght: palmerales, pozas naturales y una carretera de montaña maravillosamente revirada." },
+          { "title": "Agadir → Tafraoute por el Anti-Atlas", "desc": "Dos días hasta las rocas de granito rosa y los pueblos del valle de los Ameln, por una de las mejores carreteras del sur de Marruecos." },
+          { "title": "La costa hasta Essaouira", "desc": "170 km de Atlántico entre arganes, pasando por Taghazout, Tamri y Sidi Kaouki." }
+        ],
+        "faq": [
+          { "q": "¿Entregáis la moto en el aeropuerto de Agadir?", "a": "Sí. Entregamos en el aeropuerto Agadir Al-Massira, en tu hotel o en tu riad dentro de un radio acordado. Dinos tu hora de llegada y la moto te estará esperando, con el depósito lleno y lista para salir." },
+          { "q": "¿Qué moto elegir para el Anti-Atlas?", "a": "Las carreteras principales hacia Tafraoute y Tiznit están asfaltadas y se disfrutan mucho con una Ténéré 700 o una BMW GS. Si quieres explorar las pistas del Anti-Atlas, la Suzuki DR650 o la Honda CRF250, más ligeras, son mucho más manejables." },
+          { "q": "¿Se puede llegar al desierto desde Agadir?", "a": "Sí, por la carretera de Tata y Foum Zguid: calcula dos o tres días hasta la zona de Zagora y el erg Chegaga. Es un itinerario más salvaje y mucho menos transitado que el eje Marrakech-Merzouga." },
+          { "q": "¿Cuál es la mejor época para rodar desde Agadir?", "a": "Agadir es uno de los destinos más estables de Marruecos: suave en invierno y llevadero en verano gracias al océano. Evita solo el interior del Anti-Atlas en pleno julio y agosto, donde hace bastante más calor que en la costa." },
+          { "q": "¿Cuántos días hay que reservar saliendo de Agadir?", "a": "Dos días para Paradise Valley y la costa, de tres a cuatro para la vuelta a Tafraoute y el Anti-Atlas, y una semana si sigues hasta el desierto por la carretera de Tata." }
+        ]
+      },
+      "tanger": {
+        "name": "Tánger",
+        "lead": "Recoge tu moto en Tánger, a las puertas de Europa, y sal a descubrir el Rif, Chefchaouen y la costa mediterránea. Entrega en el puerto, en el aeropuerto Ibn Battouta o en tu hotel.",
+        "intro": [
+          "Tánger es la puerta de entrada natural para los moteros que llegan desde España. El ferry desde Tarifa o Algeciras deja el norte de Marruecos a pocas horas de Andalucía, y nada más salir de la ciudad la carretera empieza a subir hacia el Rif. Es también la mejor base si quieres rodar por la costa mediterránea, que la mayoría de los itinerarios clásicos se salta.",
+          "Alquilar aquí en lugar de cruzar con tu propia moto te ahorra los trámites de aduana, el desgaste del viaje de aproximación y la ampliación del seguro. Te entregamos una moto ya matriculada y asegurada en Marruecos, con equipo y asistencia en francés, inglés y español."
+        ],
+        "routes": [
+          { "title": "Tánger → Chefchaouen", "desc": "Dos horas y media hasta la ciudad azul entre las colinas del Rif: el calentamiento perfecto después del ferry." },
+          { "title": "La carretera mediterránea hasta Alhucemas", "desc": "Una de las mejores carreteras costeras del país: acantilados, calas y curvas sobre el Mediterráneo." },
+          { "title": "Vuelta al cabo Espartel y Tetuán", "desc": "Un día entre las cuevas de Hércules, la costa atlántica y la medina blanca de Tetuán." }
+        ],
+        "faq": [
+          { "q": "Llego en ferry desde España, ¿dónde recojo la moto?", "a": "Entregamos tanto en el puerto de Tánger Med como en el de Tánger Ciudad, además del aeropuerto Ibn Battouta y los hoteles del centro. Dinos el horario de tu travesía y ajustamos la entrega a tu llegada." },
+          { "q": "¿Es más sencillo alquilar que traer mi propia moto?", "a": "Mucho más sencillo. Sin declaración temporal de importación, sin ampliar la carta verde, sin kilómetros de aproximación: llegas y coges las llaves de una moto que ya está en regla en Marruecos." },
+          { "q": "¿Puedo bajar al sur y dejar la moto en otro sitio?", "a": "Sí. Muchos riders salen de Tánger y devuelven la moto en Fez, Marrakech o en nuestra base de Kenitra, con un suplemento de traslado." },
+          { "q": "¿Cuál es la mejor época para rodar por el Rif?", "a": "La primavera y el otoño son perfectos. El invierno es suave en la costa, pero los puertos pueden estar húmedos y con niebla; el verano es agradable junto al Mediterráneo, con bastante más tráfico alrededor de Tánger en agosto." },
+          { "q": "¿Cuántos días hay que reservar saliendo de Tánger?", "a": "Con dos días tienes para ir y volver a Chefchaouen, cuatro para la costa mediterránea hasta Alhucemas, y una semana para bajar hacia Fez y las ciudades imperiales." }
+        ]
+      },
+      "fes": {
+        "name": "Fez",
+        "lead": "Recoge tu moto en Fez y toma rumbo al Atlas Medio, los cedros de Ifrane y el Sáhara. Entrega en tu riad de la medina o en el aeropuerto Fès-Saïss.",
+        "intro": [
+          "Fez es la puerta del Atlas Medio. En una hora de moto pasas de la medina más grande del mundo a los bosques de cedros de Ifrane y Azrou, con aire fresco y carreteras vacías. Es también el arranque más directo hacia el Sáhara, por Midelt y Errachidia, sin tener que volver por Marrakech.",
+          "Entregamos en Fez una BMW GS, una Yamaha Ténéré o una Suzuki DR preparada, con el equipo de seguridad y un briefing de ruta. Como la medina es peatonal, acordamos un punto de entrega accesible a pocos pasos de tu riad."
+        ],
+        "routes": [
+          { "title": "Fez → Ifrane y el cedral de Azrou", "desc": "Un día en el Atlas Medio: curvas entre bosque, monos de Berbería y una meseta a 1.600 metros." },
+          { "title": "Fez → Merzouga por Midelt", "desc": "Dos días rumbo sur hasta el erg Chebbi, por el puerto del Zad y las gargantas del Ziz." },
+          { "title": "Fez → Chefchaouen por Ouezzane", "desc": "Las estribaciones del Rif y carreteras rurales tranquilas hasta la ciudad azul." }
+        ],
+        "faq": [
+          { "q": "¿Dónde recojo la moto en Fez?", "a": "En tu riad u hotel, en el aeropuerto Fès-Saïss, o en un punto de encuentro en la Ville Nouvelle. Como la medina es peatonal, acordamos el punto accesible más cercano a tu puerta." },
+          { "q": "¿Es Fez un buen punto de partida para el desierto?", "a": "Es el itinerario más directo. Por Midelt, Errachidia y las gargantas del Ziz llegas a Merzouga en dos días de carretera agradable, con mucho menos tráfico que por el eje de Marrakech." },
+          { "q": "¿Qué moto para el Atlas Medio?", "a": "Las carreteras están asfaltadas y son muy rodadoras: la Ténéré 700 y la BMW GS van perfectas. En invierno, ten en cuenta que puede nevar por encima de los 1.500 metros; te asesoramos sobre fechas y equipo antes de salir." },
+          { "q": "¿Cuál es la mejor época para rodar desde Fez?", "a": "La primavera y el otoño son las mejores estaciones. En invierno el Atlas Medio es precioso con nieve, pero los puertos exigen prudencia; en verano la medina y el llano superan con facilidad los 40 °C mientras el cedral se mantiene fresco." },
+          { "q": "¿Cuántos días hay que reservar saliendo de Fez?", "a": "Un día para Ifrane y Azrou, dos días hasta Chefchaouen, y de dos a tres días para llegar a Merzouga: calcula por tanto de cinco a seis días para ir y volver al Sáhara con calma." }
+        ]
+      },
+      "rabat": {
+        "name": "Rabat",
+        "lead": "Recoge tu moto en Rabat, a menos de una hora de nuestro taller de Kenitra. Entrega en el aeropuerto Rabat-Salé, en la estación o en tu hotel, con nuestros plazos más cortos.",
+        "intro": [
+          "Rabat es la ciudad donde entregamos más rápido: nuestra base de Kenitra está a cuarenta minutos. En la práctica eso significa moto disponible con poca antelación, un cambio sencillo si hace falta y un equipo que puede plantarse allí enseguida si surge cualquier cosa los primeros días.",
+          "La capital es además un excelente punto de partida. La costa atlántica se extiende hacia el norte y hacia el sur, el bosque de la Mamora empieza a las afueras de la ciudad, y tanto las ciudades imperiales como las montañas del Rif están a una jornada de moto."
+        ],
+        "routes": [
+          { "title": "Rabat → Chefchaouen", "desc": "Un buen día rumbo norte: Kenitra, Ouezzane y la subida al Rif hasta la ciudad azul." },
+          { "title": "La costa atlántica hasta Moulay Bousselham", "desc": "Playas, laguna y reserva de aves, siguiendo el océano al norte de la capital." },
+          { "title": "Rabat → Mequinez y Volubilis", "desc": "Las ciudades imperiales y las ruinas romanas de Volubilis, por las carreteras rurales del Gharb." }
+        ],
+        "faq": [
+          { "q": "¿Por qué la entrega es tan rápida en Rabat?", "a": "Porque nuestras motos se mantienen en Kenitra, a cuarenta minutos de Rabat. A menudo podemos entregar el mismo día y llegar hasta ti enseguida si necesitas cualquier cosa durante el alquiler." },
+          { "q": "¿Entregáis en el aeropuerto Rabat-Salé?", "a": "Sí: en el aeropuerto, en las estaciones de Rabat-Agdal y Rabat-Ville, y en tu hotel. Dinos la hora y el lugar y allí estará la moto." },
+          { "q": "¿Puedo recoger en Rabat y devolver en otro sitio?", "a": "Sí. Devolver en otra ciudad es posible con un suplemento de traslado; si devuelves la moto en nuestra base de Kenitra, no hay ningún suplemento." },
+          { "q": "¿Cuál es la mejor época para rodar desde Rabat?", "a": "La costa atlántica se rueda todo el año, con inviernos suaves y veranos templados por el océano. La primavera es la más agradable, cuando el interior del Gharb todavía está verde." },
+          { "q": "¿Cuántos días hay que reservar saliendo de Rabat?", "a": "Un día para la costa y el bosque de la Mamora, de dos a tres días para Mequinez, Volubilis y Fez, y de cuatro a cinco para una vuelta por el Rif y Chefchaouen." }
+        ]
+      },
+      "essaouira": {
+        "name": "Essaouira",
+        "lead": "Recoge tu moto en Essaouira y rueda por la costa atlántica, entre arganes y playas de surf. Entrega en tu riad de la medina o al borde del casco antiguo.",
+        "intro": [
+          "Essaouira es una ciudad de viento, murallas blancas y barcas azules, y es un punto de partida infravalorado para la moto. La carretera de la costa hacia Agadir está entre las mejores del país, y el interior cubierto de arganes te lleva hacia Marrakech por carreteras secundarias mucho más interesantes que la nacional.",
+          "Entregamos directamente en Essaouira una moto preparada, con equipo y asistencia en francés, inglés y español. Como la medina es peatonal, acordamos un punto de entrega a pocos pasos de tu riad."
+        ],
+        "routes": [
+          { "title": "Essaouira → Agadir por la costa", "desc": "170 km de Atlántico por Sidi Kaouki, Tamri y Taghazout: curvas amplias, acantilados y spots de surf." },
+          { "title": "Essaouira → Marrakech por el interior", "desc": "Carreteras secundarias entre arganes y los pueblos de los Chiadma, lejos del tráfico de la nacional." },
+          { "title": "Vuelta a Sidi Kaouki y cabo Sim", "desc": "Media jornada entre las playas y las dunas al sur de la ciudad." }
+        ],
+        "faq": [
+          { "q": "¿Dónde recojo la moto en Essaouira?", "a": "En tu riad, tu hotel, o en un punto de encuentro al borde de la medina. Como el casco antiguo es peatonal, acordamos el punto accesible más cercano a tu puerta." },
+          { "q": "¿El viento es un problema en moto?", "a": "Essaouira es famosa por sus vientos alisios, sobre todo en primavera y verano. En la carretera de la costa se nota el viento lateral: una moto algo más pesada como la BMW GS o la Ténéré resulta más segura que una monocilíndrica ligera." },
+          { "q": "¿Se puede ir y volver desde Marrakech?", "a": "Sí, muchos riders alquilan en Marrakech y hacen Essaouira en dos o tres días. También podemos entregar en Essaouira y recoger la moto en Marrakech, con un suplemento de traslado." },
+          { "q": "¿Cuál es la mejor época para rodar desde Essaouira?", "a": "De abril a octubre por el sol, teniendo en cuenta que el viento es más fuerte de mayo a agosto. Si prefieres rodar con calma, apunta a la primavera o el otoño; el invierno sigue siendo suave pero más húmedo." },
+          { "q": "¿Cuántos días hay que reservar saliendo de Essaouira?", "a": "Un día para la costa alrededor de Sidi Kaouki, dos días para llegar a Agadir por la carretera costera, y de tres a cuatro para una vuelta Essaouira-Marrakech por el interior de los arganes." }
+        ]
+      },
+      "ouarzazate": {
+        "name": "Uarzazate",
+        "lead": "Recoge tu moto en Uarzazate, a las puertas del desierto. Aït Benhaddou, el valle del Draa y las gargantas del Dades y del Todra empiezan aquí.",
+        "intro": [
+          "Uarzazate es el cruce de caminos del sur de Marruecos. El valle del Draa baja hacia Zagora y el erg Chegaga, la Ruta de las Mil Kasbahs se dirige a las gargantas del Dades y del Todra, y Aït Benhaddou está a treinta kilómetros. Salir de aquí en lugar de Marrakech te ahorra una jornada entera de carretera en cada sentido y te deja directamente en medio de los paisajes que has venido a ver.",
+          "Entregamos en Uarzazate una moto preparada y adecuada al terreno, con el equipo de seguridad y un briefing sobre las pistas de la zona. Es un área donde la elección de la moto importa de verdad, así que lo hablamos contigo antes de tu llegada."
+        ],
+        "routes": [
+          { "title": "Uarzazate → Zagora y el valle del Draa", "desc": "El mayor palmeral de Marruecos, kasbahs de adobe y la carretera del desierto hacia el erg Chegaga." },
+          { "title": "Gargantas del Dades y del Todra", "desc": "La Ruta de las Mil Kasbahs hasta las famosas lazadas del Dades y los acantilados del Todra." },
+          { "title": "Aït Benhaddou y el puerto de Tizi n'Tichka", "desc": "El ksar Patrimonio de la Humanidad y después la mítica subida al Alto Atlas." }
+        ],
+        "faq": [
+          { "q": "¿Por qué salir de Uarzazate y no de Marrakech?", "a": "Porque te ahorras la jornada del Tizi n'Tichka a la ida y a la vuelta. Desde Uarzazate ya estás en el sur: el Draa, el Dades y el Todra quedan a tiro de piedra." },
+          { "q": "¿Hace falta una moto de campo aquí?", "a": "Para los ejes principales no, están asfaltados y son espectaculares. Ahora bien, si quieres rodar las pistas hacia el erg Chegaga o el Jbel Saghro, coge una Suzuki DR650 o una Honda CRF250: son mucho más fáciles de levantar y de manejar en arena." },
+          { "q": "¿Entregáis en el aeropuerto de Uarzazate?", "a": "Sí, tanto en el aeropuerto como en tu hotel o kasbah. Avísanos de tu hora de llegada y la moto te estará esperando, llena y lista." },
+          { "q": "¿Cuál es la mejor época para rodar desde Uarzazate?", "a": "De octubre a abril, sin dudarlo. La primavera y el otoño son perfectos; el invierno es frío de noche pero muy despejado de día. En verano los valles del Draa y del Dades se vuelven asfixiantes a mediodía." },
+          { "q": "¿Cuántos días hay que reservar saliendo de Uarzazate?", "a": "Dos días para las gargantas del Dades y del Todra, tres para bajar el valle del Draa hasta Zagora, y de cuatro a cinco para encadenar ambos en una misma vuelta." }
+        ]
+      },
+      "merzouga": {
+        "name": "Merzouga",
+        "lead": "Recoge tu moto en Merzouga, al pie de las dunas del erg Chebbi. Entrega en tu campamento o tu alojamiento, con una moto preparada para la arena y las pistas.",
+        "intro": [
+          "Merzouga es el Sáhara, sin rodeos. Las dunas del erg Chebbi se alzan ciento cincuenta metros a la salida del pueblo, y alrededor se extienden las pistas del Tafilalet: hamada pedregosa, cauces secos y tramos de arena que han dado a Marruecos su fama entre los moteros de campo.",
+          "Es la zona donde más cuentan la elección de la moto y el briefing. Preparamos la máquina para el terreno, ajustamos las presiones y te explicamos qué pistas son practicables según la temporada. Rodar en arena no se improvisa: cuéntanos tu experiencia y adaptamos tanto la moto como el itinerario."
+        ],
+        "routes": [
+          { "title": "La vuelta al erg Chebbi", "desc": "Un circuito de pistas alrededor de las grandes dunas, entre campamentos nómadas y el lago de Dayet Srji." },
+          { "title": "Merzouga → Rissani y el Tafilalet", "desc": "El zoco histórico de Rissani, ksour en ruinas y los palmerales del Tafilalet." },
+          { "title": "Merzouga → gargantas del Todra", "desc": "Rumbo oeste por Erfoud y Tinghir hasta los acantilados del Todra, entre desierto y montaña." }
+        ],
+        "faq": [
+          { "q": "¿Hace falta experiencia para rodar aquí?", "a": "Para el asfalto, no. Para la arena del erg Chebbi, sí: es un terreno exigente en el que te caerás y levantarás la moto más de una vez. Si es tu primera vez, coge una moto ligera y dínoslo: te orientamos hacia pistas progresivas." },
+          { "q": "¿Qué moto para el Sáhara?", "a": "La Honda CRF250 y la Suzuki DR son las más fáciles en arena por su peso. La Yamaha Ténéré 700 es el mejor compromiso si combinas asfalto y pista. La BMW GS 1200 es magnífica en carretera pero pesada de levantar fuera de ella." },
+          { "q": "¿Cuál es la mejor época?", "a": "De octubre a abril. En verano, las temperaturas en el Tafilalet superan con frecuencia los 45 °C, lo que hace que rodar a mediodía sea realmente peligroso." },
+          { "q": "¿Se puede rodar por las dunas propiamente dichas?", "a": "Sí, pero solo con acompañamiento y con una moto adecuada. El erg Chebbi es arena profunda donde uno se atasca y se desorienta muy rápido. Te orientamos hacia las pistas del perímetro, más seguras, y hacia un guía si quieres entrar en las grandes dunas." },
+          { "q": "¿Cuántos días hay que reservar desde Merzouga?", "a": "Dos días para la vuelta al erg Chebbi y el Tafilalet, de tres a cuatro para llegar a las gargantas del Todra y del Dades, y una semana si después subes hacia Fez o Marrakech por los grandes valles." }
         ]
       }
     }

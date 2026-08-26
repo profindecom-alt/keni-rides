@@ -17,6 +17,9 @@ import { CITY_BASE } from '@/lib/cities';
  */
 export default function CityLinks({ dark = false, exclude }: { dark?: boolean; exclude?: string }) {
   const t = useTranslations('cityLinks');
+  // City names are localized per page ("Tangier" / "Tánger" / "Tanger"), so the
+  // anchor text matches the keyword riders actually search in that language.
+  const tCity = useTranslations('rentalCity');
   const cities = exclude ? CITY_BASE.filter((c) => c.slug !== exclude) : CITY_BASE;
   if (cities.length === 0) return null;
 
@@ -35,7 +38,7 @@ export default function CityLinks({ dark = false, exclude }: { dark?: boolean; e
               className="btn btn-ghost"
               href={{ pathname: '/rentals/[city]', params: { city: c.slug } }}
             >
-              {t('linkLabel', { city: c.name })}
+              {t('linkLabel', { city: tCity(`cities.${c.slug}.name`) })}
             </Link>
           ))}
         </Reveal>

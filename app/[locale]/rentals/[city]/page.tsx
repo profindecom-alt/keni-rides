@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { Link } from '@/i18n/navigation';
 import PageHero from '@/components/PageHero';
 import FleetGrid from '@/components/FleetGrid';
+import CityLinks from '@/components/CityLinks';
 import FallbackImg from '@/components/FallbackImg';
 import Reveal from '@/components/Reveal';
 import { routing } from '@/i18n/routing';
@@ -29,10 +30,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!c) return {};
 
   const t = await getTranslations({ locale, namespace: 'rentalCity' });
+  const cityName = t(`cities.${c.slug}.name`);
   return pageMetadata({
     locale,
     href: { pathname: '/rentals/[city]', params: { city: c.slug } },
-    title: t('metaTitle', { city: c.name }),
+    title: t('metaTitle', { city: cityName }),
     description: t(`cities.${c.slug}.lead`),
     image: c.heroImage,
   });
@@ -46,19 +48,21 @@ export default async function RentalCityPage({ params }: PageProps) {
 
   const t = await getTranslations({ locale, namespace: 'rentalCity' });
   const tNav = await getTranslations({ locale, namespace: 'nav' });
+  const cityName = t(`cities.${c.slug}.name`);
   const faq = t.raw(`cities.${c.slug}.faq`) as { q: string; a: string }[];
   const cityUrl = absoluteUrl(locale, { pathname: '/rentals/[city]', params: { city: c.slug } });
 
   const graph = [
     cityServiceNode({
       city: c,
+      cityName,
       url: cityUrl,
-      name: t('metaTitle', { city: c.name }),
+      name: t('metaTitle', { city: cityName }),
       description: t(`cities.${c.slug}.lead`),
     }),
     breadcrumbNode([
       { name: tNav('home'), url: absoluteUrl(locale, '/') },
-      { name: t('breadcrumbLabel', { city: c.name }), url: cityUrl },
+      { name: t('breadcrumbLabel', { city: cityName }), url: cityUrl },
     ]),
     faqNode(faq),
   ];
@@ -73,6 +77,7 @@ export default async function RentalCityPage({ params }: PageProps) {
 
 function RentalCityContent({ city }: { city: CityBase }) {
   const t = useTranslations('rentalCity');
+  const cityName = t(`cities.${city.slug}.name`);
   const tCommon = useTranslations('common');
   const tBikes = useTranslations();
   const bikes = mergeBikes(tBikes.raw('bikes') as Record<string, BikeTranslation>);
@@ -85,10 +90,10 @@ function RentalCityContent({ city }: { city: CityBase }) {
     <>
       <PageHero
         image={city.heroImage}
-        imageAlt={t('heroAlt', { city: city.name })}
-        placeholderLabel={city.name}
-        crumbLabel={t('breadcrumbLabel', { city: city.name })}
-        title={<>{t('heroTitle')} <span className="text-gradient">{city.name}</span></>}
+        imageAlt={t('heroAlt', { city: cityName })}
+        placeholderLabel={cityName}
+        crumbLabel={t('breadcrumbLabel', { city: cityName })}
+        title={<>{t('heroTitle')} <span className="text-gradient">{cityName}</span></>}
         lead={t(`cities.${city.slug}.lead`)}
       />
 
@@ -118,7 +123,7 @@ function RentalCityContent({ city }: { city: CityBase }) {
         <div className="container">
           <Reveal as="div" className="section-head center">
             <p className="eyebrow">{t('routesEyebrow')}</p>
-            <h2>{t('routesTitle', { city: city.name })}</h2>
+            <h2>{t('routesTitle', { city: cityName })}</h2>
           </Reveal>
           <div className="grid grid-3">
             {routes.map((r, i) => (
@@ -138,8 +143,8 @@ function RentalCityContent({ city }: { city: CityBase }) {
         <div className="container">
           <Reveal as="div" className="section-head center">
             <p className="eyebrow">{t('fleetEyebrow')}</p>
-            <h2>{t('fleetTitle', { city: city.name })}</h2>
-            <p className="lead" style={{ maxWidth: '60ch', margin: '0.6rem auto 0' }}>{t('fleetLead', { city: city.name })}</p>
+            <h2>{t('fleetTitle', { city: cityName })}</h2>
+            <p className="lead" style={{ maxWidth: '60ch', margin: '0.6rem auto 0' }}>{t('fleetLead', { city: cityName })}</p>
           </Reveal>
           <FleetGrid bikes={bikes} />
         </div>
@@ -167,11 +172,15 @@ function RentalCityContent({ city }: { city: CityBase }) {
         </div>
       </section>
 
+      {/* Every city page links to the other nine, so the ten of them reinforce
+          each other instead of each depending on the homepage for link equity. */}
+      <CityLinks exclude={city.slug} />
+
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <Reveal as="div" className="cta-band" direction="zoom">
             <FallbackImg src="/gallery/DSC01332.jpg" alt="" placeholderLabel="" />
-            <h2>{t('cta.title', { city: city.name })}</h2>
+            <h2>{t('cta.title', { city: cityName })}</h2>
             <p>{t('cta.lead')}</p>
             <div className="hero-actions">
               <Link className="btn btn-primary btn-lg" href="/contact">{t('cta.button')}</Link>

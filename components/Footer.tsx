@@ -8,6 +8,8 @@ import { routing } from '@/i18n/routing';
 
 export default function Footer() {
   const t = useTranslations('footer');
+  // Localized city names so footer anchors read 'Tangier' on /en, 'Tánger' on /es.
+  const tCity = useTranslations('rentalCity');
   const locale = useLocale();
 
   return (
@@ -56,7 +58,7 @@ export default function Footer() {
               <li><Link href="/faq">{t('links.faq')}</Link></li>
               {CITY_BASE.map((c) => (
                 <li key={c.slug}>
-                  <Link href={{ pathname: '/rentals/[city]', params: { city: c.slug } }}>{t('cityLink', { city: c.name })}</Link>
+                  <Link href={{ pathname: '/rentals/[city]', params: { city: c.slug } }}>{t('cityLink', { city: tCity(`cities.${c.slug}.name`) })}</Link>
                 </li>
               ))}
             </ul>

@@ -195,11 +195,14 @@ export function motorcycleNode(bike: Bike, url: string) {
  */
 export function cityServiceNode({
   city,
+  cityName,
   url,
   name,
   description,
 }: {
   city: CityBase;
+  /** Localized city name — "Tangier" on /en, "Tánger" on /es, "Tanger" on /fr. */
+  cityName: string;
   url: string;
   name: string;
   description: string;
@@ -214,7 +217,7 @@ export function cityServiceNode({
     provider: businessRef,
     areaServed: {
       '@type': 'City',
-      name: city.name,
+      name: cityName,
       geo: { '@type': 'GeoCoordinates', latitude: city.lat, longitude: city.lng },
     },
     availableChannel: {
