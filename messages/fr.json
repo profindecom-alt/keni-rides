@@ -91,6 +91,7 @@
     "bookYourMotorcycle": "Réserver votre moto",
     "readMore": "En savoir plus",
     "bikeImageAlt": "Location {bike} au Maroc — Keni Rides",
+    "routeImageAlt": "Moto d'aventure Keni Rides sur les routes du Maroc",
     "bikeAngleAlt": "{bike} en location au Maroc — {angle}",
     "bike3dAlt": "Modèle 3D interactif du {bike} en location au Maroc"
   },
@@ -117,6 +118,14 @@
       "title": "Prêt à rouler depuis {city} ?",
       "lead": "Donnez-nous vos dates et votre itinéraire : nous préparons la moto idéale et vous répondons dans la journée.",
       "button": "Demander un devis"
+    },
+    "itinerary": {
+      "days": "{days, plural, one {# jour} other {# jours}}",
+      "distance": "{km} km",
+      "stagesLabel": "Étapes",
+      "bikeLabel": "Moto conseillée",
+      "levelLabel": "Niveau",
+      "levels": { "easy": "Accessible", "moderate": "Intermédiaire", "demanding": "Engagé" }
     },
     "cities": {
       "marrakech": {

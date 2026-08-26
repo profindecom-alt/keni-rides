@@ -91,6 +91,7 @@
     "bookYourMotorcycle": "Book Your Motorcycle",
     "readMore": "Read more",
     "bikeImageAlt": "{bike} motorcycle rental in Morocco — Keni Rides",
+    "routeImageAlt": "Keni Rides adventure motorcycle on Moroccan roads",
     "bikeAngleAlt": "{bike} for rent in Morocco — {angle}",
     "bike3dAlt": "Interactive 3D model of the {bike} available to rent in Morocco"
   },
@@ -117,6 +118,14 @@
       "title": "Ready to ride out of {city}?",
       "lead": "Send us your dates and route and we will prepare the right motorcycle and reply the same day.",
       "button": "Request a quote"
+    },
+    "itinerary": {
+      "days": "{days, plural, one {# day} other {# days}}",
+      "distance": "{km} km",
+      "stagesLabel": "Stages",
+      "bikeLabel": "Recommended bike",
+      "levelLabel": "Level",
+      "levels": { "easy": "Easy", "moderate": "Intermediate", "demanding": "Demanding" }
     },
     "cities": {
       "marrakech": {

@@ -125,16 +125,53 @@ function RentalCityContent({ city }: { city: CityBase }) {
             <p className="eyebrow">{t('routesEyebrow')}</p>
             <h2>{t('routesTitle', { city: cityName })}</h2>
           </Reveal>
-          <div className="grid grid-3">
-            {routes.map((r, i) => (
-              <Reveal as="div" className="feature-card" key={r.title} delay={i * 0.08}>
-                <div className="feature-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M9 20 3 17V4l6 3 6-3 6 3v13l-6-3-6 3zM9 7v13M15 4v13"/></svg>
-                </div>
-                <h3>{r.title}</h3>
-                <p>{r.desc}</p>
-              </Reveal>
-            ))}
+          {/* Each translated route is paired with its measured itinerary from
+              lib/cities: duration, distance, difficulty, the waypoints and the
+              bikes we would actually suggest for that terrain. */}
+          <div className="itinerary-grid">
+            {routes.map((r, i) => {
+              const plan = city.itineraries[i];
+              if (!plan) return null;
+              return (
+                <Reveal as="article" className="itinerary-card" key={r.title} delay={i * 0.08}>
+                  <div className="itinerary-photo">
+                    <FallbackImg src={plan.image} alt={tCommon('routeImageAlt')} placeholderLabel={r.title} />
+                  </div>
+                  <div className="itinerary-body">
+                    <div className="itinerary-chips">
+                      <span className="itinerary-chip is-accent">{t('itinerary.days', { days: plan.days })}</span>
+                      <span className="itinerary-chip">{t('itinerary.distance', { km: plan.km })}</span>
+                      <span className="itinerary-chip">{t(`itinerary.levels.${plan.level}`)}</span>
+                    </div>
+                    <h3>{r.title}</h3>
+                    <p>{r.desc}</p>
+
+                    <div className="itinerary-detail">
+                      <h4>{t('itinerary.stagesLabel')}</h4>
+                      <ol className="itinerary-stages">
+                        {plan.stages.map((stage) => (
+                          <li key={stage.place}>
+                            <span>{stage.place}</span>
+                            <span className="km">{stage.km} km</span>
+                          </li>
+                        ))}
+                      </ol>
+                      <h4>{t('itinerary.bikeLabel')}</h4>
+                      <div className="itinerary-bikes">
+                        {plan.bikes.map((slug) => {
+                          const bike = bikes.find((b) => b.slug === slug);
+                          return bike ? (
+                            <Link key={slug} href={{ pathname: '/motorcycles/[slug]', params: { slug } }}>
+                              {bike.short}
+                            </Link>
+                          ) : null;
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                </Reveal>
+              );
+            })}
           </div>
         </div>
       </section>
