@@ -39,7 +39,7 @@ function TestimonialsContent() {
   return (
     <>
       <PageHero
-        image="/gallery/DSC03273.jpg"
+        image="/gallery/groupe-moto-acacia-desert-maroc.jpg"
         imageAlt="Keni Rides group under an acacia tree in the desert"
         placeholderLabel="Rider Stories"
         crumbLabel={tNav('testimonials')}
@@ -91,7 +91,7 @@ function TestimonialsContent() {
       <section className="section">
         <div className="container">
           <Reveal as="div" className="cta-band" direction="zoom">
-            <FallbackImg src="/gallery/DSC01332.jpg" alt="" placeholderLabel="" />
+            <FallbackImg src="/gallery/moto-piste-poussiere-montagne-maroc.jpg" alt="" placeholderLabel="" fill sizes="100vw" />
             <h2>{t('cta.titleStart')}<span className="text-gradient">{t('cta.titleEmphasis')}</span></h2>
             <p>{t('cta.lead')}</p>
             <div className="hero-actions">

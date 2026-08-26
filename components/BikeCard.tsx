@@ -17,6 +17,7 @@ export default function BikeCard({ bike, delay = 0 }: { bike: Bike; delay?: numb
           placeholderLabel={bike.short}
           width={800}
           height={600}
+          sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 33vw"
         />
       </Link>
       <div className="bike-card-body">

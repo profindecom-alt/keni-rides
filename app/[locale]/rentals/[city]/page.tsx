@@ -20,6 +20,11 @@ export function generateStaticParams() {
   return routing.locales.flatMap((locale) => CITY_SLUGS.map((city) => ({ locale, city })));
 }
 
+/** '/gallery/moto-dunes-sahara-maroc.jpg' → 'moto-dunes-sahara-maroc', the alt-text key. */
+function photoKey(src: string): string {
+  return src.split('/').pop()!.replace(/\.\w+$/, '');
+}
+
 interface PageProps {
   params: Promise<{ locale: string; city: string }>;
 }
@@ -135,7 +140,17 @@ function RentalCityContent({ city }: { city: CityBase }) {
               return (
                 <Reveal as="article" className="itinerary-card" key={r.title} delay={i * 0.08}>
                   <div className="itinerary-photo">
-                    <FallbackImg src={plan.image} alt={tCommon('routeImageAlt')} placeholderLabel={r.title} />
+                    {/* Alt text describes the photo itself, keyed off its
+                        filename, rather than repeating the route title — the
+                        same shot is reused across cities and image search is
+                        this site's biggest impression source. */}
+                    <FallbackImg
+                      src={plan.image}
+                      alt={tCommon(`photoAlt.${photoKey(plan.image)}`)}
+                      placeholderLabel={r.title}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 33vw"
+                    />
                   </div>
                   <div className="itinerary-body">
                     <div className="itinerary-chips">
@@ -216,7 +231,7 @@ function RentalCityContent({ city }: { city: CityBase }) {
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <Reveal as="div" className="cta-band" direction="zoom">
-            <FallbackImg src="/gallery/DSC01332.jpg" alt="" placeholderLabel="" />
+            <FallbackImg src="/gallery/moto-piste-poussiere-montagne-maroc.jpg" alt="" placeholderLabel="" fill sizes="100vw" />
             <h2>{t('cta.title', { city: cityName })}</h2>
             <p>{t('cta.lead')}</p>
             <div className="hero-actions">

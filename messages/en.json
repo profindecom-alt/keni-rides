@@ -92,6 +92,19 @@
     "readMore": "Read more",
     "bikeImageAlt": "{bike} motorcycle rental in Morocco — Keni Rides",
     "routeImageAlt": "Keni Rides adventure motorcycle on Moroccan roads",
+    "photoAlt": {
+      "desert-sahara-moto-maroc": "Adventure motorcycle on the dunes of the Moroccan Sahara",
+      "montagnes-atlas-moto-maroc": "Motorcycle at an Atlas mountain pass above a hairpin road",
+      "cote-atlantique-moto-maroc": "Motorcycle facing the Atlantic Ocean at sunset",
+      "cote-mediterranee-moto-maroc": "Motorcycle on the Mediterranean coast road in northern Morocco",
+      "groupe-moto-point-de-vue-montagne-maroc": "Keni Rides group at a viewpoint over the Moroccan plains",
+      "moto-col-montagne-maroc": "Motorcycle on a rocky mountain track in Morocco",
+      "groupe-moto-aventure-maroc": "Adventure motorcycles resting outside a kasbah",
+      "equipe-keni-rides-garage-maroc": "The Keni Rides team and bikes outside a garage in Morocco",
+      "moto-dunes-sahara-maroc": "Yamaha Ténéré 700 riding a sand dune in the Sahara",
+      "motos-plaines-desertiques-maroc": "Riders resting under an acacia in the Moroccan desert",
+      "motos-location-cote-atlantique-maroc": "Two Keni Rides rental motorcycles by the Atlantic"
+    },
     "bikeAngleAlt": "{bike} for rent in Morocco — {angle}",
     "bike3dAlt": "Interactive 3D model of the {bike} available to rent in Morocco"
   },

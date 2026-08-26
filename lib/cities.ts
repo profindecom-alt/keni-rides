@@ -58,14 +58,14 @@ export const CITY_BASE: CityBase[] = [
     name: 'Marrakech',
     lat: 31.6295,
     lng: -7.9811,
-    heroImage: '/destinations/atlas.webp',
+    heroImage: '/destinations/montagnes-atlas-moto-maroc.webp',
     itineraries: [
       {
         days: 4,
         km: 560,
         level: 'moderate',
         bikes: ['yamaha-tenere-700', 'bmw-gs1200-adventure'],
-        image: '/destinations/sahara.webp',
+        image: '/destinations/desert-sahara-moto-maroc.webp',
         stages: [
           { place: 'Ouarzazate', km: 200 },
           { place: 'Boumalne Dadès', km: 320 },
@@ -78,7 +78,7 @@ export const CITY_BASE: CityBase[] = [
         km: 200,
         level: 'easy',
         bikes: ['bmw-gs1200-adventure', 'yamaha-tenere-700'],
-        image: '/destinations/atlas.webp',
+        image: '/destinations/montagnes-atlas-moto-maroc.webp',
         stages: [
           { place: 'Aït Ourir', km: 35 },
           { place: 'Tizi n\'Tichka', km: 105 },
@@ -91,7 +91,7 @@ export const CITY_BASE: CityBase[] = [
         km: 140,
         level: 'easy',
         bikes: ['honda-crf250', 'suzuki-dr650'],
-        image: '/gallery/DSC01210.jpg',
+        image: '/gallery/groupe-moto-point-de-vue-montagne-maroc.jpg',
         stages: [
           { place: 'Tnine Ourika', km: 35 },
           { place: 'Setti Fatma', km: 65 },
@@ -106,14 +106,14 @@ export const CITY_BASE: CityBase[] = [
     name: 'Casablanca',
     lat: 33.5731,
     lng: -7.5898,
-    heroImage: '/destinations/atlantique.webp',
+    heroImage: '/destinations/cote-atlantique-moto-maroc.webp',
     itineraries: [
       {
         days: 2,
         km: 350,
         level: 'easy',
         bikes: ['bmw-gs1200-adventure', 'bmw-f800gs-adventure'],
-        image: '/destinations/atlantique.webp',
+        image: '/destinations/cote-atlantique-moto-maroc.webp',
         stages: [
           { place: 'El Jadida', km: 100 },
           { place: 'Oualidia', km: 175 },
@@ -126,7 +126,7 @@ export const CITY_BASE: CityBase[] = [
         km: 240,
         level: 'easy',
         bikes: ['bmw-gs1200-adventure'],
-        image: '/gallery/DSC01210.jpg',
+        image: '/gallery/groupe-moto-point-de-vue-montagne-maroc.jpg',
         stages: [
           { place: 'Settat', km: 75 },
           { place: 'Ben Guerir', km: 160 },
@@ -138,7 +138,7 @@ export const CITY_BASE: CityBase[] = [
         km: 400,
         level: 'moderate',
         bikes: ['yamaha-tenere-700', 'bmw-f800gs-adventure'],
-        image: '/destinations/atlas.webp',
+        image: '/destinations/montagnes-atlas-moto-maroc.webp',
         stages: [
           { place: 'Khouribga', km: 120 },
           { place: 'Beni Mellal', km: 220 },
@@ -153,14 +153,14 @@ export const CITY_BASE: CityBase[] = [
     name: 'Kénitra',
     lat: 34.261,
     lng: -6.5802,
-    heroImage: '/gallery/agence-01.jpg',
+    heroImage: '/gallery/motos-location-cote-atlantique-maroc.jpg',
     itineraries: [
       {
         days: 2,
         km: 210,
         level: 'easy',
         bikes: ['bmw-f800gs-adventure', 'yamaha-tenere-700'],
-        image: '/destinations/atlas.webp',
+        image: '/destinations/montagnes-atlas-moto-maroc.webp',
         stages: [
           { place: 'Ouezzane', km: 110 },
           { place: 'Bab Taza', km: 175 },
@@ -172,7 +172,7 @@ export const CITY_BASE: CityBase[] = [
         km: 80,
         level: 'easy',
         bikes: ['suzuki-dr650', 'honda-crf250'],
-        image: '/destinations/atlantique.webp',
+        image: '/destinations/cote-atlantique-moto-maroc.webp',
         stages: [
           { place: 'Sidi Allal Tazi', km: 45 },
           { place: 'Moulay Bousselham', km: 80 },
@@ -183,7 +183,7 @@ export const CITY_BASE: CityBase[] = [
         km: 200,
         level: 'easy',
         bikes: ['bmw-gs1200-adventure'],
-        image: '/gallery/DSC01210.jpg',
+        image: '/gallery/groupe-moto-point-de-vue-montagne-maroc.jpg',
         stages: [
           { place: 'Sidi Kacem', km: 70 },
           { place: 'Meknès', km: 130 },
@@ -198,14 +198,14 @@ export const CITY_BASE: CityBase[] = [
     name: 'Agadir',
     lat: 30.4278,
     lng: -9.5981,
-    heroImage: '/destinations/atlantique.webp',
+    heroImage: '/destinations/cote-atlantique-moto-maroc.webp',
     itineraries: [
       {
         days: 1,
         km: 150,
         level: 'easy',
         bikes: ['honda-crf250', 'suzuki-dr650'],
-        image: '/gallery/group-ride.webp',
+        image: '/gallery/groupe-moto-aventure-maroc.webp',
         stages: [
           { place: 'Aourir', km: 15 },
           { place: 'Paradise Valley', km: 35 },
@@ -218,7 +218,7 @@ export const CITY_BASE: CityBase[] = [
         km: 285,
         level: 'moderate',
         bikes: ['yamaha-tenere-700', 'bmw-f800gs-adventure'],
-        image: '/gallery/DSC01895.jpg',
+        image: '/gallery/moto-col-montagne-maroc.jpg',
         stages: [
           { place: 'Aït Baha', km: 90 },
           { place: 'Tafraoute', km: 175 },
@@ -231,7 +231,7 @@ export const CITY_BASE: CityBase[] = [
         km: 175,
         level: 'easy',
         bikes: ['bmw-gs1200-adventure'],
-        image: '/destinations/atlantique.webp',
+        image: '/destinations/cote-atlantique-moto-maroc.webp',
         stages: [
           { place: 'Taghazout', km: 20 },
           { place: 'Tamri', km: 55 },
@@ -246,14 +246,14 @@ export const CITY_BASE: CityBase[] = [
     name: 'Tanger',
     lat: 35.7595,
     lng: -5.834,
-    heroImage: '/destinations/mediterranee.webp',
+    heroImage: '/destinations/cote-mediterranee-moto-maroc.webp',
     itineraries: [
       {
         days: 1,
         km: 115,
         level: 'easy',
         bikes: ['yamaha-tenere-700', 'bmw-f800gs-adventure'],
-        image: '/destinations/atlas.webp',
+        image: '/destinations/montagnes-atlas-moto-maroc.webp',
         stages: [
           { place: 'Tétouan', km: 60 },
           { place: 'Bab Taza', km: 95 },
@@ -265,7 +265,7 @@ export const CITY_BASE: CityBase[] = [
         km: 300,
         level: 'moderate',
         bikes: ['bmw-gs1200-adventure', 'yamaha-tenere-700'],
-        image: '/destinations/mediterranee.webp',
+        image: '/destinations/cote-mediterranee-moto-maroc.webp',
         stages: [
           { place: 'Tétouan', km: 60 },
           { place: 'Oued Laou', km: 100 },
@@ -278,7 +278,7 @@ export const CITY_BASE: CityBase[] = [
         km: 130,
         level: 'easy',
         bikes: ['suzuki-dr650'],
-        image: '/destinations/atlantique.webp',
+        image: '/destinations/cote-atlantique-moto-maroc.webp',
         stages: [
           { place: 'Cap Spartel', km: 15 },
           { place: 'Grottes d\'Hercule', km: 18 },
@@ -293,14 +293,14 @@ export const CITY_BASE: CityBase[] = [
     name: 'Fès',
     lat: 34.0331,
     lng: -5.0003,
-    heroImage: '/gallery/DSC01210.jpg',
+    heroImage: '/gallery/groupe-moto-point-de-vue-montagne-maroc.jpg',
     itineraries: [
       {
         days: 1,
         km: 170,
         level: 'easy',
         bikes: ['yamaha-tenere-700', 'bmw-f800gs-adventure'],
-        image: '/gallery/DSC01210.jpg',
+        image: '/gallery/groupe-moto-point-de-vue-montagne-maroc.jpg',
         stages: [
           { place: 'Imouzzer Kandar', km: 40 },
           { place: 'Ifrane', km: 65 },
@@ -313,7 +313,7 @@ export const CITY_BASE: CityBase[] = [
         km: 470,
         level: 'moderate',
         bikes: ['yamaha-tenere-700', 'bmw-gs1200-adventure'],
-        image: '/destinations/sahara.webp',
+        image: '/destinations/desert-sahara-moto-maroc.webp',
         stages: [
           { place: 'Ifrane', km: 65 },
           { place: 'Midelt', km: 205 },
@@ -327,7 +327,7 @@ export const CITY_BASE: CityBase[] = [
         km: 300,
         level: 'easy',
         bikes: ['bmw-f800gs-adventure'],
-        image: '/destinations/atlas.webp',
+        image: '/destinations/montagnes-atlas-moto-maroc.webp',
         stages: [
           { place: 'Meknès', km: 65 },
           { place: 'Ouezzane', km: 200 },
@@ -341,14 +341,14 @@ export const CITY_BASE: CityBase[] = [
     name: 'Rabat',
     lat: 34.0209,
     lng: -6.8416,
-    heroImage: '/gallery/agence-01.jpg',
+    heroImage: '/gallery/motos-location-cote-atlantique-maroc.jpg',
     itineraries: [
       {
         days: 2,
         km: 250,
         level: 'easy',
         bikes: ['bmw-f800gs-adventure', 'yamaha-tenere-700'],
-        image: '/destinations/atlas.webp',
+        image: '/destinations/montagnes-atlas-moto-maroc.webp',
         stages: [
           { place: 'Kénitra', km: 40 },
           { place: 'Ouezzane', km: 150 },
@@ -360,7 +360,7 @@ export const CITY_BASE: CityBase[] = [
         km: 200,
         level: 'easy',
         bikes: ['suzuki-dr650'],
-        image: '/destinations/atlantique.webp',
+        image: '/destinations/cote-atlantique-moto-maroc.webp',
         stages: [
           { place: 'Kénitra', km: 40 },
           { place: 'Sidi Allal Tazi', km: 85 },
@@ -373,7 +373,7 @@ export const CITY_BASE: CityBase[] = [
         km: 170,
         level: 'easy',
         bikes: ['bmw-gs1200-adventure'],
-        image: '/gallery/DSC01210.jpg',
+        image: '/gallery/groupe-moto-point-de-vue-montagne-maroc.jpg',
         stages: [
           { place: 'Khémisset', km: 85 },
           { place: 'Meknès', km: 140 },
@@ -387,14 +387,14 @@ export const CITY_BASE: CityBase[] = [
     name: 'Essaouira',
     lat: 31.5085,
     lng: -9.7595,
-    heroImage: '/destinations/atlantique.webp',
+    heroImage: '/destinations/cote-atlantique-moto-maroc.webp',
     itineraries: [
       {
         days: 1,
         km: 175,
         level: 'easy',
         bikes: ['bmw-gs1200-adventure', 'yamaha-tenere-700'],
-        image: '/destinations/atlantique.webp',
+        image: '/destinations/cote-atlantique-moto-maroc.webp',
         stages: [
           { place: 'Sidi Kaouki', km: 25 },
           { place: 'Tamri', km: 120 },
@@ -407,7 +407,7 @@ export const CITY_BASE: CityBase[] = [
         km: 220,
         level: 'easy',
         bikes: ['suzuki-dr650', 'yamaha-tenere-700'],
-        image: '/gallery/DSC01210.jpg',
+        image: '/gallery/groupe-moto-point-de-vue-montagne-maroc.jpg',
         stages: [
           { place: 'Ounagha', km: 30 },
           { place: 'Chichaoua', km: 130 },
@@ -419,7 +419,7 @@ export const CITY_BASE: CityBase[] = [
         km: 60,
         level: 'easy',
         bikes: ['honda-crf250', 'suzuki-dr200'],
-        image: '/gallery/agence-01.jpg',
+        image: '/gallery/motos-location-cote-atlantique-maroc.jpg',
         stages: [
           { place: 'Cap Sim', km: 20 },
           { place: 'Sidi Kaouki', km: 30 },
@@ -433,14 +433,14 @@ export const CITY_BASE: CityBase[] = [
     name: 'Ouarzazate',
     lat: 30.9335,
     lng: -6.937,
-    heroImage: '/gallery/DSC02705.jpg',
+    heroImage: '/gallery/equipe-keni-rides-garage-maroc.jpg',
     itineraries: [
       {
         days: 2,
         km: 260,
         level: 'moderate',
         bikes: ['yamaha-tenere-700', 'suzuki-dr650'],
-        image: '/destinations/sahara.webp',
+        image: '/destinations/desert-sahara-moto-maroc.webp',
         stages: [
           { place: 'Agdz', km: 70 },
           { place: 'Zagora', km: 165 },
@@ -453,7 +453,7 @@ export const CITY_BASE: CityBase[] = [
         km: 235,
         level: 'moderate',
         bikes: ['yamaha-tenere-700', 'bmw-f800gs-adventure'],
-        image: '/gallery/DSC01895.jpg',
+        image: '/gallery/moto-col-montagne-maroc.jpg',
         stages: [
           { place: 'Skoura', km: 40 },
           { place: 'Boumalne Dadès', km: 115 },
@@ -467,7 +467,7 @@ export const CITY_BASE: CityBase[] = [
         km: 190,
         level: 'easy',
         bikes: ['bmw-gs1200-adventure'],
-        image: '/gallery/DSC02705.jpg',
+        image: '/gallery/equipe-keni-rides-garage-maroc.jpg',
         stages: [
           { place: 'Aït Benhaddou', km: 30 },
           { place: 'Telouet', km: 75 },
@@ -482,14 +482,14 @@ export const CITY_BASE: CityBase[] = [
     name: 'Merzouga',
     lat: 31.0996,
     lng: -4.0129,
-    heroImage: '/gallery/DSC04394.jpg',
+    heroImage: '/gallery/moto-dunes-sahara-maroc.jpg',
     itineraries: [
       {
         days: 1,
         km: 90,
         level: 'demanding',
         bikes: ['honda-crf250', 'suzuki-dr650'],
-        image: '/gallery/DSC04394.jpg',
+        image: '/gallery/moto-dunes-sahara-maroc.jpg',
         stages: [
           { place: 'Dayet Srji', km: 8 },
           { place: 'Khamlia', km: 15 },
@@ -502,7 +502,7 @@ export const CITY_BASE: CityBase[] = [
         km: 120,
         level: 'moderate',
         bikes: ['suzuki-dr650', 'yamaha-tenere-700'],
-        image: '/gallery/DSC03120.jpg',
+        image: '/gallery/motos-plaines-desertiques-maroc.jpg',
         stages: [
           { place: 'Rissani', km: 40 },
           { place: 'Ksar Abbar', km: 50 },
@@ -515,7 +515,7 @@ export const CITY_BASE: CityBase[] = [
         km: 235,
         level: 'moderate',
         bikes: ['yamaha-tenere-700', 'bmw-f800gs-adventure'],
-        image: '/gallery/DSC01895.jpg',
+        image: '/gallery/moto-col-montagne-maroc.jpg',
         stages: [
           { place: 'Erfoud', km: 55 },
           { place: 'Tinejdad', km: 145 },

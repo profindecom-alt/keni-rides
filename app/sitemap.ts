@@ -16,8 +16,8 @@ function imageUrls(paths: string[]): string[] {
 
 // Static routes that exist in every locale, with a rough crawl priority.
 const STATIC_ROUTES: { href: Href; priority: number; changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency']; images?: string[] }[] = [
-  { href: '/', priority: 1.0, changeFrequency: 'weekly', images: ['/gallery/DSC02225.jpg'] },
-  { href: '/motorcycles', priority: 0.9, changeFrequency: 'weekly', images: ['/gallery/DSC03230.jpg', ...BIKE_SLUGS.map((s) => getBikeGallery(s)[0])] },
+  { href: '/', priority: 1.0, changeFrequency: 'weekly', images: ['/gallery/moto-col-montagne-crepuscule-maroc.jpg'] },
+  { href: '/motorcycles', priority: 0.9, changeFrequency: 'weekly', images: ['/gallery/moto-traversee-desert-maroc.jpg', ...BIKE_SLUGS.map((s) => getBikeGallery(s)[0])] },
   { href: '/gallery', priority: 0.7, changeFrequency: 'monthly', images: GALLERY_SRCS.map((g) => g.src) },
   { href: '/testimonials', priority: 0.7, changeFrequency: 'monthly' },
   { href: '/about', priority: 0.6, changeFrequency: 'yearly', images: ['/founder.webp'] },

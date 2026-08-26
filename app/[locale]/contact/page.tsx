@@ -58,7 +58,7 @@ function ContactContent() {
   return (
     <>
       <PageHero
-        image="/gallery/DSC05655.jpg"
+        image="/gallery/assistance-moto-garage-zagora-maroc.jpg"
         imageAlt="Keni Rides riders sharing a moment together"
         placeholderLabel="Say Salam"
         crumbLabel={tNav('contact')}

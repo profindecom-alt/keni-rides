@@ -67,7 +67,7 @@ function ConditionsContent() {
   return (
     <>
       <PageHero
-        image="/gallery/DSC02705.jpg"
+        image="/gallery/equipe-keni-rides-garage-maroc.jpg"
         imageAlt="Keni Rides team at a garage in Morocco"
         placeholderLabel="The Fine Print"
         crumbLabel={tFooter('rentalConditions')}

@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect, useRef, useState } from 'react';
 
 function placeholderSVG(label: string): string {
@@ -61,16 +62,24 @@ export default function ParallaxHero({ src, alt, placeholderLabel, speed = 0.2, 
 
   return (
     <div className="hero-media">
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        ref={imgRef}
-        src={failed ? placeholderSVG(placeholderLabel || alt) : src}
-        alt={alt}
-        className="parallax-media"
-        loading={fetchPriority === 'high' ? 'eager' : 'lazy'}
-        fetchPriority={fetchPriority}
-        onError={() => setFailed(true)}
-      />
+      {failed ? (
+        // The placeholder is a data: URI, which the optimiser cannot process.
+        // eslint-disable-next-line @next/next/no-img-element
+        <img ref={imgRef} src={placeholderSVG(placeholderLabel || alt)} alt={alt} className="parallax-media" />
+      ) : (
+        <Image
+          ref={imgRef}
+          src={src}
+          alt={alt}
+          className="parallax-media"
+          fill
+          // The hero spans the viewport at every breakpoint.
+          sizes="100vw"
+          quality={78}
+          priority={fetchPriority === 'high'}
+          onError={() => setFailed(true)}
+        />
+      )}
     </div>
   );
 }

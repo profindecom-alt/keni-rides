@@ -67,6 +67,38 @@ const LEGACY_REDIRECTS = [
   { source: '/dropoff_location/:path*', destination: '/nos-motos' },
   { source: '/mb_categories/:path*', destination: '/nos-motos' },
 
+  // --- Renamed image assets ---
+  // The gallery and destination photos were renamed from camera filenames
+  // (DSC03120.jpg) to descriptive ones (motos-plaines-desertiques-maroc.jpg).
+  // Image search is this site's largest impression source and the old URLs are
+  // already indexed, so each one redirects rather than 404ing and dropping the
+  // ranking that came with it.
+  { source: '/gallery/DSC01210.jpg', destination: '/gallery/groupe-moto-point-de-vue-montagne-maroc.jpg' },
+  { source: '/gallery/DSC01332.jpg', destination: '/gallery/moto-piste-poussiere-montagne-maroc.jpg' },
+  { source: '/gallery/DSC01352.jpg', destination: '/gallery/moto-canyon-roches-rouges-maroc.jpg' },
+  { source: '/gallery/DSC01895.jpg', destination: '/gallery/moto-col-montagne-maroc.jpg' },
+  { source: '/gallery/DSC01993.jpg', destination: '/gallery/route-col-montagne-atlas-maroc.jpg' },
+  { source: '/gallery/DSC02225.jpg', destination: '/gallery/moto-col-montagne-crepuscule-maroc.jpg' },
+  { source: '/gallery/DSC02705.jpg', destination: '/gallery/equipe-keni-rides-garage-maroc.jpg' },
+  { source: '/gallery/DSC02757.jpg', destination: '/gallery/riders-keni-rides-ensemble-maroc.jpg' },
+  { source: '/gallery/DSC02961.jpg', destination: '/gallery/rider-pause-desert-maroc.jpg' },
+  { source: '/gallery/DSC03120.jpg', destination: '/gallery/motos-plaines-desertiques-maroc.jpg' },
+  { source: '/gallery/DSC03230.jpg', destination: '/gallery/moto-traversee-desert-maroc.jpg' },
+  { source: '/gallery/DSC03273.jpg', destination: '/gallery/groupe-moto-acacia-desert-maroc.jpg' },
+  { source: '/gallery/DSC03818.jpg', destination: '/gallery/riders-desert-maroc.jpg' },
+  { source: '/gallery/DSC03952.jpg', destination: '/gallery/moto-piste-montagne-maroc.jpg' },
+  { source: '/gallery/DSC04394.jpg', destination: '/gallery/moto-dunes-sahara-maroc.jpg' },
+  { source: '/gallery/DSC05655.jpg', destination: '/gallery/assistance-moto-garage-zagora-maroc.jpg' },
+  { source: '/gallery/DSC05672.jpg', destination: '/gallery/rider-keni-rides-moto-maroc.jpg' },
+  { source: '/gallery/DSC05794.jpg', destination: '/gallery/reparation-pneu-moto-desert-maroc.jpg' },
+  { source: '/gallery/agence-01.jpg', destination: '/gallery/motos-location-cote-atlantique-maroc.jpg' },
+  { source: '/gallery/agence-02.jpg', destination: '/gallery/livraison-moto-remorque-maroc.jpg' },
+  { source: '/gallery/group-ride.webp', destination: '/gallery/groupe-moto-aventure-maroc.webp' },
+  { source: '/destinations/sahara.webp', destination: '/destinations/desert-sahara-moto-maroc.webp' },
+  { source: '/destinations/atlas.webp', destination: '/destinations/montagnes-atlas-moto-maroc.webp' },
+  { source: '/destinations/mediterranee.webp', destination: '/destinations/cote-mediterranee-moto-maroc.webp' },
+  { source: '/destinations/atlantique.webp', destination: '/destinations/cote-atlantique-moto-maroc.webp' },
+
   // --- Old WordPress content pages → closest current page ---
   { source: '/histoire', destination: '/a-propos-de-nous' },
   { source: '/a-propos', destination: '/a-propos-de-nous' },
@@ -81,6 +113,19 @@ const LEGACY_REDIRECTS = [
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  images: {
+    // AVIF first, WebP second: both are a large step down from the source JPEG
+    // and every browser we see in Search Console supports at least one.
+    formats: ['image/avif', 'image/webp'],
+    // The widths srcset is generated at. Trimmed to the sizes this layout
+    // actually uses — a 4-across gallery tile and a 3-across card on desktop,
+    // full-bleed heroes — so we are not caching variants nothing requests.
+    deviceSizes: [640, 828, 1080, 1200, 1600, 1920],
+    imageSizes: [256, 384],
+    // Optimised variants are immutable for a year; the filenames are stable and
+    // a changed photo gets a new name.
+    minimumCacheTTL: 31536000,
+  },
   async redirects() {
     return LEGACY_REDIRECTS.map((r) => ({ ...r, permanent: true }));
   },

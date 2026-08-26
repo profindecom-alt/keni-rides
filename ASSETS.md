@@ -31,24 +31,31 @@ quality ~80. Landscape ~1600×1200 for bikes, ~1920×1080+ for heroes.
 | `honda-transalp-700.jpg` | Honda Transalp 700 |
 | `suzuki-dr400.jpg` | Suzuki DR400 |
 
-## Gallery & heroes (`public/gallery/`) — 16:9 or wider for heroes
+## Gallery & heroes (`public/gallery/`, `public/destinations/`)
 
-| File | Used for |
-|---|---|
-| `hero.jpg` | Home page full-screen hero (most important image on the site) |
-| `fleet-hero.jpg` | Motorcycles page hero |
-| `gallery-hero.jpg` | Gallery page hero |
-| `testimonials-hero.jpg` | Testimonials page hero |
-| `about-hero.jpg` | About page hero |
-| `faq-hero.jpg` | FAQ page hero |
-| `conditions-hero.jpg` | Rental conditions page hero |
-| `contact-hero.jpg` | Contact page hero |
-| `cta.jpg` | Background of the orange call-to-action bands |
-| `sahara.jpg` | Sahara destination card |
-| `atlas.jpg` | Atlas destination card |
-| `mediterranean.jpg` | Mediterranean destination card |
-| `atlantic.jpg` | Atlantic destination card |
-| `gallery-01.jpg` … `gallery-12.jpg` | Gallery grid (01, 03/06/08 shown large — pick your best) |
+Filenames are descriptive and keyword-bearing, not camera names — Google Image
+search is this site's largest source of impressions, and the filename is one of
+the few signals it has about an image's subject. Use lowercase, hyphenated,
+French (the default locale), ending in the subject and place:
+
+    moto-dunes-sahara-maroc.jpg
+    cote-mediterranee-moto-maroc.webp
+    groupe-moto-point-de-vue-montagne-maroc.jpg
+
+**Size them before committing.** Source files are capped at 2400px on the long
+edge, quality ~82. The originals were 6000px camera exports and the folder was
+327 MB; it is now ~16 MB for the same visible quality. next/image generates
+every smaller width from these, so anything above 2400px is bytes nobody reads.
+
+**Renaming an existing photo needs a redirect.** Old image URLs are indexed, so
+add a `{ source, destination }` pair to LEGACY_REDIRECTS in `next.config.ts`
+rather than letting the old path 404.
+
+Alt text lives in the message files, never in the component:
+- Gallery grid — `galleryPage.images` in `messages/<locale>.json`, matched
+  **by index** to `GALLERY_SRCS` in `lib/gallery.ts`.
+- City itinerary photos — `common.photoAlt.<filename-without-extension>`.
+- Bikes — `common.bikeImageAlt` / `bikeAngleAlt`, interpolated with the name.
 
 ## Testimonial videos
 

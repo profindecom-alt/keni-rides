@@ -40,7 +40,7 @@ function GalleryContent() {
   return (
     <>
       <PageHero
-        image="/gallery/DSC01993.jpg"
+        image="/gallery/route-col-montagne-atlas-maroc.jpg"
         imageAlt="Aerial view of a mountain pass road in Morocco"
         placeholderLabel="The Gallery"
         crumbLabel={tNav('gallery')}
@@ -58,7 +58,7 @@ function GalleryContent() {
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <Reveal as="div" className="cta-band" direction="zoom">
-            <FallbackImg src="/gallery/DSC01332.jpg" alt="" placeholderLabel="" />
+            <FallbackImg src="/gallery/moto-piste-poussiere-montagne-maroc.jpg" alt="" placeholderLabel="" fill sizes="100vw" />
             <h2>{t('cta.titleStart')}<span className="text-gradient">{t('cta.titleEmphasis')}</span>{t('cta.titleEnd')}</h2>
             <p>{t('cta.lead')}</p>
             <div className="hero-actions">

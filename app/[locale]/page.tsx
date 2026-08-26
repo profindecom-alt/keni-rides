@@ -43,15 +43,15 @@ const STAR = (
 const FIVE_STARS = <div className="stars" aria-label="5 out of 5 stars">{STAR}{STAR}{STAR}{STAR}{STAR}</div>;
 
 const GALLERY_STRIP: { src: string; size?: 'wide' }[] = [
-  { src: '/gallery/DSC01210.jpg', size: 'wide' },
-  { src: '/gallery/DSC01332.jpg' },
-  { src: '/gallery/DSC01352.jpg' },
-  { src: '/gallery/DSC01895.jpg' },
-  { src: '/gallery/DSC01993.jpg' },
-  { src: '/gallery/DSC02225.jpg', size: 'wide' },
+  { src: '/gallery/groupe-moto-point-de-vue-montagne-maroc.jpg', size: 'wide' },
+  { src: '/gallery/moto-piste-poussiere-montagne-maroc.jpg' },
+  { src: '/gallery/moto-canyon-roches-rouges-maroc.jpg' },
+  { src: '/gallery/moto-col-montagne-maroc.jpg' },
+  { src: '/gallery/route-col-montagne-atlas-maroc.jpg' },
+  { src: '/gallery/moto-col-montagne-crepuscule-maroc.jpg', size: 'wide' },
 ];
 
-const DEST_IMAGES = ['/destinations/sahara.webp', '/destinations/atlas.webp', '/destinations/mediterranee.webp', '/destinations/atlantique.webp'];
+const DEST_IMAGES = ['/destinations/desert-sahara-moto-maroc.webp', '/destinations/montagnes-atlas-moto-maroc.webp', '/destinations/cote-mediterranee-moto-maroc.webp', '/destinations/cote-atlantique-moto-maroc.webp'];
 
 const FEATURE_ICONS = [
   <path key="1" d="m12 15 2 5 3-9 4-1-9-8-1 4-9 3 9 4z" transform="rotate(45 12 12)" />,
@@ -88,7 +88,7 @@ function HomeContent() {
       {/* HERO — full-bleed cinematic */}
       <section className="hero">
         <ParallaxHero
-          src="/gallery/DSC02225.jpg"
+          src="/gallery/moto-col-montagne-crepuscule-maroc.jpg"
           alt={t('heroAlt')}
           placeholderLabel="Ride Morocco"
           speed={0.18}
@@ -143,7 +143,7 @@ function HomeContent() {
       <section className="section section-dark">
         <div className="container split">
           <Reveal as="div" className="split-media" direction="left">
-            <FallbackImg src="/founder.webp" alt="Mohamed (Simo) Bennis, founder of Keni Rides" placeholderLabel="Simo Bennis" />
+            <FallbackImg src="/founder.webp" alt="Mohamed (Simo) Bennis, founder of Keni Rides" placeholderLabel="Simo Bennis" fill sizes="(max-width: 900px) 100vw, 45vw" />
             <span className="media-caption">{t('founder.caption')}</span>
           </Reveal>
           <Reveal as="div" direction="right">
@@ -237,7 +237,7 @@ function HomeContent() {
             {destinations.map((d, i) => (
               <Reveal key={d.name} delay={i * 0.1}>
                 <Link href="/gallery" className="route-card">
-                  <FallbackImg src={DEST_IMAGES[i]} alt={d.name} placeholderLabel={d.name} />
+                  <FallbackImg src={DEST_IMAGES[i]} alt={d.name} placeholderLabel={d.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 300px" />
                   <div className="route-card-body">
                     <span className="route-tag">{d.tag}</span>
                     <h3>{d.name}</h3>
@@ -282,7 +282,7 @@ function HomeContent() {
           <div className="gallery-grid">
             {GALLERY_STRIP.map((g, i) => (
               <Reveal as="div" className={`gallery-item${g.size ? ` ${g.size}` : ''}`} key={g.src} delay={(i % 3) * 0.06}>
-                <FallbackImg src={g.src} alt={galleryImages[i]?.alt || ''} placeholderLabel={galleryImages[i]?.label || ''} />
+                <FallbackImg src={g.src} alt={galleryImages[i]?.alt || ''} placeholderLabel={galleryImages[i]?.label || ''} fill sizes="(max-width: 640px) 50vw, 25vw" />
               </Reveal>
             ))}
           </div>
@@ -296,7 +296,7 @@ function HomeContent() {
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <Reveal as="div" className="cta-band" direction="zoom">
-            <FallbackImg src="/gallery/DSC01332.jpg" alt="" placeholderLabel="" />
+            <FallbackImg src="/gallery/moto-piste-poussiere-montagne-maroc.jpg" alt="" placeholderLabel="" fill sizes="100vw" />
             <h2>{t('cta.titleStart')}<span className="text-gradient">{t('cta.titleEmphasis')}</span>{t('cta.titleEnd')}</h2>
             <p>{t('cta.lead')}</p>
             <div className="hero-actions">

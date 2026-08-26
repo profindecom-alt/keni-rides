@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState, type CSSProperties } from 'react';
 
 function placeholderSVG(label: string): string {
@@ -31,9 +32,29 @@ interface FallbackImgProps {
   fetchPriority?: 'high' | 'low' | 'auto';
   width?: number;
   height?: number;
+  /**
+   * Render through next/image as a fill layer. The parent must be positioned
+   * and have a height of its own (every container we use it in sets
+   * `position: relative` plus an `aspect-ratio`).
+   */
+  fill?: boolean;
+  /** Slot width per breakpoint, so the browser picks the right srcset entry. */
+  sizes?: string;
 }
 
-/** Plain <img> that swaps to a branded SVG placeholder if the real asset 404s. */
+/**
+ * Site image with a branded SVG placeholder if the asset 404s.
+ *
+ * Photos go through next/image, which is the whole point: the source files are
+ * 2400px and every device used to download that same file. With `fill` (or an
+ * explicit width/height) Next emits a srcset, so a phone rendering a 350px card
+ * fetches a 640px image instead of a 1600px one — the difference between a
+ * ~3 MB city page and a few hundred KB.
+ *
+ * Callers that pass neither `fill` nor width/height keep a plain <img>: that is
+ * the logo path, where the intrinsic size is set in CSS and optimisation buys
+ * nothing.
+ */
 export default function FallbackImg({
   src,
   alt,
@@ -44,19 +65,53 @@ export default function FallbackImg({
   fetchPriority,
   width,
   height,
+  fill,
+  sizes,
 }: FallbackImgProps) {
   const [failed, setFailed] = useState(false);
+
+  // The placeholder is a data: URI, which the optimiser cannot process.
+  if (failed) {
+    return (
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src={placeholderSVG(placeholderLabel || alt)}
+        alt={alt}
+        className={className}
+        style={style}
+        width={width}
+        height={height}
+      />
+    );
+  }
+
+  const shared = {
+    src,
+    alt,
+    className,
+    style,
+    quality: 78,
+    priority: fetchPriority === 'high',
+    onError: () => setFailed(true),
+  };
+
+  if (fill) {
+    return <Image {...shared} fill sizes={sizes ?? '100vw'} />;
+  }
+
+  if (width && height) {
+    return <Image {...shared} width={width} height={height} sizes={sizes} loading={fetchPriority === 'high' ? undefined : loading} />;
+  }
+
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src={failed ? placeholderSVG(placeholderLabel || alt) : src}
+      src={src}
       alt={alt}
       className={className}
       style={style}
       loading={loading}
       fetchPriority={fetchPriority}
-      width={width}
-      height={height}
       onError={() => setFailed(true)}
     />
   );

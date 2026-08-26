@@ -33,7 +33,7 @@ export default function GalleryGrid({ images, rowHeight }: { images: GalleryImag
               }
             }}
           >
-            <FallbackImg src={img.src} alt={img.alt} placeholderLabel={img.placeholderLabel} />
+            <FallbackImg src={img.src} alt={img.alt} placeholderLabel={img.placeholderLabel} fill sizes="(max-width: 640px) 50vw, 25vw" />
           </Reveal>
         ))}
       </div>

@@ -87,7 +87,7 @@ function MotorcyclesContent() {
   return (
     <>
       <PageHero
-        image="/gallery/DSC03230.jpg"
+        image="/gallery/moto-traversee-desert-maroc.jpg"
         imageAlt={t('heroAlt')}
         placeholderLabel="The Fleet"
         crumbLabel={tNav('motorcycles')}
@@ -136,7 +136,7 @@ function MotorcyclesContent() {
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <Reveal as="div" className="cta-band" direction="zoom">
-            <FallbackImg src="/gallery/DSC01332.jpg" alt="" placeholderLabel="" />
+            <FallbackImg src="/gallery/moto-piste-poussiere-montagne-maroc.jpg" alt="" placeholderLabel="" fill sizes="100vw" />
             <h2>{t('cta.titleStart')}<span className="text-gradient">{t('cta.titleEmphasis')}</span>{t('cta.titleEnd')}</h2>
             <p>{t('cta.lead')}</p>
             <div className="hero-actions">

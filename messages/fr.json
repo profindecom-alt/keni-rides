@@ -92,6 +92,19 @@
     "readMore": "En savoir plus",
     "bikeImageAlt": "Location {bike} au Maroc — Keni Rides",
     "routeImageAlt": "Moto d'aventure Keni Rides sur les routes du Maroc",
+    "photoAlt": {
+      "desert-sahara-moto-maroc": "Moto d'aventure sur les dunes du Sahara marocain",
+      "montagnes-atlas-moto-maroc": "Moto à un col des montagnes de l'Atlas, au-dessus d'une route en lacets",
+      "cote-atlantique-moto-maroc": "Moto face à l'océan Atlantique au coucher du soleil",
+      "cote-mediterranee-moto-maroc": "Moto sur la route côtière méditerranéenne du nord du Maroc",
+      "groupe-moto-point-de-vue-montagne-maroc": "Groupe de riders Keni Rides à un point de vue sur les plaines marocaines",
+      "moto-col-montagne-maroc": "Moto sur une piste de montagne rocailleuse au Maroc",
+      "groupe-moto-aventure-maroc": "Groupe de motos d'aventure en pause devant une kasbah",
+      "equipe-keni-rides-garage-maroc": "L'équipe Keni Rides et les motos devant un garage au Maroc",
+      "moto-dunes-sahara-maroc": "Yamaha Ténéré 700 franchissant une dune de sable au Sahara",
+      "motos-plaines-desertiques-maroc": "Groupe de riders à l'ombre d'un acacia dans le désert marocain",
+      "motos-location-cote-atlantique-maroc": "Deux motos de location Keni Rides au bord de l'Atlantique"
+    },
     "bikeAngleAlt": "{bike} en location au Maroc — {angle}",
     "bike3dAlt": "Modèle 3D interactif du {bike} en location au Maroc"
   },

@@ -18,7 +18,7 @@ export async function generateMetadata({
   return pageMetadata({ locale, href: '/about', title: t('title'), description: t('description') });
 }
 
-const REGION_IMAGES = ['/gallery/DSC04394.jpg', '/gallery/DSC01895.jpg', '/gallery/agence-01.jpg', '/gallery/agence-02.jpg'];
+const REGION_IMAGES = ['/gallery/moto-dunes-sahara-maroc.jpg', '/gallery/moto-col-montagne-maroc.jpg', '/gallery/motos-location-cote-atlantique-maroc.jpg', '/gallery/livraison-moto-remorque-maroc.jpg'];
 
 export default async function AboutPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -36,7 +36,7 @@ function AboutContent() {
   return (
     <>
       <PageHero
-        image="/gallery/DSC01210.jpg"
+        image="/gallery/groupe-moto-point-de-vue-montagne-maroc.jpg"
         imageAlt="Keni Rides group at a mountain viewpoint in Morocco"
         placeholderLabel="The Story"
         crumbLabel={tNav('about')}
@@ -47,7 +47,7 @@ function AboutContent() {
         <div className="glow-field" aria-hidden="true"><span className="glow" style={{ top: '10%', right: '-15%' }} /></div>
         <div className="container split">
           <Reveal as="div" className="split-media" direction="left">
-            <FallbackImg src="/founder.webp" alt="Mohamed (Simo) Bennis, founder of Keni Rides, with his motorcycle" placeholderLabel="Simo Bennis" />
+            <FallbackImg src="/founder.webp" alt="Mohamed (Simo) Bennis, founder of Keni Rides, with his motorcycle" placeholderLabel="Simo Bennis" fill sizes="(max-width: 900px) 100vw, 45vw" />
             <span className="media-caption">{t('founder.caption')}</span>
           </Reveal>
           <Reveal as="div" direction="right">
@@ -77,7 +77,7 @@ function AboutContent() {
             {regions.map((r, i) => (
               <Reveal key={r.name} delay={i * 0.1}>
                 <Link href="/gallery" className="route-card">
-                  <FallbackImg src={REGION_IMAGES[i]} alt={r.name} placeholderLabel={r.name} />
+                  <FallbackImg src={REGION_IMAGES[i]} alt={r.name} placeholderLabel={r.name} fill sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 300px" />
                   <div className="route-card-body">
                     <span className="route-tag">{r.tag}</span>
                     <h3>{r.name}</h3>
@@ -117,7 +117,7 @@ function AboutContent() {
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <Reveal as="div" className="cta-band" direction="zoom">
-            <FallbackImg src="/gallery/DSC01332.jpg" alt="" placeholderLabel="" />
+            <FallbackImg src="/gallery/moto-piste-poussiere-montagne-maroc.jpg" alt="" placeholderLabel="" fill sizes="100vw" />
             <h2>{t('cta.titleStart')}<span className="text-gradient">{t('cta.titleEmphasis')}</span></h2>
             <p>{t('cta.lead')}</p>
             <div className="hero-actions">

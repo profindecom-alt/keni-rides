@@ -56,7 +56,7 @@ function FaqContent({ items }: { items: { q: string; a: string }[] }) {
   return (
     <>
       <PageHero
-        image="/gallery/DSC02225.jpg"
+        image="/gallery/moto-col-montagne-crepuscule-maroc.jpg"
         imageAlt="Motorcycle riding through a mountain pass at dusk"
         placeholderLabel="Questions"
         crumbLabel={tNav('faq')}
@@ -92,7 +92,7 @@ function FaqContent({ items }: { items: { q: string; a: string }[] }) {
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="container">
           <Reveal as="div" className="cta-band" direction="zoom">
-            <FallbackImg src="/gallery/DSC01332.jpg" alt="" placeholderLabel="" />
+            <FallbackImg src="/gallery/moto-piste-poussiere-montagne-maroc.jpg" alt="" placeholderLabel="" fill sizes="100vw" />
             <h2>{t('cta.titleStart')}<span className="text-gradient">{t('cta.titleEmphasis')}</span></h2>
             <p>{t('cta.lead')}</p>
             <div className="hero-actions">
