@@ -13,12 +13,19 @@ import { CONFIG } from '@/lib/config';
 import { pageMetadata } from '@/lib/seo';
 import type { Metadata } from 'next';
 
+/**
+ * Six, not five: FleetGrid is a three-column grid, so five left a hole in the
+ * second row. The sixth is the CRF250 rather than another big trail — it is the
+ * lightest and cheapest bike we have, so the row now spans €65 to €140 and a
+ * first-time rider sees something for them without leaving the homepage.
+ */
 const FEATURED_SLUGS = [
   'bmw-gs1200-adventure',
   'yamaha-tenere-700-world-raid',
   'yamaha-tenere-700',
   'bmw-f800gs-adventure',
   'suzuki-dr650',
+  'honda-crf250',
 ];
 
 export async function generateMetadata({
